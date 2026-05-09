@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import WorkWithUs from "@/components/home/WorkWithUs";
+import TeamShowcase from "@/components/team/TeamShowcase";
 
 export const metadata: Metadata = {
   title: "About DolphX — Technology-Mediatique Company",
@@ -31,13 +32,6 @@ const milestones = [
   { year: "2025", event: "40+ properties. International expansion into North America and MENA." },
 ];
 
-const team = [
-  { initial: "A", name: "Alexandre D.", role: "Founder & CEO", bio: "Serial entrepreneur with exits in media tech. Built and scaled two digital publishing groups before founding DolphX." },
-  { initial: "S", name: "Sophie R.", role: "Chief Data Officer", bio: "Former Head of Audience Intelligence at a FTSE 100 publisher. Leads all data strategy and platform architecture." },
-  { initial: "M", name: "Marc K.", role: "Head of Network", bio: "15 years in digital publishing. Responsible for editorial standards across all 40+ media properties." },
-  { initial: "J", name: "Julia L.", role: "VP Technology", bio: "Full-stack infrastructure specialist. Oversees the proprietary data platform and all client technology deployments." },
-];
-
 const stats = [
   { val: "40+", label: "Media Properties" },
   { val: "120M+", label: "Monthly Audience" },
@@ -65,7 +59,7 @@ export default function AboutPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -83,7 +77,7 @@ export default function AboutPage() {
                   letterSpacing: "-0.02em",
                 }}
               >
-                Operating at the intersection of media &amp; data technology<span style={{ color: "#2563EB" }}>.</span>
+                Operating at the intersection of media &amp; data technology<span style={{ color: "var(--color-eyebrow)" }}>.</span>
               </h1>
               <p
                 style={{
@@ -128,7 +122,7 @@ export default function AboutPage() {
                     fontFamily: "var(--font-serif)",
                     fontSize: 36,
                     fontWeight: 400,
-                    color: "#2563EB",
+                    color: "var(--color-eyebrow)",
                     letterSpacing: "-0.02em",
                     lineHeight: 1,
                     display: "block",
@@ -165,7 +159,7 @@ export default function AboutPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -184,7 +178,7 @@ export default function AboutPage() {
                 marginBottom: 40,
               }}
             >
-              Turn audience trust into <span style={{ color: "#2563EB" }}>measurable enterprise value</span>.
+              Turn audience trust into <span style={{ color: "var(--color-eyebrow)" }}>measurable enterprise value</span>.
             </h2>
 
             <div style={{ height: 1, backgroundColor: "var(--color-border)", marginBottom: 40 }} />
@@ -212,7 +206,7 @@ export default function AboutPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -229,7 +223,7 @@ export default function AboutPage() {
                 marginBottom: 56,
               }}
             >
-              How we operate<span style={{ color: "#2563EB" }}>.</span>
+              How we operate<span style={{ color: "var(--color-eyebrow)" }}>.</span>
             </h2>
           </ScrollReveal>
 
@@ -249,7 +243,7 @@ export default function AboutPage() {
                   }}
                   id="val-row"
                 >
-                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "#2563EB", letterSpacing: "0.1em" }}>{v.num}</span>
+                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--color-eyebrow)", letterSpacing: "0.1em" }}>{v.num}</span>
                   <span style={{ fontFamily: "var(--font-serif)", fontSize: 18, fontWeight: 400, color: "var(--color-foreground)", letterSpacing: "-0.01em" }}>{v.title}</span>
                   <span style={{ fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 300, color: "var(--color-muted-foreground)", lineHeight: 1.75 }}>{v.desc}</span>
                 </div>
@@ -264,89 +258,12 @@ export default function AboutPage() {
       </section>
 
       {/* ── Team ────────────────────────────────────────────────── */}
-      <section style={{ backgroundColor: "var(--color-canvas)", borderBottom: "1px solid var(--color-border)", paddingTop: 120, paddingBottom: 120 }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 40px" }}>
-          <ScrollReveal>
-            <p
-              style={{
-                fontFamily: "var(--font-mono)",
-                fontSize: 10,
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                color: "#2563EB",
-                marginBottom: 40,
-              }}
-            >
-              Leadership
-            </p>
-            <h2
-              style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "clamp(28px, 3.5vw, 44px)",
-                fontWeight: 400,
-                color: "var(--color-foreground)",
-                lineHeight: 1.1,
-                letterSpacing: "-0.02em",
-                marginBottom: 56,
-              }}
-            >
-              The people behind DolphX<span style={{ color: "#2563EB" }}>.</span>
-            </h2>
-          </ScrollReveal>
+      <TeamShowcase
+        eyebrow="Leadership"
+        title="Senior operators, not account managers."
+        subtitle="Each member owns a vertical end-to-end — from strategy through delivery. They answer their own inbox and are on every client call."
+      />
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(4,1fr)",
-              gap: 1,
-              backgroundColor: "var(--color-border)",
-              border: "1px solid var(--color-border)",
-            }}
-            id="team-grid"
-          >
-            {team.map((m, i) => (
-              <ScrollReveal key={m.name} delay={i * 80}>
-                <div
-                  style={{
-                    backgroundColor: "var(--color-canvas)",
-                    padding: "32px 24px",
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    transition: "background-color 200ms ease",
-                  }}
-                  className="team-cell"
-                >
-                  <div
-                    style={{
-                      width: 44,
-                      height: 44,
-                      backgroundColor: "#2563EB",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      color: "#fff",
-                      fontFamily: "var(--font-serif)",
-                      fontSize: 18,
-                      marginBottom: 24,
-                    }}
-                  >
-                    {m.initial}
-                  </div>
-                  <p style={{ fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: 500, color: "var(--color-foreground)", marginBottom: 4 }}>{m.name}</p>
-                  <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#2563EB", marginBottom: 16, letterSpacing: "0.1em", textTransform: "uppercase" }}>{m.role}</p>
-                  <p style={{ fontSize: 13, fontWeight: 300, color: "var(--color-muted-foreground)", lineHeight: 1.75, marginTop: "auto" }}>{m.bio}</p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-        <style>{`
-          .team-cell:hover{background-color:var(--color-surface)!important;}
-          @media(max-width:900px){#team-grid{grid-template-columns:repeat(2,1fr)!important;}}
-          @media(max-width:480px){#team-grid{grid-template-columns:1fr!important;}}
-        `}</style>
-      </section>
 
       {/* ── Milestones ──────────────────────────────────────────── */}
       <section style={{ backgroundColor: "var(--color-surface)", borderBottom: "1px solid var(--color-border)", paddingTop: 120, paddingBottom: 120 }}>
@@ -358,7 +275,7 @@ export default function AboutPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -375,7 +292,7 @@ export default function AboutPage() {
                 marginBottom: 56,
               }}
             >
-              Milestones<span style={{ color: "#2563EB" }}>.</span>
+              Milestones<span style={{ color: "var(--color-eyebrow)" }}>.</span>
             </h2>
           </ScrollReveal>
 
@@ -394,7 +311,7 @@ export default function AboutPage() {
                     transition: "background-color 200ms ease",
                   }}
                 >
-                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, fontWeight: 500, color: "#2563EB", letterSpacing: "0.05em" }}>{m.year}</span>
+                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, fontWeight: 500, color: "var(--color-eyebrow)", letterSpacing: "0.05em" }}>{m.year}</span>
                   <span style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--color-foreground)", fontWeight: 300, lineHeight: 1.7 }}>{m.event}</span>
                 </div>
               </ScrollReveal>

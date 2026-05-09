@@ -34,7 +34,7 @@ function MiniChart() {
           style={{
             width: 6,
             height: `${h}%`,
-            backgroundColor: i >= 10 ? "#2563EB" : "rgba(37,99,235,0.25)",
+            backgroundColor: i >= 10 ? "#a7f432" : "rgba(167,244,50,0.25)",
             transition: "height 600ms ease",
             animationDelay: `${i * 80}ms`,
           }}
@@ -51,7 +51,7 @@ function SparkLine() {
       <polyline
         points={points}
         fill="none"
-        stroke="#2563EB"
+        stroke="#a7f432"
         strokeWidth={1.5}
         className="spark-line"
       />
@@ -63,8 +63,8 @@ function SparkLine() {
       />
       <defs>
         <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#2563EB" stopOpacity="0.15" />
-          <stop offset="100%" stopColor="#2563EB" stopOpacity="0" />
+          <stop offset="0%" stopColor="#a7f432" stopOpacity="0.15" />
+          <stop offset="100%" stopColor="#a7f432" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
@@ -90,9 +90,9 @@ function DataStream() {
             fontFamily: "var(--font-mono, monospace)",
             fontSize: 9,
             letterSpacing: "0.04em",
-            color: "rgba(37,99,235,0.7)",
+            color: "rgba(167,244,50,0.7)",
             padding: "4px 0",
-            borderBottom: "1px solid rgba(37,99,235,0.06)",
+            borderBottom: "1px solid rgba(167,244,50,0.06)",
             animationDelay: `${i * 0.3}s`,
             whiteSpace: "nowrap",
           }}
@@ -128,7 +128,7 @@ export default function HeroDashboard() {
           alignItems: "center",
           justifyContent: "space-between",
           padding: "10px 16px",
-          borderBottom: "1px solid rgba(37,99,235,0.1)",
+          borderBottom: "1px solid rgba(167,244,50,0.1)",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -175,7 +175,7 @@ export default function HeroDashboard() {
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: 1,
-          backgroundColor: "rgba(37,99,235,0.06)",
+          backgroundColor: "rgba(167,244,50,0.06)",
         }}
       >
         {metrics.map((m) => (
@@ -256,7 +256,7 @@ export default function HeroDashboard() {
       <div
         style={{
           padding: "12px 16px 16px",
-          borderTop: "1px solid rgba(37,99,235,0.08)",
+          borderTop: "1px solid rgba(167,244,50,0.08)",
         }}
       >
         <div
@@ -284,7 +284,7 @@ export default function HeroDashboard() {
           left: 0,
           right: 0,
           height: 1,
-          backgroundColor: "rgba(37,99,235,0.15)",
+          backgroundColor: "rgba(167,244,50,0.15)",
           pointerEvents: "none",
         }}
       />

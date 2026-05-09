@@ -19,7 +19,7 @@ export default function NetworkCTA() {
             fontSize: 10,
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: "#2563EB",
+            color: "var(--color-eyebrow)",
             marginBottom: 32,
           }}
         >
@@ -40,7 +40,7 @@ export default function NetworkCTA() {
           Tell us your market.
           <br />
           We&apos;ll show you{" "}
-          <span style={{ color: "#2563EB" }}>the audience.</span>
+          <span style={{ color: "var(--color-eyebrow)" }}>the audience.</span>
         </h2>
         <div style={{ height: 1, backgroundColor: "var(--color-border)", marginBottom: 40 }} />
         <div
@@ -69,18 +69,18 @@ export default function NetworkCTA() {
               href="/contact"
               style={{
                 display: "inline-block",
-                backgroundColor: "#2563EB",
-                color: "#fff",
+                backgroundColor: "#F0F2EA",
+                color: "#0f110c",
                 fontFamily: "var(--font-sans)",
-                fontWeight: 400,
+                fontWeight: 500,
                 fontSize: 14,
                 padding: "14px 32px",
                 textDecoration: "none",
                 letterSpacing: "0.02em",
                 whiteSpace: "nowrap",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#1D4ED8")}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#2563EB")}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#d8dbd2")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#F0F2EA")}
             >
               Request a Network Brief
             </Link>
@@ -97,7 +97,7 @@ export default function NetworkCTA() {
                 border: "1px solid var(--color-border-md)",
                 whiteSpace: "nowrap",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#2563EB")}
+              onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(167,244,50,0.5)")}
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = "var(--color-border-md)")}
             >
               View Services

@@ -25,7 +25,7 @@ export default function CTABanner() {
               fontSize: 10,
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#2563EB",
+              color: "var(--color-eyebrow)",
               marginBottom: 40,
             }}
           >
@@ -45,8 +45,8 @@ export default function CTABanner() {
               marginBottom: 56,
             }}
           >
-            Ready to turn audience intelligence into{" "}
-            <span style={{ color: "#2563EB" }}>measurable growth?</span>
+            Ready to deploy owned media intelligence for{" "}
+            <span style={{ color: "var(--color-eyebrow)" }}>measurable enterprise growth?</span>
           </h2>
 
           {/* ── Divider ─────────────────────────────────────── */}
@@ -86,10 +86,10 @@ export default function CTABanner() {
                 href="/contact"
                 style={{
                   display: "inline-block",
-                  backgroundColor: "#2563EB",
-                  color: "#fff",
+                  backgroundColor: "#F0F2EA",
+                  color: "#0f110c",
                   fontFamily: "var(--font-sans)",
-                  fontWeight: 400,
+                  fontWeight: 500,
                   fontSize: 14,
                   padding: "16px 36px",
                   textDecoration: "none",
@@ -97,8 +97,8 @@ export default function CTABanner() {
                   transition: "background-color 200ms ease",
                   whiteSpace: "nowrap",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#1D4ED8")}
-                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#2563EB")}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#d8dbd2")}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#F0F2EA")}
               >
                 Start a Conversation
               </Link>
@@ -116,7 +116,7 @@ export default function CTABanner() {
                   transition: "border-color 200ms ease",
                   whiteSpace: "nowrap",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#2563EB")}
+                onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(167,244,50,0.5)")}
                 onMouseLeave={(e) => (e.currentTarget.style.borderColor = "var(--color-border-md)")}
               >
                 View Services

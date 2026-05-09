@@ -8,29 +8,31 @@
 
 @theme {
   /* ── Canvas / backgrounds ──────────────────────────────────────────── */
-  --color-canvas:     #03060F;
-  --color-surface:    #080D1A;
-  --color-card:       #0C1221;
+  --color-canvas:     #0f110c;
+  --color-surface:    #1c1f18;
+  --color-card:       #292c26;
 
-  /* Backward-compat aliases (used by old pages via bg-background, bg-muted etc.) */
-  --color-background: #03060F;
-  --color-muted:      #0C1221;
+  /* Backward-compat aliases */
+  --color-background: #0f110c;
+  --color-muted:      #292c26;
 
   /* ── Foreground ──────────────────────────────────────────────────────── */
-  --color-foreground:       #F8FAFC;
-  --color-secondary:        #94A3B8;
-  --color-muted-foreground: #94A3B8;
+  --color-foreground:       #F0F2EA;
+  --color-secondary:        #8a8e82;
+  --color-muted-foreground: #8a8e82;
 
   /* ── Brand ───────────────────────────────────────────────────────────── */
-  --color-primary:            #2563EB;
-  --color-primary-foreground: #ffffff;
-  --color-bright:             #3B82F6;
-  --color-cyan:               #06B6D4;
+  /* Primary = white fill for CTAs in dark mode; accent = olive-sage micro-accent */
+  --color-primary:            #F0F2EA;
+  --color-primary-foreground: #0f110c;
+  --color-accent:             #a7f432;
+  --color-bright:             #bff368;
+  --color-cyan:               #86c93f;
   --color-positive:           #10B981;
 
   /* ── Borders ─────────────────────────────────────────────────────────── */
-  --color-border:    rgba(255,255,255,0.08);
-  --color-border-md: rgba(255,255,255,0.14);
+  --color-border:    rgba(255,255,255,0.07);
+  --color-border-md: rgba(255,255,255,0.13);
 
   /* ── Typography ──────────────────────────────────────────────────────── */
   --font-sans:  var(--font-dm-sans,  ui-sans-serif,  system-ui, sans-serif);
@@ -40,29 +42,54 @@
 
 /* ─── Default (dark) component-level tokens ─────────────────────────────── */
 :root {
-  --color-nav-scrolled:  rgba(3, 6, 15, 0.96);
-  --color-hover-link:    #F8FAFC;
+  --color-nav-scrolled:  rgba(15, 17, 12, 0.96);
+  --color-hover-link:    #F0F2EA;
+
+  /*
+   * --color-eyebrow: used for all small-cap mono section labels (8-12px).
+   * Dark mode: full brand lime — legible on near-black backgrounds.
+   * Distinct from --color-accent which is also used for large fills/borders;
+   * this token is specifically tuned for tiny text readability.
+   */
+  --color-eyebrow: #a7f432;
+
+  /*
+   * --color-accent-text: used for inline accent spans inside headings/body.
+   * Dark mode: same as accent (lime). Light mode: darkened for readability.
+   */
+  --color-accent-text: #a7f432;
 }
 
 /* ─── Light-mode overrides (html.light set by next-themes) ─────────────── */
 html.light {
   color-scheme: light;
-  --color-canvas:           #F8FAFC;
-  --color-surface:          #F1F5F9;
+  --color-canvas:           #F4F6EE;
+  --color-surface:          #E8EBE0;
   --color-card:             #FFFFFF;
-  --color-background:       #F8FAFC;
-  --color-muted:            #EFF2F7;
-  --color-foreground:       #0F172A;
-  --color-muted-foreground: #64748B;
-  --color-secondary:        #64748B;
-  --color-border:           rgba(0,0,0,0.09);
-  --color-border-md:        rgba(0,0,0,0.16);
-  --color-primary:          #2563EB;
-  --color-primary-foreground: #ffffff;
+  --color-background:       #F4F6EE;
+  --color-muted:            #E8EBE0;
+  --color-foreground:       #1c1f18;
+  --color-muted-foreground: #4e5248;
+  --color-secondary:        #4e5248;
+  --color-border:           rgba(0,0,0,0.08);
+  --color-border-md:        rgba(0,0,0,0.15);
+  --color-primary:          #1c1f18;
+  --color-primary-foreground: #F4F6EE;
+
+  /*
+   * Light-mode accent strategy:
+   * --color-accent stays as the "brand signal" colour but at a darker value
+   * so borders, dots, focus rings remain recognisably lime without disappearing.
+   * --color-eyebrow goes much darker for tiny mono text legibility.
+   * --color-accent-text matches eyebrow: dark olive for inline h2/body accents.
+   */
+  --color-accent:      #5a8a12;
+  --color-eyebrow:     #2d4a0c;
+  --color-accent-text: #2d4a0c;
 
   /* Component tokens */
-  --color-nav-scrolled: rgba(248, 250, 252, 0.97);
-  --color-hover-link:   #0F172A;
+  --color-nav-scrolled: rgba(244, 246, 238, 0.97);
+  --color-hover-link:   #1c1f18;
 }
 
 /* ─── Reset & base ─────────────────────────────────────────────────────── */
@@ -111,7 +138,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #2563EB;
+  color: var(--color-eyebrow);
   font-weight: 500;
   display: block;
 }
@@ -127,7 +154,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 @utility accent-bar {
-  border-left: 2px solid #2563EB;
+  border-left: 2px solid var(--color-accent);
   padding-left: 16px;
 }
 
@@ -142,9 +169,10 @@ a { color: inherit; text-decoration: none; }
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 11px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #2563EB;
+  color: var(--color-eyebrow);
+  font-weight: 500;
 }
 
 /* ─── Scroll-reveal animations ─────────────────────────────────────────── */
@@ -191,8 +219,8 @@ a { color: inherit; text-decoration: none; }
   transition: border-color 250ms ease, background-color 250ms ease;
 }
 .network-card:hover {
-  border-color: rgba(255,255,255,0.14);
-  background-color: #0F1929;
+  border-color: rgba(255,255,255,0.13);
+  background-color: #232619;
 }
 
 /* ─── Page-level card (used by old pages) ────────────────────────────── */
@@ -216,9 +244,10 @@ a { color: inherit; text-decoration: none; }
 
 /* ─── Selection ────────────────────────────────────────────────────────── */
 ::selection {
-  background: rgba(37, 99, 235, 0.28);
-  color: #F8FAFC;
+  background: rgba(167, 244, 50, 0.28);
+  color: #0f110c;
 }
 
 /* ─── Button component overrides ─────────────────────────────────────── */
 html.light .border-border { border-color: rgba(0,0,0,0.10); }
+

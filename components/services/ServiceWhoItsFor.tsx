@@ -16,7 +16,7 @@ type Props = {
   accentColor?: string;
 };
 
-const defaultAccent = "#2563EB";
+const defaultAccent = "#a7f432";
 
 export default function ServiceWhoItsFor({
   eyebrow,

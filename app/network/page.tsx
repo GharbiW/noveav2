@@ -56,7 +56,7 @@ export default function NetworkPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -87,7 +87,7 @@ export default function NetworkPage() {
                 <br />
                 Specialist networks.
                 <br />
-                <span style={{ color: "#2563EB" }}>150+ countries.</span>
+                <span style={{ color: "var(--color-eyebrow)" }}>150+ countries.</span>
               </h1>
               <div>
                 <p
@@ -190,7 +190,7 @@ export default function NetworkPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 16,
               }}
             >
@@ -229,7 +229,7 @@ export default function NetworkPage() {
                       fontFamily: "var(--font-serif)",
                       fontSize: "clamp(32px, 3.5vw, 48px)",
                       fontWeight: 400,
-                      color: "#2563EB",
+                      color: "var(--color-eyebrow)",
                       letterSpacing: "-0.03em",
                       lineHeight: 1,
                     }}
@@ -301,7 +301,7 @@ export default function NetworkPage() {
                     fontSize: 10,
                     letterSpacing: "0.22em",
                     textTransform: "uppercase",
-                    color: "#2563EB",
+                    color: "var(--color-eyebrow)",
                     marginBottom: 16,
                   }}
                 >

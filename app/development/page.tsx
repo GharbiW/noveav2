@@ -16,10 +16,10 @@ export const metadata: Metadata = {
 };
 
 const capabilities = [
-  { num: "01", title: "Headless CMS & Publishing Infrastructure", accent: "#2563EB", desc: "Scalable, performance-optimised publishing infrastructure built for media at volume. Supports thousands of articles, real-time editorial workflows and multi-property management.", items: ["Headless CMS (Sanity, Contentful)", "Next.js / React frontends", "Multi-site architecture", "Editorial workflow tooling"] },
-  { num: "02", title: "Audience Analytics Platforms", accent: "#06B6D4", desc: "Custom analytics dashboards that surface the metrics that actually matter: engagement depth, content resonance, audience segments and revenue attribution.", items: ["Real-time dashboards", "Custom event tracking", "Segment analysis", "Revenue attribution"] },
+  { num: "01", title: "Headless CMS & Publishing Infrastructure", accent: "#a7f432", desc: "Scalable, performance-optimised publishing infrastructure built for media at volume. Supports thousands of articles, real-time editorial workflows and multi-property management.", items: ["Headless CMS (Sanity, Contentful)", "Next.js / React frontends", "Multi-site architecture", "Editorial workflow tooling"] },
+  { num: "02", title: "Audience Analytics Platforms", accent: "#86c93f", desc: "Custom analytics dashboards that surface the metrics that actually matter: engagement depth, content resonance, audience segments and revenue attribution.", items: ["Real-time dashboards", "Custom event tracking", "Segment analysis", "Revenue attribution"] },
   { num: "03", title: "Data Engineering & Pipelines", accent: "#10B981", desc: "End-to-end data pipelines connecting editorial, audience and advertising data — structured for clean-room compatibility and licensing-ready output.", items: ["ETL / ELT pipelines", "Data warehouse design", "Clean-room integration", "Licensing data structures"] },
-  { num: "04", title: "API Development & Integrations", accent: "#2563EB", desc: "Custom API layers connecting your CMS, CRM, advertising platforms and analytics tooling. Built for reliability and documented for internal teams.", items: ["REST & GraphQL APIs", "Third-party integrations", "Webhook infrastructure", "Developer documentation"] },
+  { num: "04", title: "API Development & Integrations", accent: "#a7f432", desc: "Custom API layers connecting your CMS, CRM, advertising platforms and analytics tooling. Built for reliability and documented for internal teams.", items: ["REST & GraphQL APIs", "Third-party integrations", "Webhook infrastructure", "Developer documentation"] },
 ];
 
 const techStack = [
@@ -115,7 +115,7 @@ export default function DevelopmentPage() {
             <p style={{ fontSize: 15, fontWeight: 300, color: "var(--color-muted-foreground)", marginBottom: 36, lineHeight: 1.7 }}>
               Share your infrastructure challenges. We&apos;ll propose a technical approach and timeline within 48 hours.
             </p>
-            <Link href="/contact" style={{ display: "inline-block", backgroundColor: "#2563EB", color: "#fff", padding: "14px 32px", fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 400, textDecoration: "none" }}>
+            <Link href="/contact" style={{ display: "inline-block", backgroundColor: "var(--color-primary)", color: "var(--color-primary-foreground)", padding: "14px 32px", fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 400, textDecoration: "none" }}>
               Start the Conversation
             </Link>
           </ScrollReveal>

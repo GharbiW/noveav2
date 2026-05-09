@@ -26,14 +26,14 @@ const subServices: SubService[] = [
     description: "Comprehensive diagnostic of your digital assets — traffic quality, conversion paths, technical infrastructure and competitive positioning. You get a prioritised roadmap, not a generic checklist.",
     stat: { val: "72h", label: "turnaround" },
     items: ["Traffic quality analysis", "Technical diagnostics", "Competitive benchmarking", "Prioritised roadmap"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
   {
     num: "02",
     title: "SEO Architecture",
     description: "Organic search strategy built on real traffic data from our media network. Technical SEO, content architecture and link-building frameworks — validated on high-volume properties before client deployment.",
     items: ["Technical audits", "Keyword strategy", "Content architecture", "Link-building frameworks"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
   {
     num: "03",
@@ -41,21 +41,21 @@ const subServices: SubService[] = [
     description: "Landing pages, forms, funnels and UX optimised for conversion. We apply the same conversion frameworks we use across our own properties — backed by A/B testing and real user data.",
     stat: { val: "2.4×", label: "avg. conversion lift" },
     items: ["Landing page design", "Funnel optimisation", "A/B testing", "CRO audits"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
   {
     num: "04",
     title: "Customer Journey Design",
     description: "End-to-end mapping of customer touchpoints — from first impression to retention. We structure acquisition funnels, onboarding flows and lifecycle sequences that scale predictably.",
     items: ["Journey mapping", "Touchpoint optimisation", "Onboarding flows", "Lifecycle strategy"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
   {
     num: "05",
     title: "Growth Strategy",
     description: "Data-backed growth planning with clear KPIs, execution timelines and accountability. We define the metrics that matter and build the systems to hit them — no vanity reporting.",
     items: ["KPI frameworks", "Growth modelling", "Execution planning", "Performance reviews"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
 ];
 
@@ -140,7 +140,7 @@ export default function ConsultingPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -167,7 +167,7 @@ export default function ConsultingPage() {
                   margin: 0,
                 }}
               >
-                Strategic advisory grounded in proprietary data<span style={{ color: "#2563EB" }}>.</span>
+                Strategic advisory grounded in proprietary data<span style={{ color: "var(--color-eyebrow)" }}>.</span>
               </h1>
               <p
                 style={{
@@ -193,7 +193,7 @@ export default function ConsultingPage() {
         title="From audit to growth in three steps"
         titleHighlight="."
         steps={howItWorksSteps}
-        accentColor="#2563EB"
+        accentColor="#a7f432"
       />
 
       <ServiceWhoItsFor
@@ -201,7 +201,7 @@ export default function ConsultingPage() {
         title="Built for teams who want data-backed growth"
         titleHighlight="."
         items={whoItsForItems}
-        accentColor="#2563EB"
+        accentColor="#a7f432"
       />
 
       <ServiceFAQ
@@ -209,7 +209,7 @@ export default function ConsultingPage() {
         title="Consulting Digital"
         titleHighlight="."
         faqs={faqs}
-        accentColor="#2563EB"
+        accentColor="#a7f432"
       />
 
       <WorkWithUs precoloredFaces />

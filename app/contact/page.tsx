@@ -15,26 +15,44 @@ export const metadata: Metadata = {
 };
 
 const contactDetails = [
-  { label: "Email", value: "hello@dolphx.com", mono: true },
-  { label: "Response Time", value: "Within 24 business hours", mono: false },
-  { label: "Office Hours", value: "Mon–Fri, 09:00–18:00 CET", mono: false },
-  { label: "Headquarters", value: "Paris, France — Remote-first", mono: false },
+  { label: "General Enquiries",  value: "contact@dolphx.com",             mono: true  },
+  { label: "Business Development",value: "partnerships@dolphx.com",        mono: true  },
+  { label: "Response Guarantee", value: "Within 24 business hours",        mono: false },
+  { label: "Paris Office",       value: "14 Rue de la Paix, 75002 Paris",  mono: false },
+  { label: "Istanbul Office",    value: "Levent Mah., Cömert Sok. 8, Beşiktaş", mono: false },
+  { label: "Office Hours",       value: "Mon–Fri · 09:00–18:00 CET · 10:00–19:00 TRT", mono: false },
 ];
 
 const faqs = [
-  { q: "What types of clients do you work with?", a: "Enterprise brands, media companies, publishers and institutional investors seeking exposure to the media-technology space." },
-  { q: "How quickly will you respond?", a: "Within 24 business hours. Responses come from a senior team member, not an automated system." },
-  { q: "Do you work with clients outside France?", a: "Yes — we work remotely with clients across Europe, North America, the Middle East and globally." },
-  { q: "What happens after I submit the form?", a: "A DolphX strategist reviews your submission and responds with a brief assessment and proposed next steps within one business day." },
+  {
+    q: "Who will I actually speak with?",
+    a: "Every enquiry is reviewed by a senior DolphX operator — the same person who will run your project. We don't use account managers or automated routing beyond the initial form.",
+  },
+  {
+    q: "What size of clients do you work with?",
+    a: "We work primarily with enterprise brands, institutional media companies and publishers generating more than €5M in annual digital revenue. Smaller organisations are considered on a case-by-case basis.",
+  },
+  {
+    q: "Do you operate outside France and Turkey?",
+    a: "Yes — roughly 60% of our engagements are cross-border. We have active clients in the UK, the UAE, Germany and North America, and operate fully remotely with all of them.",
+  },
+  {
+    q: "What happens after I send the form?",
+    a: "A senior team member reads your submission the same business day. You receive a short written assessment of the situation and a proposed next step — no slide decks, no sales calls unless you request one.",
+  },
+  {
+    q: "How do you charge for your services?",
+    a: "Depending on the service: consulting and data mandates run on monthly retainers with defined deliverables; media campaigns are quoted per placement; automation and SaaS builds are scoped and fixed-price.",
+  },
 ];
 
 const enquiryTypes = [
-  "Media Partnership",
-  "Branded Content",
+  "Digital Consulting & Strategy",
+  "Marketing Automation & SaaS",
+  "AI & Data Intelligence",
+  "Média & Editorial Distribution",
+  "Partnership & Press",
   "Data Licensing",
-  "Performance Marketing",
-  "Technology Services",
-  "Strategic Advisory",
   "Investment Enquiry",
   "Other",
 ];
@@ -53,12 +71,13 @@ const inputStyle: React.CSSProperties = {
 
 const labelStyle: React.CSSProperties = {
   fontFamily: "var(--font-mono)",
-  fontSize: 10,
+  fontSize: 11,
   color: "var(--color-muted-foreground)",
   display: "block",
   marginBottom: 8,
-  letterSpacing: "0.15em",
+  letterSpacing: "0.14em",
   textTransform: "uppercase",
+  fontWeight: 500,
 };
 
 export default function ContactPage() {
@@ -75,18 +94,7 @@ export default function ContactPage() {
       >
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 40px" }}>
           <ScrollReveal>
-            <p
-              style={{
-                fontFamily: "var(--font-mono)",
-                fontSize: 10,
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                color: "#2563EB",
-                marginBottom: 40,
-              }}
-            >
-              Get In Touch
-            </p>
+            <p className="eyebrow" style={{ marginBottom: 40 }}>Get In Touch</p>
 
             <div id="contact-hero-grid" style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: 80, alignItems: "end" }}>
               <h1
@@ -99,7 +107,7 @@ export default function ContactPage() {
                   letterSpacing: "-0.02em",
                 }}
               >
-                Start a conversation with DolphX<span style={{ color: "#2563EB" }}>.</span>
+                Start a conversation with DolphX<span style={{ color: "var(--color-eyebrow)" }}>.</span>
               </h1>
               <p
                 style={{
@@ -110,7 +118,7 @@ export default function ContactPage() {
                   lineHeight: 1.8,
                 }}
               >
-                Tell us about your objectives. We&apos;ll respond with a tailored assessment within 24 hours — from a senior team member, not an automated reply.
+                Offices in Paris and Istanbul. Senior operators across four service verticals. Every enquiry reviewed within one business day — by a person, not a system.
               </p>
             </div>
           </ScrollReveal>
@@ -126,8 +134,8 @@ export default function ContactPage() {
           <ScrollReveal>
             <div style={{ border: "1px solid var(--color-border)", backgroundColor: "var(--color-card)" }}>
               <div style={{ padding: "20px 32px", borderBottom: "1px solid var(--color-border)", display: "flex", alignItems: "center", gap: 10 }}>
-                <span style={{ width: 6, height: 6, backgroundColor: "#2563EB" }} />
-                <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#2563EB", letterSpacing: "0.2em", textTransform: "uppercase" }}>Enquiry Form</p>
+                <span style={{ width: 6, height: 6, borderRadius: "50%", backgroundColor: "var(--color-eyebrow)" }} />
+                <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--color-eyebrow)", letterSpacing: "0.2em", textTransform: "uppercase" }}>Enquiry Form</p>
               </div>
 
               <form
@@ -188,13 +196,13 @@ export default function ContactPage() {
                   type="submit"
                   style={{
                     width: "100%",
-                    backgroundColor: "#2563EB",
-                    color: "#fff",
+                    backgroundColor: "#F0F2EA",
+                    color: "#0f110c",
                     border: "none",
                     padding: "16px",
                     fontFamily: "var(--font-sans)",
                     fontSize: 14,
-                    fontWeight: 400,
+                    fontWeight: 500,
                     cursor: "pointer",
                     letterSpacing: "0.02em",
                     transition: "background-color 200ms ease",
@@ -211,8 +219,8 @@ export default function ContactPage() {
             <ScrollReveal delay={100}>
               <div style={{ border: "1px solid var(--color-border)", backgroundColor: "var(--color-card)" }}>
                 <div style={{ padding: "20px 28px", borderBottom: "1px solid var(--color-border)", display: "flex", alignItems: "center", gap: 10 }}>
-                  <span style={{ width: 6, height: 6, backgroundColor: "#2563EB" }} />
-                  <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#2563EB", letterSpacing: "0.2em", textTransform: "uppercase" }}>Contact Details</p>
+                  <span style={{ width: 6, height: 6, borderRadius: "50%", backgroundColor: "var(--color-eyebrow)" }} />
+                  <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--color-eyebrow)", letterSpacing: "0.2em", textTransform: "uppercase" }}>Contact Details</p>
                 </div>
                 {contactDetails.map((c, i) => (
                   <div
@@ -232,8 +240,8 @@ export default function ContactPage() {
             <ScrollReveal delay={200}>
               <div style={{ border: "1px solid var(--color-border)", backgroundColor: "var(--color-card)" }}>
                 <div style={{ padding: "20px 28px", borderBottom: "1px solid var(--color-border)", display: "flex", alignItems: "center", gap: 10 }}>
-                  <span style={{ width: 6, height: 6, backgroundColor: "#2563EB" }} />
-                  <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#2563EB", letterSpacing: "0.2em", textTransform: "uppercase" }}>Common Questions</p>
+                  <span style={{ width: 6, height: 6, borderRadius: "50%", backgroundColor: "var(--color-eyebrow)" }} />
+                  <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--color-eyebrow)", letterSpacing: "0.2em", textTransform: "uppercase" }}>Common Questions</p>
                 </div>
                 {faqs.map((faq, i) => (
                   <div
@@ -255,8 +263,8 @@ export default function ContactPage() {
           @media(max-width:900px){#contact-grid{grid-template-columns:1fr!important;}}
           @media(max-width:480px){#form-name-grid{grid-template-columns:1fr!important;}}
           input::placeholder,textarea::placeholder{color:var(--color-muted-foreground);opacity:0.5;}
-          input:focus,textarea:focus,select:focus{border-color:#2563EB!important;}
-          button[type="submit"]:hover{background-color:#1D4ED8!important;}
+          input:focus,textarea:focus,select:focus{border-color:var(--color-eyebrow)!important;}
+          button[type="submit"]:hover{background-color:#d8dbd2!important;}
         `}</style>
       </section>
 
@@ -270,7 +278,7 @@ export default function ContactPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -289,7 +297,7 @@ export default function ContactPage() {
                 marginBottom: 24,
               }}
             >
-              24-hour response <span style={{ color: "#2563EB" }}>guarantee</span>.
+              24-hour response <span style={{ color: "var(--color-eyebrow)" }}>guarantee</span>.
             </h2>
 
             <div style={{ height: 1, backgroundColor: "var(--color-border)", marginBottom: 40 }} />
@@ -308,7 +316,7 @@ export default function ContactPage() {
                     paddingLeft: i > 0 ? 32 : 0,
                   }}
                 >
-                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#2563EB", letterSpacing: "0.2em", display: "block", marginBottom: 20 }}>{item.num}</span>
+                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--color-eyebrow)", letterSpacing: "0.2em", display: "block", marginBottom: 20 }}>{item.num}</span>
                   <p style={{ fontFamily: "var(--font-serif)", fontSize: 20, fontWeight: 400, color: "var(--color-foreground)", marginBottom: 12, letterSpacing: "-0.01em" }}>{item.title}</p>
                   <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: 14, color: "var(--color-muted-foreground)", lineHeight: 1.75 }}>{item.desc}</p>
                 </div>

@@ -26,21 +26,21 @@ const subServices: SubService[] = [
     description: "End-to-end CRM workflow architecture — from lead capture to closed deal. We design, build and integrate pipelines that eliminate manual steps and keep your sales team focused on revenue.",
     stat: { val: "60%", label: "time saved" },
     items: ["Pipeline architecture", "CRM integration", "Trigger-based workflows", "Data hygiene automation"],
-    accent: "#06B6D4",
+    accent: "#86c93f",
   },
   {
     num: "02",
     title: "Lead Nurturing Sequences",
     description: "Automated email and multi-channel sequences that move prospects through your funnel. Personalised content, behaviour-triggered sends and dynamic segmentation — configured for compliance and deliverability.",
     items: ["Email sequence design", "Multi-channel nurturing", "Behavioural triggers", "Deliverability optimisation"],
-    accent: "#06B6D4",
+    accent: "#86c93f",
   },
   {
     num: "03",
     title: "Lead Scoring & Qualification",
     description: "Scoring models that rank prospects by intent and fit. We build qualification frameworks that route hot leads to sales and cold leads to nurture — automatically, in real time.",
     items: ["Scoring model design", "Intent-based ranking", "Automated routing", "Score calibration"],
-    accent: "#06B6D4",
+    accent: "#86c93f",
   },
   {
     num: "04",
@@ -48,14 +48,14 @@ const subServices: SubService[] = [
     description: "Personalised marketing tools built for your specific use case. Client portals, reporting dashboards, ROI calculators, booking engines — lightweight SaaS products that add value and lock in retention.",
     stat: { val: "40+", label: "platforms built" },
     items: ["Client portals", "Reporting dashboards", "ROI calculators", "Booking & scheduling tools"],
-    accent: "#06B6D4",
+    accent: "#86c93f",
   },
   {
     num: "05",
     title: "Reporting Automation",
     description: "Automated reporting that pulls data from every channel into one view. Weekly performance summaries, campaign attribution and executive dashboards — delivered without manual effort.",
     items: ["Multi-source data aggregation", "Automated report generation", "Executive dashboards", "Attribution tracking"],
-    accent: "#06B6D4",
+    accent: "#86c93f",
   },
 ];
 
@@ -140,7 +140,7 @@ export default function AutomationPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#06B6D4",
+                color: "#86c93f",
                 marginBottom: 40,
               }}
             >
@@ -167,7 +167,7 @@ export default function AutomationPage() {
                   margin: 0,
                 }}
               >
-                Custom automation and mini-SaaS platforms<span style={{ color: "#06B6D4" }}>.</span>
+                Custom automation and mini-SaaS platforms<span style={{ color: "#86c93f" }}>.</span>
               </h1>
               <p
                 style={{
@@ -193,7 +193,7 @@ export default function AutomationPage() {
         title="From mapping to scale in three phases"
         titleHighlight="."
         steps={howItWorksSteps}
-        accentColor="#06B6D4"
+        accentColor="#86c93f"
       />
 
       <ServiceWhoItsFor
@@ -201,7 +201,7 @@ export default function AutomationPage() {
         title="Built for teams ready to automate"
         titleHighlight="."
         items={whoItsForItems}
-        accentColor="#06B6D4"
+        accentColor="#86c93f"
       />
 
       <ServiceFAQ
@@ -209,7 +209,7 @@ export default function AutomationPage() {
         title="Automation & SaaS Marketing"
         titleHighlight="."
         faqs={faqs}
-        accentColor="#06B6D4"
+        accentColor="#86c93f"
       />
 
       <WorkWithUs precoloredFaces />

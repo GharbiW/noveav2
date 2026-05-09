@@ -15,7 +15,7 @@ const properties = [
     description: "Premier sports news & analysis platform across North Africa and the Maghreb.",
     audience: "4.2M monthly",
     href: "https://lesportifplus.com",
-    accentColor: "#2563EB",
+    accentcolor: "var(--color-eyebrow)",
   },
   {
     name: "EconomySignals",
@@ -23,7 +23,7 @@ const properties = [
     description: "Real-time economic intelligence for investors and business decision-makers.",
     audience: "1.8M monthly",
     href: "#",
-    accentColor: "#06B6D4",
+    accentColor: "#86c93f",
   },
   {
     name: "FormalGeek",
@@ -31,7 +31,7 @@ const properties = [
     description: "In-depth AI tools and innovation reviews for senior tech professionals.",
     audience: "980K monthly",
     href: "#",
-    accentColor: "#2563EB",
+    accentcolor: "var(--color-eyebrow)",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Network({ backgroundColor = "var(--color-canvas)" }: { b
                   fontSize: 10,
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#2563EB",
+                  color: "var(--color-eyebrow)",
                   marginBottom: 20,
                 }}
               >

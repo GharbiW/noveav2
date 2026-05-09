@@ -6,15 +6,19 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 /* ── Services — full-width panels with colored accent, chip items ────── */
 
+const ACCENT  = "#a7f432";
+const ACCENT2 = "#86c93f";
+const GREEN   = "#10B981";
+
 const services = [
   {
     num: "01",
     title: "Consulting Digital",
     href: "/consulting",
     description:
-      "Strategic advisory for companies navigating digital transformation. Performance audits, SEO architecture, conversion engineering and customer journey design — grounded in proprietary data from our own media operations.",
-    items: ["Performance Audit", "SEO Architecture", "Conversion Engineering", "Growth Strategy"],
-    accent: "#2563EB",
+      "Performance audits, SEO architecture and conversion engineering grounded in real reader behaviour from our owned network — not third-party benchmarks. Every recommendation comes with a measurable KPI attached.",
+    items: ["Performance Audit", "SEO Architecture", "Conversion Engineering", "Growth Playbooks"],
+    accent: ACCENT,
     stat: { val: "98%", label: "client retention" },
   },
   {
@@ -22,29 +26,29 @@ const services = [
     title: "Automation & SaaS Marketing",
     href: "/automation",
     description:
-      "Custom-built marketing automation and mini-SaaS platforms. CRM workflows, lead nurturing sequences, scoring engines and personalised tools that let clients industrialise acquisition, retention and reporting.",
-    items: ["CRM Workflows", "Lead Nurturing", "Lead Scoring", "Mini-SaaS Platforms"],
-    accent: "#06B6D4",
+      "Custom CRM workflows, lead scoring engines and mini-SaaS platforms built to industrialise acquisition and retention. We deploy, integrate and maintain — you see the pipeline fill.",
+    items: ["CRM Workflows", "Lead Scoring", "Email Sequences", "Mini-SaaS Platforms"],
+    accent: ACCENT2,
     stat: { val: "40+", label: "automations deployed" },
   },
   {
     num: "03",
-    title: "AI & Data",
+    title: "AI & Data Intelligence",
     href: "/ai-data",
     description:
-      "AI-powered audience intelligence built on first-party data from our media network. Predictive modelling, behavioural segmentation, intent signals and GDPR-compliant data monetisation.",
-    items: ["Predictive Modeling", "Segmentation", "Intent Signals", "Data Licensing"],
-    accent: "#10B981",
-    stat: { val: "120M+", label: "data points monthly" },
+      "Behavioural segmentation, intent signals and predictive models built on 2.4 billion annual first-party touchpoints. GDPR-native, consent-first, and licensed directly from our own editorial network.",
+    items: ["Predictive Modelling", "Behavioural Segmentation", "Intent Signals", "Data Licensing"],
+    accent: GREEN,
+    stat: { val: "2.4B+", label: "data points / year" },
   },
   {
     num: "04",
     title: "Média & Distribution",
     href: "/media-distribution",
     description:
-      "Sponsored editorial content produced and distributed across our proprietary media network. Qualified, verified audiences across sport, finance and technology verticals.",
-    items: ["Sponsored Editorial", "Native Syndication", "Multi-Platform", "Attribution Reporting"],
-    accent: "#2563EB",
+      "Sponsored editorial produced in-house and syndicated across 40+ owned properties. Sport, finance and technology verticals with verified, qualified audiences — full-funnel attribution on every placement.",
+    items: ["Sponsored Editorial", "Native Syndication", "Multi-Vertical Reach", "Attribution Reports"],
+    accent: ACCENT,
     stat: { val: "40+", label: "media properties" },
   },
 ];
@@ -77,17 +81,7 @@ export default function Services({ showAllServicesLink = true }: Props) {
               flexWrap: "wrap",
             }}
           >
-            <p
-              style={{
-                fontFamily: "var(--font-mono)",
-                fontSize: 10,
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                color: "#2563EB",
-              }}
-            >
-              What We Do
-            </p>
+            <p className="eyebrow">What We Do</p>
             {showAllServicesLink && (
               <Link
                 href="/services"
@@ -309,7 +303,7 @@ export default function Services({ showAllServicesLink = true }: Props) {
 
       <style>{`
         .svc-chip:hover {
-          border-color: #2563EB !important;
+          border-color: rgba(167,244,50,0.5) !important;
           background-color: var(--color-card) !important;
         }
         @media (max-width: 768px) {

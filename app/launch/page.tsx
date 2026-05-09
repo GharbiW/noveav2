@@ -47,7 +47,7 @@ export default function LaunchPage() {
             <p style={{ fontSize: 17, fontWeight: 300, color: "var(--color-muted-foreground)", maxWidth: 520, lineHeight: 1.7, marginBottom: 40 }}>
               From audience intelligence to full-scale distribution — DolphX manages every element of your media launch, backed by first-party data and 40+ owned properties.
             </p>
-            <Link href="/contact" style={{ display: "inline-block", backgroundColor: "#2563EB", color: "#fff", padding: "14px 32px", fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 400, textDecoration: "none" }}>
+            <Link href="/contact" style={{ display: "inline-block", backgroundColor: "var(--color-primary)", color: "var(--color-primary-foreground)", padding: "14px 32px", fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 400, textDecoration: "none" }}>
               Brief Us on Your Launch
             </Link>
           </ScrollReveal>
@@ -74,7 +74,7 @@ export default function LaunchPage() {
 
           <ScrollReveal delay={150}>
             <div style={{ border: "1px solid var(--color-border)", backgroundColor: "var(--color-card)", padding: "36px 32px" }}>
-              <p style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "#2563EB", letterSpacing: "0.18em", textTransform: "uppercase", marginBottom: 20 }}>Network Reach</p>
+              <p style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--color-eyebrow)", letterSpacing: "0.18em", textTransform: "uppercase", marginBottom: 20 }}>Network Reach</p>
               {[
                 ["40+", "Owned media properties"],
                 ["120M+", "Monthly unique readers"],
@@ -82,7 +82,7 @@ export default function LaunchPage() {
                 ["12", "Countries covered"],
               ].map(([val, label], i) => (
                 <div key={label} style={{ display: "flex", gap: 20, padding: "16px 0", borderBottom: i < 3 ? "1px solid var(--color-border)" : "none" }}>
-                  <span style={{ fontFamily: "var(--font-serif)", fontSize: 26, color: "#2563EB", minWidth: 80 }}>{val}</span>
+                  <span style={{ fontFamily: "var(--font-serif)", fontSize: 26, color: "var(--color-eyebrow)", minWidth: 80 }}>{val}</span>
                   <span style={{ fontSize: 14, color: "var(--color-muted-foreground)", fontWeight: 300, alignSelf: "center" }}>{label}</span>
                 </div>
               ))}
@@ -106,7 +106,7 @@ export default function LaunchPage() {
               <ScrollReveal key={phase.day} delay={i * 80}>
                 <div style={{ backgroundColor: "var(--color-card)", padding: "28px 32px", display: "grid", gridTemplateColumns: "140px 1fr", gap: 32 }} id={`phase-row-${i}`}>
                   <div>
-                    <p style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "#2563EB", letterSpacing: "0.15em", marginBottom: 4 }}>{phase.day}</p>
+                    <p style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--color-eyebrow)", letterSpacing: "0.15em", marginBottom: 4 }}>{phase.day}</p>
                     <p style={{ fontSize: 14, fontWeight: 500, color: "var(--color-foreground)" }}>{phase.title}</p>
                   </div>
                   <p style={{ fontSize: 14, fontWeight: 300, color: "var(--color-muted-foreground)", lineHeight: 1.75, alignSelf: "center" }}>{phase.desc}</p>
@@ -128,7 +128,7 @@ export default function LaunchPage() {
             <p style={{ fontSize: 15, fontWeight: 300, color: "var(--color-muted-foreground)", marginBottom: 36, lineHeight: 1.7 }}>
               Tell us your objectives, audience and timeline. We&apos;ll respond with a tailored distribution strategy within 24 hours.
             </p>
-            <Link href="/contact" style={{ display: "inline-block", backgroundColor: "#2563EB", color: "#fff", padding: "14px 32px", fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 400, textDecoration: "none" }}>
+            <Link href="/contact" style={{ display: "inline-block", backgroundColor: "var(--color-primary)", color: "var(--color-primary-foreground)", padding: "14px 32px", fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 400, textDecoration: "none" }}>
               Start a Conversation
             </Link>
           </ScrollReveal>

@@ -1,26 +1,30 @@
+"use client";
+
 import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
+const ACCENT = "#a7f432";
+
 const pillars = [
   {
-    title: "Media-Native",
-    body: "We don't buy audiences — we own them. 40+ properties and millions of daily readers mean first-party data is built-in by design.",
+    title: "Media-Native Infrastructure",
+    body: "We don't rent audiences — we operate 40+ owned properties. First-party data is structural, not sourced.",
   },
   {
-    title: "Data-Engineered",
-    body: "Every impression, click and conversion feeds a proprietary intelligence layer that compounds over time.",
+    title: "Data That Compounds",
+    body: "2.4 billion annual touchpoints feed a proprietary intelligence layer — behavioural signals, intent, and attribution built in-house.",
   },
   {
-    title: "Enterprise-Ready",
-    body: "Structured for institutional clients — contractual KPIs, dedicated reporting, and senior-level account ownership.",
+    title: "Enterprise Accountability",
+    body: "Contractual KPIs, senior-led accounts, full-funnel reporting. Every mandate closes with verified outcomes.",
   },
 ];
 
 const keyStats = [
-  { val: "40+", label: "Owned media properties" },
-  { val: "120M+", label: "Monthly readers" },
-  { val: "150+", label: "Countries reached" },
-  { val: "2.4B+", label: "Data points / year" },
+  { val: "40+",   label: "Owned media properties" },
+  { val: "120M+", label: "Monthly readers"         },
+  { val: "150+",  label: "Countries reached"       },
+  { val: "2.4B+", label: "Data points / year"      },
 ];
 
 export default function AboutStrip() {
@@ -44,12 +48,12 @@ export default function AboutStrip() {
             }}
             id="about-grid"
           >
-            {/* ── LEFT: Cinematic dark panel ────────────────────── */}
+            {/* ── LEFT: Dark panel ── */}
             <div
               style={{
                 position: "relative",
                 overflow: "hidden",
-                background: "linear-gradient(145deg, #0b0f1a 0%, #0d1526 55%, #060a12 100%)",
+                background: "linear-gradient(145deg, #141710 0%, #1c1f18 55%, #10120e 100%)",
                 padding: "52px 48px 48px",
                 display: "flex",
                 flexDirection: "column",
@@ -58,7 +62,7 @@ export default function AboutStrip() {
                 borderRight: "1px solid rgba(255,255,255,0.06)",
               }}
             >
-              {/* Ghost watermark — cinematic depth */}
+              {/* Ghost watermark */}
               <span
                 aria-hidden
                 style={{
@@ -68,7 +72,7 @@ export default function AboutStrip() {
                   fontFamily: "var(--font-serif)",
                   fontSize: "clamp(120px, 18vw, 220px)",
                   fontWeight: 400,
-                  color: "rgba(255,255,255,0.028)",
+                  color: "rgba(255,255,255,0.022)",
                   lineHeight: 1,
                   letterSpacing: "-0.05em",
                   userSelect: "none",
@@ -86,8 +90,8 @@ export default function AboutStrip() {
                   left: 0,
                   top: 0,
                   bottom: 0,
-                  width: 3,
-                  background: "linear-gradient(180deg, #2563EB 0%, #1D4ED8 60%, transparent 100%)",
+                  width: 2,
+                  background: `linear-gradient(180deg, ${ACCENT} 0%, ${ACCENT}80 60%, transparent 100%)`,
                 }}
               />
 
@@ -99,7 +103,7 @@ export default function AboutStrip() {
                     fontSize: 9,
                     letterSpacing: "0.28em",
                     textTransform: "uppercase",
-                    color: "#2563EB",
+                    color: "var(--color-eyebrow)",
                     marginBottom: 28,
                     marginLeft: 3,
                   }}
@@ -112,60 +116,41 @@ export default function AboutStrip() {
                     fontFamily: "var(--font-serif)",
                     fontSize: "clamp(26px, 3vw, 40px)",
                     fontWeight: 400,
-                    color: "#fff",
+                    color: "#F0F2EA",
                     lineHeight: 1.18,
-                    letterSpacing: "-0.02em",
+                    letterSpacing: "-0.025em",
                     margin: 0,
                     marginBottom: 20,
                     maxWidth: 440,
                   }}
                 >
-                  The company that owns the&nbsp;media,
-                  engineers the data, and{" "}
-                  <em
-                    style={{
-                      fontStyle: "normal",
-                      color: "#2563EB",
-                      display: "inline-block",
-                    }}
-                  >
-                    delivers the growth.
+                  We own the media, engineer the data, and{" "}
+                  <em style={{ fontStyle: "normal", color: "var(--color-eyebrow)" }}>
+                    deliver the results.
                   </em>
                 </h2>
 
-                {/* Thin divider */}
-                <div
-                  style={{
-                    width: 40,
-                    height: 1,
-                    backgroundColor: "rgba(37,99,235,0.5)",
-                    marginBottom: 20,
-                  }}
-                />
+                <div style={{ width: 32, height: 1, backgroundColor: `${ACCENT}55`, marginBottom: 20 }} />
 
                 <p
                   style={{
                     fontFamily: "var(--font-sans)",
                     fontWeight: 300,
                     fontSize: 13,
-                    color: "rgba(255,255,255,0.42)",
+                    color: "rgba(240,242,234,0.42)",
                     lineHeight: 1.85,
                     margin: 0,
                     maxWidth: 380,
                   }}
                 >
-                  DolphX is not an agency. We operate a technology-mediatique platform — a network of owned media properties generating proprietary first-party audience data for enterprise clients.
+                  DolphX is not an agency. We operate a technology-mediatique platform — a proprietary network generating first-party audience intelligence that powers every consulting mandate, automation deployment and distribution campaign we run.
                 </p>
               </div>
 
-              {/* Stats — editorial number rows */}
+              {/* Stats */}
               <div style={{ marginTop: 44, position: "relative", zIndex: 1 }}>
                 <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    borderTop: "1px solid rgba(255,255,255,0.08)",
-                  }}
+                  style={{ display: "grid", gridTemplateColumns: "1fr 1fr", borderTop: "1px solid rgba(255,255,255,0.07)" }}
                   id="about-stats"
                 >
                   {keyStats.map((s, i) => (
@@ -174,34 +159,15 @@ export default function AboutStrip() {
                       style={{
                         padding: "20px 0",
                         paddingRight: i % 2 === 0 ? 24 : 0,
-                        paddingLeft: i % 2 === 1 ? 24 : 0,
-                        borderBottom: i < 2 ? "1px solid rgba(255,255,255,0.08)" : "none",
-                        borderLeft: i % 2 === 1 ? "1px solid rgba(255,255,255,0.08)" : "none",
+                        paddingLeft:  i % 2 === 1 ? 24 : 0,
+                        borderBottom: i < 2 ? "1px solid rgba(255,255,255,0.07)" : "none",
+                        borderLeft:   i % 2 === 1 ? "1px solid rgba(255,255,255,0.07)" : "none",
                       }}
                     >
-                      <span
-                        style={{
-                          fontFamily: "var(--font-serif)",
-                          fontSize: "clamp(26px, 2.8vw, 36px)",
-                          fontWeight: 400,
-                          color: "#fff",
-                          letterSpacing: "-0.03em",
-                          display: "block",
-                          lineHeight: 1,
-                          marginBottom: 5,
-                        }}
-                      >
+                      <span style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(26px, 2.8vw, 36px)", fontWeight: 400, color: "#F0F2EA", letterSpacing: "-0.03em", display: "block", lineHeight: 1, marginBottom: 5 }}>
                         {s.val}
                       </span>
-                      <span
-                        style={{
-                          fontFamily: "var(--font-mono)",
-                          fontSize: 8,
-                          letterSpacing: "0.14em",
-                          textTransform: "uppercase",
-                          color: "rgba(255,255,255,0.3)",
-                        }}
-                      >
+                      <span style={{ fontFamily: "var(--font-mono)", fontSize: 8, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(240,242,234,0.28)" }}>
                         {s.label}
                       </span>
                     </div>
@@ -210,7 +176,7 @@ export default function AboutStrip() {
               </div>
             </div>
 
-            {/* ── RIGHT: Pillars + CTA ──────────────────────────── */}
+            {/* ── RIGHT: Pillars + CTA ── */}
             <div
               style={{
                 backgroundColor: "var(--color-surface)",
@@ -221,33 +187,10 @@ export default function AboutStrip() {
               }}
             >
               <div>
-                {/* Eyebrow row with editorial rule */}
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 16,
-                    marginBottom: 36,
-                  }}
-                >
-                  <div
-                    style={{
-                      width: 20,
-                      height: 1,
-                      backgroundColor: "var(--color-border)",
-                    }}
-                  />
-                  <p
-                    style={{
-                      fontFamily: "var(--font-mono)",
-                      fontSize: 9,
-                      letterSpacing: "0.26em",
-                      textTransform: "uppercase",
-                      color: "var(--color-muted-foreground)",
-                      margin: 0,
-                      opacity: 0.55,
-                    }}
-                  >
+                {/* Eyebrow */}
+                <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 36 }}>
+                  <div style={{ width: 20, height: 1, backgroundColor: "var(--color-border)" }} />
+                  <p style={{ fontFamily: "var(--font-mono)", fontSize: 9, letterSpacing: "0.26em", textTransform: "uppercase", color: "var(--color-muted-foreground)", margin: 0, opacity: 0.55 }}>
                     Why DolphX
                   </p>
                 </div>
@@ -265,58 +208,18 @@ export default function AboutStrip() {
                         gridTemplateColumns: "22px 1fr",
                         gap: 18,
                         alignItems: "start",
-                        borderBottom:
-                          i === pillars.length - 1
-                            ? "1px solid var(--color-border)"
-                            : "none",
+                        borderBottom: i === pillars.length - 1 ? "1px solid var(--color-border)" : "none",
                       }}
                     >
-                      {/* Circle check */}
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                        style={{ marginTop: 2, flexShrink: 0 }}
-                      >
-                        <circle
-                          cx="9"
-                          cy="9"
-                          r="8.5"
-                          stroke="#2563EB"
-                          strokeOpacity="0.3"
-                        />
-                        <path
-                          d="M5.5 9l2.5 2.5 4.5-5"
-                          stroke="#2563EB"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style={{ marginTop: 2, flexShrink: 0 }}>
+                        <circle cx="9" cy="9" r="8.5" stroke={ACCENT} strokeOpacity="0.3" />
+                        <path d="M5.5 9l2.5 2.5 4.5-5" stroke={ACCENT} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                       <div>
-                        <p
-                          style={{
-                            fontFamily: "var(--font-serif)",
-                            fontSize: 17,
-                            fontWeight: 400,
-                            color: "var(--color-foreground)",
-                            letterSpacing: "-0.01em",
-                            marginBottom: 6,
-                          }}
-                        >
+                        <p style={{ fontFamily: "var(--font-serif)", fontSize: 17, fontWeight: 400, color: "var(--color-foreground)", letterSpacing: "-0.01em", marginBottom: 6 }}>
                           {p.title}
                         </p>
-                        <p
-                          style={{
-                            fontFamily: "var(--font-sans)",
-                            fontWeight: 300,
-                            fontSize: 13,
-                            color: "var(--color-muted-foreground)",
-                            lineHeight: 1.75,
-                            margin: 0,
-                          }}
-                        >
+                        <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: 13, color: "var(--color-muted-foreground)", lineHeight: 1.75, margin: 0 }}>
                           {p.body}
                         </p>
                       </div>
@@ -326,41 +229,28 @@ export default function AboutStrip() {
               </div>
 
               {/* CTA */}
-              <div
-                style={{
-                  marginTop: 36,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 20,
-                }}
-              >
+              <div style={{ marginTop: 36, display: "flex", alignItems: "center", gap: 20 }}>
                 <Link
                   href="/about"
                   style={{
                     display: "inline-block",
-                    backgroundColor: "#2563EB",
-                    color: "#fff",
+                    backgroundColor: "#F0F2EA",
+                    color: "#0f110c",
                     fontFamily: "var(--font-sans)",
-                    fontWeight: 400,
+                    fontWeight: 500,
                     fontSize: 13,
                     padding: "12px 26px",
                     textDecoration: "none",
                     letterSpacing: "0.03em",
                     whiteSpace: "nowrap",
+                    transition: "background-color 150ms ease",
                   }}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#d8dbd2")}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#F0F2EA")}
                 >
                   Learn about DolphX →
                 </Link>
-                <span
-                  style={{
-                    fontFamily: "var(--font-mono)",
-                    fontSize: 9,
-                    letterSpacing: "0.14em",
-                    textTransform: "uppercase",
-                    color: "var(--color-muted-foreground)",
-                    opacity: 0.45,
-                  }}
-                >
+                <span style={{ fontFamily: "var(--font-mono)", fontSize: 9, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-muted-foreground)", opacity: 0.45 }}>
                   Est. 2019 · Paris, France
                 </span>
               </div>
@@ -371,7 +261,7 @@ export default function AboutStrip() {
 
       <style>{`
         @media (max-width: 768px) {
-          #about-grid { grid-template-columns: 1fr !important; }
+          #about-grid  { grid-template-columns: 1fr !important; }
           #about-stats { grid-template-columns: 1fr 1fr !important; }
         }
       `}</style>

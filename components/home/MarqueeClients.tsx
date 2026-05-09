@@ -44,7 +44,7 @@ export default function MarqueeClients() {
             fontSize: 10,
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: "#2563EB",
+            color: "var(--color-eyebrow)",
             whiteSpace: "nowrap",
           }}
         >
@@ -129,7 +129,7 @@ export default function MarqueeClients() {
                 style={{
                   width: 3,
                   height: 3,
-                  backgroundColor: "#2563EB",
+                  backgroundColor: "var(--color-accent)",
                   opacity: 0.4,
                   flexShrink: 0,
                 }}

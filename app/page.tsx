@@ -7,15 +7,16 @@ import ComparisonTable from "@/components/home/ComparisonTable";
 import GlobalReach    from "@/components/home/GlobalReach";
 import Network        from "@/components/home/Network";
 import WorkWithUs     from "@/components/home/WorkWithUs";
+import TeamShowcase   from "@/components/team/TeamShowcase";
 
 export const metadata: Metadata = {
-  title: "DolphX — Intelligent Media. Measurable Growth.",
+  title: "DolphX — Owned Media. First-Party Data. Enterprise Delivery.",
   description:
-    "DolphX is a technology-mediatique company. We deliver digital consulting, marketing automation & SaaS, AI-powered data intelligence and media distribution — powered by 40+ owned media properties.",
+    "DolphX operates 40+ owned media properties and turns 2.4 billion annual first-party data points into consulting strategies, marketing automation, AI intelligence and direct media distribution for enterprise clients.",
   openGraph: {
-    title: "DolphX — Intelligent Media. Measurable Growth.",
+    title: "DolphX — Owned Media. First-Party Data. Enterprise Delivery.",
     description:
-      "A technology-mediatique platform operating 40+ owned media properties and delivering measurable audience intelligence for enterprise clients.",
+      "40+ owned properties. 120M+ monthly readers. Digital consulting, automation, AI data and media distribution — built on first-party intelligence, not rented audiences.",
     url: "https://dolphx.com",
     siteName: "DolphX",
     locale: "en_US",
@@ -23,9 +24,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DolphX — Intelligent Media. Measurable Growth.",
+    title: "DolphX — Owned Media. First-Party Data. Enterprise Delivery.",
     description:
-      "Technology-mediatique company. 40+ owned properties. 120M+ monthly readers. Proprietary audience data for enterprise growth.",
+      "40+ owned properties. 2.4B data points/year. Consulting, automation, AI & distribution — DolphX delivers attribution, not estimates.",
   },
 };
 
@@ -39,6 +40,7 @@ export default function HomePage() {
       <ComparisonTable /> {/* Why DolphX vs others */}
       <GlobalReach />     {/* Global Data Network */}
       <Network />      {/* Our Network */}
+      <TeamShowcase /> {/* The crew (home + about only) */}
       <WorkWithUs />   {/* Work with us */}
     </>
   );

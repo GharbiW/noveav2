@@ -55,34 +55,9 @@ export default function Footer() {
         >
           {/* Brand col */}
           <div>
-            <Link
-              href="/"
-              style={{
-                textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 10,
-              }}
-            >
-              <span
-                style={{
-                  display: "inline-block",
-                  width: 8,
-                  height: 8,
-                  backgroundColor: "#2563EB",
-                  flexShrink: 0,
-                }}
-              />
-              <span
-                style={{
-                  fontFamily: "var(--font-serif)",
-                  fontSize: 19,
-                  color: "var(--color-foreground)",
-                  letterSpacing: "-0.01em",
-                }}
-              >
-                DolphX
-              </span>
+            <Link href="/" aria-label="DolphX home" style={{ textDecoration: "none", display: "inline-block" }}>
+              <img src="/brand/logo-white.webp" alt="DolphX" className="footer-logo footer-logo-dark"  style={{ height: 26 }} />
+              <img src="/brand/logo-black.webp" alt="DolphX" className="footer-logo footer-logo-light" style={{ height: 26 }} />
             </Link>
 
             <p
@@ -113,7 +88,7 @@ export default function Footer() {
             </p>
 
             {/* Social links */}
-            <div style={{ display: "flex", gap: 20, marginTop: 24 }}>
+            <div style={{ display: "flex", gap: 20, marginTop: 20, marginBottom: 24 }}>
               {[
                 { label: "LinkedIn", href: "#" },
                 { label: "X",        href: "#" },
@@ -134,6 +109,29 @@ export default function Footer() {
                 >
                   {s.label}
                 </Link>
+              ))}
+            </div>
+
+            {/* Offices */}
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {[
+                {
+                  city: "Paris",
+                  lines: ["14 Rue de la Paix, 2ème", "75002 Paris, France", "Mon–Fri  09:00–18:00 CET"],
+                },
+                {
+                  city: "Istanbul",
+                  lines: ["Levent Mahallesi, Cömert Sok. 8", "34330 Beşiktaş, Istanbul", "Mon–Fri  10:00–19:00 TRT"],
+                },
+              ].map((o) => (
+                <div key={o.city}>
+                  <p style={{ fontFamily: "var(--font-mono)", fontSize: 9, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--color-eyebrow)", marginBottom: 4 }}>
+                    {o.city}
+                  </p>
+                  {o.lines.map((l) => (
+                    <p key={l} style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: 12, color: "var(--color-muted-foreground)", lineHeight: 1.6 }}>{l}</p>
+                  ))}
+                </div>
               ))}
             </div>
           </div>
@@ -197,7 +195,7 @@ export default function Footer() {
               letterSpacing: "0.06em",
             }}
           >
-            © 2025 DolphX. All rights reserved.
+            © 2026 DolphX. All rights reserved.
           </span>
           <span
             style={{
@@ -207,12 +205,17 @@ export default function Footer() {
               letterSpacing: "0.06em",
             }}
           >
-            Paris, France
+            Paris · Istanbul
           </span>
         </div>
       </div>
 
       <style>{`
+        .footer-logo           { display: block; }
+        .footer-logo-light     { display: none !important; }
+        html.light .footer-logo-dark   { display: none !important; }
+        html.light .footer-logo-light  { display: block !important; }
+
         @media (max-width: 900px) {
           #footer-grid { grid-template-columns: 1fr 1fr !important; }
         }

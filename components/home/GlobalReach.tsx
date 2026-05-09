@@ -89,9 +89,9 @@ function WorldMap() {
         <polygon
           key={i}
           points={poly(coords)}
-          fill="#2563EB"
+          fill="#a7f432"
           fillOpacity={0.12}
-          stroke="#2563EB"
+          stroke="#a7f432"
           strokeWidth={0.5}
           strokeOpacity={0.2}
         />
@@ -112,13 +112,13 @@ function WorldMap() {
             <path
               d={d}
               fill="none"
-              stroke="#2563EB"
+              stroke="#a7f432"
               strokeWidth={0.7}
               opacity={0.15}
               className="net-arc"
               style={{ animationDelay: `${i * 0.1}s` }}
             />
-            <circle r={1.8} fill="#2563EB" opacity={0.7} className="travel-dot">
+            <circle r={1.8} fill="#a7f432" opacity={0.7} className="travel-dot">
               <animateMotion
                 dur={`${3 + (i % 3)}s`}
                 repeatCount="indefinite"
@@ -144,17 +144,17 @@ function WorldMap() {
               style={{ cursor: "pointer" }}
             />
             {isHQ && (
-              <circle cx={cx} cy={cy} r={8} fill="none" stroke="#2563EB"
+              <circle cx={cx} cy={cy} r={8} fill="none" stroke="#a7f432"
                 strokeWidth={0.8} opacity={0.5} className="hq-ring" />
             )}
             {!isHQ && (
-              <circle cx={cx} cy={cy} r={5} fill="none" stroke="#2563EB"
+              <circle cx={cx} cy={cy} r={5} fill="none" stroke="#a7f432"
                 strokeWidth={0.4} opacity={0.15} className="city-glow" />
             )}
             <circle
               cx={cx} cy={cy}
               r={isHQ ? 4 : isHov ? 3.5 : 2}
-              fill="#2563EB"
+              fill="#a7f432"
               opacity={isHQ ? 1 : isHov ? 0.95 : 0.55}
             />
             {isHov && (
@@ -162,7 +162,7 @@ function WorldMap() {
                 <rect
                   x={cx - city.name.length * 3.5 - 6} y={cy - 22}
                   width={city.name.length * 7 + 12} height={16}
-                  fill="#2563EB" rx={2}
+                  fill="#a7f432" rx={2}
                 />
                 <text
                   x={cx} y={cy - 12} textAnchor="middle" fill="#fff"
@@ -230,7 +230,7 @@ export default function GlobalReach({ backgroundColor = "var(--color-surface)" }
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 20,
                 textAlign: "center",
               }}
@@ -251,7 +251,7 @@ export default function GlobalReach({ backgroundColor = "var(--color-surface)" }
               }}
             >
               Audience intelligence across{" "}
-              <span style={{ color: "#2563EB" }}>120+ countries</span>.
+              <span style={{ color: "var(--color-eyebrow)" }}>120+ countries</span>.
             </h2>
 
             <p
@@ -386,7 +386,7 @@ export default function GlobalReach({ backgroundColor = "var(--color-surface)" }
               <polygon
                 key={i}
                 points={poly(coords)}
-                fill="#2563EB"
+                fill="#a7f432"
                 stroke="none"
               />
             ))}
@@ -429,3 +429,4 @@ export default function GlobalReach({ backgroundColor = "var(--color-surface)" }
     </section>
   );
 }
+

@@ -64,7 +64,7 @@ export default function ServicesPage() {
               fontSize: 10,
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#2563EB",
+              color: "var(--color-eyebrow)",
               marginBottom: 40,
             }}
           >
@@ -97,7 +97,7 @@ export default function ServicesPage() {
               One integrated
               <br />
               platform
-              <span style={{ color: "#2563EB" }}>.</span>
+              <span style={{ color: "var(--color-eyebrow)" }}>.</span>
             </h1>
 
             <div>
@@ -189,7 +189,7 @@ export default function ServicesPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -207,7 +207,7 @@ export default function ServicesPage() {
                 marginBottom: 24,
               }}
             >
-              What our clients <span style={{ color: "#2563EB" }}>achieve</span>.
+              What our clients <span style={{ color: "var(--color-eyebrow)" }}>achieve</span>.
             </h2>
             <p
               style={{
@@ -257,7 +257,7 @@ export default function ServicesPage() {
                       fontFamily: "var(--font-serif)",
                       fontSize: 36,
                       fontWeight: 400,
-                      color: "#2563EB",
+                      color: "var(--color-eyebrow)",
                       letterSpacing: "-0.02em",
                       lineHeight: 1,
                       display: "block",
@@ -323,7 +323,7 @@ export default function ServicesPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -366,7 +366,7 @@ export default function ServicesPage() {
                     style={{
                       fontFamily: "var(--font-mono)",
                       fontSize: 11,
-                      color: "#2563EB",
+                      color: "var(--color-eyebrow)",
                       letterSpacing: "0.12em",
                     }}
                   >

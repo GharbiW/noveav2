@@ -86,7 +86,7 @@ export default function SpecialistNetworks() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 14,
               }}
             >
@@ -154,7 +154,7 @@ export default function SpecialistNetworks() {
                     display: "block",
                     padding: "28px 28px",
                     borderBottom: "1px solid var(--color-border)",
-                    borderLeft: isActive ? "3px solid #2563EB" : "3px solid transparent",
+                    borderLeft: isActive ? "3px solid #a7f432" : "3px solid transparent",
                     backgroundColor: isActive ? "var(--color-canvas)" : "transparent",
                     transition: "background-color 180ms ease, border-color 180ms ease",
                     textAlign: "left",
@@ -171,7 +171,7 @@ export default function SpecialistNetworks() {
                       fontFamily: "var(--font-mono)",
                       fontSize: 9,
                       letterSpacing: "0.18em",
-                      color: isActive ? "#2563EB" : "var(--color-muted-foreground)",
+                      color: isActive ? "var(--color-eyebrow)" : "var(--color-muted-foreground)",
                       display: "block",
                       marginBottom: 8,
                       opacity: isActive ? 1 : 0.5,
@@ -199,7 +199,7 @@ export default function SpecialistNetworks() {
                       fontSize: 9,
                       letterSpacing: "0.1em",
                       textTransform: "uppercase",
-                      color: isActive ? "#2563EB" : "var(--color-muted-foreground)",
+                      color: isActive ? "var(--color-eyebrow)" : "var(--color-muted-foreground)",
                       opacity: isActive ? 0.75 : 0.35,
                     }}
                   >
@@ -253,8 +253,8 @@ export default function SpecialistNetworks() {
                     fontSize: 9,
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "#2563EB",
-                    border: "1px solid rgba(37,99,235,0.35)",
+                    color: "var(--color-eyebrow)",
+                    border: "1px solid rgba(167,244,50,0.35)",
                     padding: "4px 12px",
                     whiteSpace: "nowrap",
                   }}
@@ -319,7 +319,7 @@ export default function SpecialistNetworks() {
                       fontFamily: "var(--font-serif)",
                       fontSize: "clamp(24px, 2.5vw, 34px)",
                       fontWeight: 400,
-                      color: "#2563EB",
+                      color: "var(--color-eyebrow)",
                       letterSpacing: "-0.025em",
                       display: "block",
                       lineHeight: 1,

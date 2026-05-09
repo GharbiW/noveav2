@@ -3,7 +3,7 @@
 import { useRef, useEffect } from "react";
 
 /* ── Animated topographic terrain — pure Canvas, no libraries ────────────
-   Dense blue-to-cyan dot field displaced by layered sine waves.
+   Dense olive-to-sage dot field displaced by layered sine waves.
    Fills the right ~65% of the Hero viewport.
 ─────────────────────────────────────────────────────────────────────────── */
 
@@ -17,7 +17,7 @@ export default function HeroCanvas() {
     if (!ctx) return;
 
     let animId: number;
-    const SPACING = 18; // tighter grid = denser feel
+    const SPACING = 18;
 
     const resize = () => {
       const parent = canvas.parentElement;
@@ -44,7 +44,6 @@ export default function HeroCanvas() {
           const x = xi * SPACING;
           const y = yi * SPACING;
 
-          // 5 layered waves — complex terrain
           const w1 = Math.sin(x * 0.016 + t)                * 22;
           const w2 = Math.cos(y * 0.013 + t * 0.7)          * 17;
           const w3 = Math.sin((x + y) * 0.008 + t * 0.52)   * 13;
@@ -58,22 +57,25 @@ export default function HeroCanvas() {
           const range = 67;
           const norm  = (dy + range) / (range * 2); // 0..1
 
-          // Blue (#2563EB) → Cyan (#06B6D4) → White peak highlights
-          const r = Math.round(37  + norm * (6   - 37));
-          const g = Math.round(99  + norm * (182  - 99));
-          const b = Math.round(235 + norm * (212 - 235));
+          // Deep olive → brand lime (#a7f432) at peaks → warm white
+          const r = Math.round(41  + norm * (240 - 41));
+          const g = Math.round(44  + norm * (242 - 44));
+          const b = Math.round(38  + norm * (234 - 38));
+          const limeBoost = Math.max(0, 1 - Math.abs(norm - 0.6) * 3);
+          const r2 = Math.round(r * (1 - limeBoost) + 167 * limeBoost);
+          const g2 = Math.round(g * (1 - limeBoost) + 244 * limeBoost);
+          const b2 = Math.round(b * (1 - limeBoost) + 50  * limeBoost);
 
-          // Fade on left edge (text area) + vignette top/bottom
-          const leftFade   = Math.min(1, x / (W * 0.20));
-          const vertFade   = Math.min(1, Math.min(drawY / (H * 0.08), (H - drawY) / (H * 0.08)));
-          const alphaMult  = leftFade * vertFade;
+          const leftFade  = Math.min(1, x / (W * 0.20));
+          const vertFade  = Math.min(1, Math.min(drawY / (H * 0.08), (H - drawY) / (H * 0.08)));
+          const alphaMult = leftFade * vertFade;
 
-          const alpha  = alphaMult * (0.12 + norm * 0.48);
+          const alpha  = alphaMult * (0.10 + norm * 0.42);
           const radius = 0.75 + norm * 1.6;
 
           ctx.beginPath();
           ctx.arc(x, drawY, radius, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(${r},${g},${b},${alpha})`;
+          ctx.fillStyle = `rgba(${r2},${g2},${b2},${alpha})`;
           ctx.fill();
         }
       }

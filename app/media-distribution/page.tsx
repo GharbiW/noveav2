@@ -26,21 +26,21 @@ const subServices: SubService[] = [
     description: "Long-form editorial content crafted to your brief and published across our network. Written by journalists who understand each vertical — sport, finance, technology — ensuring authentic tone and genuine reader engagement.",
     stat: { val: "2.1×", label: "engagement rate" },
     items: ["Brief-to-publish workflow", "Vertical-native writing", "Brand safety controls", "Performance tracking"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
   {
     num: "02",
     title: "Native Syndication",
     description: "Content syndicated across multiple properties in our network simultaneously. One piece of content, distributed to audiences across distinct verticals — maximising reach without diluting editorial quality.",
     items: ["Cross-property distribution", "Audience matching", "Format adaptation", "Syndication reporting"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
   {
     num: "03",
     title: "Video & Multimedia",
     description: "Video content, infographics and interactive formats produced in-house and distributed through our media properties. Designed for engagement and optimised for the platforms where your audiences consume content.",
     items: ["Video production", "Infographic design", "Interactive formats", "Platform optimisation"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
   {
     num: "04",
@@ -48,14 +48,14 @@ const subServices: SubService[] = [
     description: "Strategic content placement across our owned properties, social channels and partner networks. One campaign brief, unified reporting, consistent messaging across every touchpoint.",
     stat: { val: "40+", label: "media properties" },
     items: ["Owned media placement", "Social amplification", "Partner network access", "Unified campaign management"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
   {
     num: "05",
     title: "Attribution Reporting",
     description: "Full-funnel attribution from impression to conversion. Real-time dashboards, weekly reports and transparent performance data — no black boxes, only verified metrics tied to business outcomes.",
     items: ["Real-time dashboards", "Conversion tracking", "ROI attribution", "Weekly performance reports"],
-    accent: "#2563EB",
+    accent: "#a7f432",
   },
 ];
 
@@ -140,7 +140,7 @@ export default function MediaDistributionPage() {
                 fontSize: 10,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#2563EB",
+                color: "var(--color-eyebrow)",
                 marginBottom: 40,
               }}
             >
@@ -167,7 +167,7 @@ export default function MediaDistributionPage() {
                   margin: 0,
                 }}
               >
-                Editorial distribution across our proprietary network<span style={{ color: "#2563EB" }}>.</span>
+                Editorial distribution across our proprietary network<span style={{ color: "var(--color-eyebrow)" }}>.</span>
               </h1>
               <p
                 style={{
@@ -193,7 +193,7 @@ export default function MediaDistributionPage() {
         title="From brief to measurable impact"
         titleHighlight="."
         steps={howItWorksSteps}
-        accentColor="#2563EB"
+        accentColor="#a7f432"
       />
 
       <ServiceWhoItsFor
@@ -201,7 +201,7 @@ export default function MediaDistributionPage() {
         title="Built for brands that demand editorial quality"
         titleHighlight="."
         items={whoItsForItems}
-        accentColor="#2563EB"
+        accentColor="#a7f432"
       />
 
       <ServiceFAQ
@@ -209,7 +209,7 @@ export default function MediaDistributionPage() {
         title="Média & Distribution"
         titleHighlight="."
         faqs={faqs}
-        accentColor="#2563EB"
+        accentColor="#a7f432"
       />
 
       <WorkWithUs precoloredFaces />

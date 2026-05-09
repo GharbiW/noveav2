@@ -65,7 +65,7 @@ export default function ThankYouPage() {
         {/* Next steps */}
         <div style={{ border: "1px solid var(--color-border)", backgroundColor: "var(--color-card)", marginBottom: 40, textAlign: "left" }}>
           <div style={{ padding: "18px 28px", borderBottom: "1px solid var(--color-border)" }}>
-            <p style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "#2563EB", letterSpacing: "0.18em", textTransform: "uppercase" }}>What Happens Next</p>
+            <p style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--color-eyebrow)", letterSpacing: "0.18em", textTransform: "uppercase" }}>What Happens Next</p>
           </div>
           {nextSteps.map((step, i) => (
             <div
@@ -77,7 +77,7 @@ export default function ThankYouPage() {
                 borderBottom: i < nextSteps.length - 1 ? "1px solid var(--color-border)" : "none",
               }}
             >
-              <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "#2563EB", minWidth: 28, paddingTop: 2 }}>{step.num}</span>
+              <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--color-eyebrow)", minWidth: 28, paddingTop: 2 }}>{step.num}</span>
               <div>
                 <p style={{ fontSize: 14, fontWeight: 500, color: "var(--color-foreground)", marginBottom: 4 }}>{step.label}</p>
                 <p style={{ fontSize: 13, fontWeight: 300, color: "var(--color-muted-foreground)", lineHeight: 1.65 }}>{step.desc}</p>
@@ -90,7 +90,7 @@ export default function ThankYouPage() {
           <Link
             href="/"
             style={{
-              backgroundColor: "#2563EB",
+              backgroundColor: "var(--color-accent)",
               color: "#fff",
               padding: "12px 28px",
               fontFamily: "var(--font-sans)",

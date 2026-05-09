@@ -37,7 +37,7 @@ export default function ServiceDetailPanels({ subServices }: Props) {
               fontSize: 10,
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#2563EB",
+              color: "var(--color-eyebrow)",
               marginBottom: 16,
             }}
           >
@@ -53,7 +53,7 @@ export default function ServiceDetailPanels({ subServices }: Props) {
               marginBottom: 56,
             }}
           >
-            What we deliver<span style={{ color: "#2563EB" }}>.</span>
+            What we deliver<span style={{ color: "var(--color-eyebrow)" }}>.</span>
           </h2>
         </ScrollReveal>
 
@@ -242,7 +242,7 @@ export default function ServiceDetailPanels({ subServices }: Props) {
       </div>
 
       <style>{`
-        .svc-chip:hover { border-color: #2563EB !important; background-color: var(--color-card) !important; }
+        .svc-chip:hover { border-color: #a7f432 !important; background-color: var(--color-card) !important; }
         @media (max-width: 768px) { .svc-stat { display: none !important; } }
       `}</style>
     </section>

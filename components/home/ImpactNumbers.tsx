@@ -8,10 +8,10 @@ import { useEffect, useRef, useState } from "react";
 ─────────────────────────────────────────────────────────────────────────── */
 
 const metrics = [
-  { raw: 40,  suffix: "+",  label: "Media Properties",   sub: "Owned & actively operated",       color: "#2563EB" },
-  { raw: 120, suffix: "M+", label: "Monthly Readers",    sub: "Across all network verticals",    color: "#06B6D4" },
+  { raw: 40,  suffix: "+",  label: "Media Properties",   sub: "Owned & actively operated",       color: "var(--color-eyebrow)" },
+  { raw: 120, suffix: "M+", label: "Monthly Readers",    sub: "Across all network verticals",    color: "#86c93f" },
   { raw: 98,  suffix: "%",  label: "Client Retention",   sub: "Enterprise partnership rate",     color: "#10B981" },
-  { raw: 4,   suffix: "",   label: "Service Pillars",    sub: "Consulting · Automation · AI & Data · Media", color: "#2563EB" },
+  { raw: 4,   suffix: "",   label: "Service Pillars",    sub: "Consulting · Automation · AI & Data · Media", color: "var(--color-eyebrow)" },
 ];
 
 function Counter({ raw, suffix }: { raw: number; suffix: string }) {
@@ -66,7 +66,7 @@ export default function ImpactNumbers() {
             fontSize: 10,
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: "#2563EB",
+            color: "var(--color-eyebrow)",
           }}
         >
           By the Numbers

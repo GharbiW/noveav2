@@ -7,7 +7,7 @@ const services = [
   {
     num: "01",
     title: "Consulting Digital",
-    accent: "#2563EB",
+    accent: "#a7f432",
     tag: "Strategy",
     description:
       "Strategic advisory for companies navigating digital transformation. We audit performance, architect SEO strategies, engineer conversion funnels and design customer journeys — every recommendation grounded in proprietary data from our own media operations, not generic playbooks.",
@@ -22,7 +22,7 @@ const services = [
   {
     num: "02",
     title: "Automation & SaaS Marketing",
-    accent: "#06B6D4",
+    accent: "#86c93f",
     tag: "Automation",
     description:
       "Custom-built marketing automation and personalised mini-SaaS platforms. We design CRM workflows, lead nurturing sequences and scoring engines — then build the tools that let clients industrialise their acquisition, retention and reporting at scale.",
@@ -52,7 +52,7 @@ const services = [
   {
     num: "04",
     title: "Média & Distribution",
-    accent: "#2563EB",
+    accent: "#a7f432",
     tag: "Media",
     description:
       "Sponsored editorial content produced and distributed across our proprietary network of media properties. Native advertising that reaches qualified, verified audiences across sport, finance and technology verticals — with full attribution reporting.",

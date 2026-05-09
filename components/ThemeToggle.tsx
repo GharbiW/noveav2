@@ -34,8 +34,8 @@ export default function ThemeToggle() {
       }}
       onMouseEnter={(e) => {
         const btn = e.currentTarget as HTMLButtonElement;
-        btn.style.borderColor = "#2563EB";
-        btn.style.color = "#2563EB";
+        btn.style.borderColor = "var(--color-eyebrow)";
+        btn.style.color = "var(--color-eyebrow)";
       }}
       onMouseLeave={(e) => {
         const btn = e.currentTarget as HTMLButtonElement;
