@@ -21,20 +21,6 @@ export type TeamMember = {
 export const TEAM: TeamMember[] = [
   {
     id: 1,
-    name: "Wael Gharbi",
-    role: "Chief Innovation & Strategy Officer",
-    bio: "Leads DolphX's strategic direction, product innovation and enterprise client relationships. Brings together the media network, data platform and consulting practice around a single integrated value proposition.",
-    photo: "/team/wael-gharbi.webp",
-    service: "consulting",
-    posts: [
-      { kind: "Article",   label: "DolphX 2026 — The media-data convergence thesis" },
-      { kind: "Interview", label: "Les Échos — Building a technology-mediatique company from Paris" },
-    ],
-    initials: "WG",
-    social: { linkedin: "#" },
-  },
-  {
-    id: 2,
     name: "Emir Kaya",
     role: "Chief Technology Officer",
     bio: "Architects and operates the technology backbone of DolphX — from the proprietary data platform to the SaaS automation layer. Leads all engineering decisions across client-facing products.",
@@ -48,7 +34,7 @@ export const TEAM: TeamMember[] = [
     social: { linkedin: "#" },
   },
   {
-    id: 3,
+    id: 2,
     name: "Kerem Yılmaz",
     role: "Chief Financial Officer",
     bio: "Oversees financial strategy, investor relations and operational performance across the DolphX group. Brings institutional finance experience to media-technology business models.",
@@ -62,7 +48,7 @@ export const TEAM: TeamMember[] = [
     social: { linkedin: "#" },
   },
   {
-    id: 4,
+    id: 3,
     name: "Mehmet Adali",
     role: "Chief Operation Officer",
     bio: "Runs day-to-day operations, client delivery coordination and cross-vertical project management. Ensures every engagement is executed on time and to the agreed specification.",
@@ -76,7 +62,7 @@ export const TEAM: TeamMember[] = [
     social: { linkedin: "#" },
   },
   {
-    id: 5,
+    id: 4,
     name: "Selin Yıldız",
     role: "Chief Client Success Director",
     bio: "Manages all client relationships from onboarding through quarterly reviews. Ensures every engagement produces measurable results and long-term partnership outcomes.",
@@ -90,7 +76,7 @@ export const TEAM: TeamMember[] = [
     social: { linkedin: "#" },
   },
   {
-    id: 6,
+    id: 5,
     name: "Claire Moreau",
     role: "Brand & Communication Director",
     bio: "Leads DolphX brand strategy, external communications and the sponsored editorial programme. Manages the voice and visibility of the group across all properties and international markets.",
@@ -104,7 +90,7 @@ export const TEAM: TeamMember[] = [
     social: { linkedin: "#" },
   },
   {
-    id: 7,
+    id: 6,
     name: "Elif Şahin",
     role: "Performance Marketing Lead",
     bio: "Designs and operates high-performance marketing automation systems for clients. Expert in CRM architecture, lead scoring and multi-channel acquisition programmes at enterprise scale.",
@@ -118,7 +104,7 @@ export const TEAM: TeamMember[] = [
     social: { linkedin: "#" },
   },
   {
-    id: 8,
+    id: 7,
     name: "Aylin Arslan",
     role: "Data & Analytics Manager",
     bio: "Translates raw audience behaviour into actionable intelligence. Builds the predictive models, segment schemas and reporting layers that power every DolphX client engagement.",
@@ -139,27 +125,27 @@ export const INQUIRIES: Record<
   { key: string; label: string; memberId: number }[]
 > = {
   consulting: [
-    { key: "audit",      label: "Performance audit & diagnostics",      memberId: 1 },
-    { key: "seo",        label: "SEO architecture & strategy",          memberId: 1 },
-    { key: "conversion", label: "Conversion engineering & CRO",         memberId: 5 },
+    { key: "audit",      label: "Performance audit & diagnostics",      memberId: 4 },
+    { key: "seo",        label: "SEO architecture & strategy",          memberId: 4 },
+    { key: "conversion", label: "Conversion engineering & CRO",         memberId: 4 },
   ],
   automation: [
-    { key: "crm",        label: "CRM workflows & integration",          memberId: 7 },
-    { key: "nurturing",  label: "Lead nurturing & scoring",             memberId: 7 },
-    { key: "saas",       label: "Custom mini-SaaS platform",            memberId: 2 },
+    { key: "crm",        label: "CRM workflows & integration",          memberId: 6 },
+    { key: "nurturing",  label: "Lead nurturing & scoring",             memberId: 6 },
+    { key: "saas",       label: "Custom mini-SaaS platform",            memberId: 1 },
   ],
   aidata: [
-    { key: "modeling",   label: "Predictive modelling & segmentation",  memberId: 8 },
-    { key: "signals",    label: "Intent signals & data activation",     memberId: 8 },
-    { key: "licensing",  label: "Data monetisation & licensing",        memberId: 8 },
+    { key: "modeling",   label: "Predictive modelling & segmentation",  memberId: 7 },
+    { key: "signals",    label: "Intent signals & data activation",     memberId: 7 },
+    { key: "licensing",  label: "Data monetisation & licensing",        memberId: 7 },
   ],
   media: [
-    { key: "editorial",    label: "Sponsored editorial programs",       memberId: 6 },
-    { key: "distribution", label: "Multi-platform distribution",        memberId: 6 },
+    { key: "editorial",    label: "Sponsored editorial programs",       memberId: 5 },
+    { key: "distribution", label: "Multi-platform distribution",        memberId: 5 },
   ],
   general: [
-    { key: "partnership", label: "Partnership & press",                  memberId: 5 },
-    { key: "onboarding",  label: "Client onboarding",                    memberId: 5 },
+    { key: "partnership", label: "Partnership & press",                  memberId: 4 },
+    { key: "onboarding",  label: "Client onboarding",                    memberId: 4 },
   ],
 };
 
