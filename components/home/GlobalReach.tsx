@@ -41,7 +41,7 @@ const LAND: [number, number][][] = [
 ];
 
 const CITIES: { lon: number; lat: number; name: string }[] = [
-  { lon: 2.35,  lat: 48.86, name: "Paris"       },
+  { lon: 29.02, lat: 41.08, name: "Istanbul"    },
   { lon: -0.12, lat: 51.51, name: "London"       },
   { lon: 13.4,  lat: 52.52, name: "Berlin"       },
   { lon: 12.5,  lat: 41.9,  name: "Rome"         },
@@ -73,7 +73,7 @@ const CITIES: { lon: number; lat: number; name: string }[] = [
   { lon: -9.14, lat: 38.74, name: "Lisbon"       },
 ];
 
-const HQ = { lon: 2.35, lat: 48.86 };
+const HQ = { lon: 29.02, lat: 41.08 };
 
 function WorldMap() {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -268,7 +268,7 @@ export default function GlobalReach({ backgroundColor = "var(--color-surface)" }
               }}
             >
               Our media network generates first-party data signals from readers
-              across every major market — with Paris as our operational hub.
+              across every major market — with Istanbul as our operational hub.
             </p>
 
             {/* Stats row */}

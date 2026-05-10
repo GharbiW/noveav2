@@ -29,7 +29,7 @@ const dataScale = [
 
 const partnerRegions = [
   { region: "Western Europe", countries: "France, UK, Germany, Spain, Italy, Netherlands, Belgium", strength: "Flagship market — full vertical coverage across all 4 content networks." },
-  { region: "North Africa & MENA", countries: "Morocco, Algeria, Tunisia, Egypt, UAE, Saudi Arabia, Qatar", strength: "Sports and civic audiences dominant. LesportifPlus anchors Maghreb reach." },
+  { region: "North Africa & MENA", countries: "Morocco, Algeria, Tunisia, Egypt, UAE, Saudi Arabia, Qatar", strength: "Sports and civic audiences dominant. Strong Maghreb and Gulf reach across owned and partner inventory." },
   { region: "Sub-Saharan Africa", countries: "Nigeria, Kenya, Ghana, South Africa, Senegal", strength: "Growing digital-first audiences. High mobile engagement. Sports and finance focus." },
   { region: "North America", countries: "USA, Canada", strength: "B2B and tech vertical. Decision-maker data from FormalGeek syndication partners." },
   { region: "Asia-Pacific", countries: "Singapore, Australia, India, Japan, South Korea", strength: "Partner syndication layer. Finance and enterprise technology verticals." },

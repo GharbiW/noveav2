@@ -16,7 +16,6 @@ const cols = [
   {
     title: "Network",
     links: [
-      { label: "LesportifPlus",  href: "#" },
       { label: "EconomySignals", href: "#" },
       { label: "FormalGeek",     href: "#" },
     ],
@@ -112,13 +111,9 @@ export default function Footer() {
               ))}
             </div>
 
-            {/* Offices */}
+            {/* Office */}
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {[
-                {
-                  city: "Paris",
-                  lines: ["14 Rue de la Paix, 2ème", "75002 Paris, France", "Mon–Fri  09:00–18:00 CET"],
-                },
                 {
                   city: "Istanbul",
                   lines: ["Levent Mahallesi, Cömert Sok. 8", "34330 Beşiktaş, Istanbul", "Mon–Fri  10:00–19:00 TRT"],
@@ -205,7 +200,7 @@ export default function Footer() {
               letterSpacing: "0.06em",
             }}
           >
-            Paris · Istanbul
+            Istanbul
           </span>
         </div>
       </div>

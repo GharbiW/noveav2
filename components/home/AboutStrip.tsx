@@ -251,7 +251,7 @@ export default function AboutStrip() {
                   Learn about DolphX →
                 </Link>
                 <span style={{ fontFamily: "var(--font-mono)", fontSize: 9, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-muted-foreground)", opacity: 0.45 }}>
-                  Est. 2019 · Paris, France
+                  Est. 2019 · Istanbul, Turkey
                 </span>
               </div>
             </div>

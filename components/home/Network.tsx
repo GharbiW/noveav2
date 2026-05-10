@@ -10,14 +10,6 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const properties = [
   {
-    name: "LesportifPlus",
-    vertical: "Sports",
-    description: "Premier sports news & analysis platform across North Africa and the Maghreb.",
-    audience: "4.2M monthly",
-    href: "https://lesportifplus.com",
-    accentcolor: "var(--color-eyebrow)",
-  },
-  {
     name: "EconomySignals",
     vertical: "Finance",
     description: "Real-time economic intelligence for investors and business decision-makers.",
@@ -31,7 +23,7 @@ const properties = [
     description: "In-depth AI tools and innovation reviews for senior tech professionals.",
     audience: "980K monthly",
     href: "#",
-    accentcolor: "var(--color-eyebrow)",
+    accentColor: "var(--color-eyebrow)",
   },
 ];
 

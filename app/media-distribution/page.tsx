@@ -102,7 +102,7 @@ const faqs: FAQItem[] = [
   {
     question: "Which media properties are included in your network?",
     answer:
-      "Our network includes owned editorial properties across sport, finance and technology verticals — including LesportifPlus, EconomySignals and FormalGeek, among others. All properties are fully owned and operated by DolphX.",
+      "Our network includes owned editorial properties across sport, finance and technology verticals — including EconomySignals and FormalGeek, among others. All properties are fully owned and operated by DolphX.",
   },
   {
     question: "How do you ensure brand safety?",

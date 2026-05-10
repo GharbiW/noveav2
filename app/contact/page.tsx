@@ -18,9 +18,8 @@ const contactDetails = [
   { label: "General Enquiries",  value: "contact@dolphx.com",             mono: true  },
   { label: "Business Development",value: "partnerships@dolphx.com",        mono: true  },
   { label: "Response Guarantee", value: "Within 24 business hours",        mono: false },
-  { label: "Paris Office",       value: "14 Rue de la Paix, 75002 Paris",  mono: false },
   { label: "Istanbul Office",    value: "Levent Mah., Cömert Sok. 8, Beşiktaş", mono: false },
-  { label: "Office Hours",       value: "Mon–Fri · 09:00–18:00 CET · 10:00–19:00 TRT", mono: false },
+  { label: "Office Hours",       value: "Mon–Fri · 10:00–19:00 TRT", mono: false },
 ];
 
 const faqs = [
@@ -33,8 +32,8 @@ const faqs = [
     a: "We work primarily with enterprise brands, institutional media companies and publishers generating more than €5M in annual digital revenue. Smaller organisations are considered on a case-by-case basis.",
   },
   {
-    q: "Do you operate outside France and Turkey?",
-    a: "Yes — roughly 60% of our engagements are cross-border. We have active clients in the UK, the UAE, Germany and North America, and operate fully remotely with all of them.",
+    q: "Do you operate outside Turkey?",
+    a: "Yes — roughly 60% of our engagements are cross-border. We have active clients in the UK, the UAE, Germany, France, North America and beyond, and operate fully remotely with all of them.",
   },
   {
     q: "What happens after I send the form?",
@@ -118,7 +117,7 @@ export default function ContactPage() {
                   lineHeight: 1.8,
                 }}
               >
-                Offices in Paris and Istanbul. Senior operators across four service verticals. Every enquiry reviewed within one business day — by a person, not a system.
+                Headquartered in Istanbul with senior operators across four service verticals. Every enquiry reviewed within one business day — by a person, not a system.
               </p>
             </div>
           </ScrollReveal>
