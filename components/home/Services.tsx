@@ -23,13 +23,13 @@ const services = [
   },
   {
     num: "02",
-    title: "Automation & SaaS Marketing",
+    title: "Project Development & SaaS",
     href: "/automation",
     description:
-      "Custom CRM workflows, lead scoring engines and mini-SaaS platforms built to industrialise acquisition and retention. We deploy, integrate and maintain — you see the pipeline fill.",
-    items: ["CRM Workflows", "Lead Scoring", "Email Sequences", "Mini-SaaS Platforms"],
+      "From project strategy to SaaS builds, dashboards, client portals and automation systems. We scope, design, develop, integrate and maintain digital products that make acquisition, operations and reporting easier to scale.",
+    items: ["Project Scoping", "SaaS Platforms", "Client Portals", "Automation Systems"],
     accent: ACCENT2,
-    stat: { val: "40+", label: "automations deployed" },
+    stat: { val: "40+", label: "projects shipped" },
   },
   {
     num: "03",
@@ -46,8 +46,8 @@ const services = [
     title: "Média & Distribution",
     href: "/media-distribution",
     description:
-      "Sponsored editorial produced in-house and syndicated across 40+ owned properties. Sport, finance and technology verticals with verified, qualified audiences — full-funnel attribution on every placement.",
-    items: ["Sponsored Editorial", "Native Syndication", "Multi-Vertical Reach", "Attribution Reports"],
+      "Sponsored editorial produced in-house and distributed through owned channels, social amplification and vetted media partners. Sport, finance, retail and technology verticals with full-funnel attribution on every placement.",
+    items: ["Sponsored Editorial", "Partner Syndication", "Multi-Vertical Reach", "Attribution Reports"],
     accent: ACCENT,
     stat: { val: "40+", label: "media properties" },
   },

@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import Services from "@/components/home/Services";
 import GlobalReach from "@/components/home/GlobalReach";
 import WorkWithUs from "@/components/home/WorkWithUs";
 
 export const metadata: Metadata = {
-  title: "Services — DolphX | Consulting, Automation, AI & Data, Media",
+  title: "Services — DolphX | Consulting, Project Development, AI & Data, Media",
   description:
-    "DolphX delivers four integrated service pillars: digital consulting, marketing automation & SaaS, AI-powered data intelligence and media distribution — all powered by our proprietary media network.",
+    "DolphX delivers four integrated service pillars: digital consulting, project development & SaaS, AI-powered data intelligence and media distribution.",
   openGraph: {
     title: "Services — DolphX",
     description:
-      "Four pillars. One integrated platform. Consulting, automation, AI & data, and media distribution for enterprise clients.",
+      "Four pillars. One integrated platform. Consulting, project development, AI & data, and media distribution for enterprise clients.",
     url: "https://dolphx.com/services",
     siteName: "DolphX",
     type: "website",
@@ -112,8 +113,8 @@ export default function ServicesPage() {
                 }}
               >
                 Every service is structured around one objective — measurable,
-                compounding growth through the intersection of owned media and
-                engineered audience data. No generic playbooks.
+                compounding growth through the intersection of owned channels,
+                media partners and engineered audience data. No generic playbooks.
               </p>
 
               {/* Supporting stats — reinforce authority signals */}
@@ -127,8 +128,8 @@ export default function ServicesPage() {
                 }}
               >
                 {[
-                  { val: "40+",   label: "Owned Properties" },
-                  { val: "120M+", label: "Monthly Readers"  },
+                  { val: "40+",   label: "Media Touchpoints" },
+                  { val: "120M+", label: "Addressable Reach" },
                   { val: "98%",   label: "Client Retention" },
                 ].map((s) => (
                   <div key={s.label} style={{ display: "flex", gap: 8, alignItems: "baseline" }}>
@@ -220,8 +221,22 @@ export default function ServicesPage() {
                 marginBottom: 64,
               }}
             >
-              Measurable outcomes across every engagement — driven by owned media distribution and proprietary audience data.
+              Measurable outcomes across every engagement — driven by owned channels, media partnerships and audience intelligence.
             </p>
+            <Link
+              href="/use-cases"
+              style={{
+                display: "inline-block",
+                fontFamily: "var(--font-mono)",
+                fontSize: 12,
+                color: "var(--color-eyebrow)",
+                textDecoration: "none",
+                letterSpacing: "0.08em",
+                marginBottom: 44,
+              }}
+            >
+              View real use cases →
+            </Link>
           </ScrollReveal>
 
           <div

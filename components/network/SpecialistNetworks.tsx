@@ -11,7 +11,7 @@ const networks = [
     geography: "Global — 60+ financial markets",
     reach: "15M+ finance readers monthly",
     description:
-      "Built on EconomySignals and partner finance publications, our financial intelligence layer captures declared reading behaviour across markets, investment verticals and economic cycles. Precision targeting for asset managers, fintech brands, banks and financial institutions.",
+      "Built through Turkish finance and business media partnerships including Kurumsal Medya and sector publications, our financial intelligence layer captures declared reading behaviour across markets, investment verticals and economic cycles. Precision targeting for asset managers, fintech brands, banks and financial institutions.",
     signals: ["Investment intent", "Sector affinity", "Asset class behaviour", "Economic decision cycle"],
     metrics: [
       { val: "15M+", label: "Finance readers" },
@@ -43,7 +43,7 @@ const networks = [
     geography: "Global — 80+ countries",
     reach: "8.2M decision-makers",
     description:
-      "Harvested from EconomySignals, FormalGeek and partner publications, our B2B layer segments C-suite, director and senior manager audiences by industry, company size and purchase decision cycle. Structured for ABM, outbound sales and pipeline acceleration.",
+      "Activated through Webrazzi, egirişim, Girişim Haber and partner publications, our B2B layer segments founders, executives and senior managers by industry, company size and purchase decision cycle. Structured for ABM, outbound sales and pipeline acceleration.",
     signals: ["Title & seniority", "Industry vertical", "Technology stack signals", "Company growth stage"],
     metrics: [
       { val: "8.2M", label: "Decision-makers" },
@@ -119,7 +119,7 @@ export default function SpecialistNetworks() {
               margin: 0,
             }}
           >
-            Purpose-built audience intelligence layers — not interest categories. Refined over years of editorial data collection across owned media.
+            Purpose-built audience intelligence layers — not interest categories. Refined through first-party analytics, campaign data and trusted media partnerships.
           </p>
         </div>
 

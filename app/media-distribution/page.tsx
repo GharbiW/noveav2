@@ -9,10 +9,10 @@ import WorkWithUs from "@/components/home/WorkWithUs";
 export const metadata: Metadata = {
   title: "Média & Distribution — DolphX | Sponsored Content & Media Network",
   description:
-    "Sponsored editorial content distributed across our proprietary media network. Qualified audiences across sport, finance and technology verticals — with full attribution reporting.",
+    "Sponsored editorial content distributed through DolphX media operations and vetted Turkish partner publications. Qualified audiences across sport, finance, retail and technology verticals — with full attribution reporting.",
   openGraph: {
     title: "Média & Distribution — DolphX",
-    description: "Premium editorial distribution across 40+ owned media properties.",
+    description: "Premium editorial distribution through owned channels and vetted media partners.",
     url: "https://dolphx.com/media-distribution",
     siteName: "DolphX",
     type: "website",
@@ -31,23 +31,23 @@ const subServices: SubService[] = [
   {
     num: "02",
     title: "Native Syndication",
-    description: "Content syndicated across multiple properties in our network simultaneously. One piece of content, distributed to audiences across distinct verticals — maximising reach without diluting editorial quality.",
+    description: "Content syndicated across selected owned channels and partner publications. One piece of content, adapted to distinct verticals — maximising reach without diluting editorial quality.",
     items: ["Cross-property distribution", "Audience matching", "Format adaptation", "Syndication reporting"],
     accent: "#a7f432",
   },
   {
     num: "03",
     title: "Video & Multimedia",
-    description: "Video content, infographics and interactive formats produced in-house and distributed through our media properties. Designed for engagement and optimised for the platforms where your audiences consume content.",
+    description: "Video content, infographics and interactive formats produced in-house and distributed through owned channels and media partners. Designed for engagement and optimised for the platforms where your audiences consume content.",
     items: ["Video production", "Infographic design", "Interactive formats", "Platform optimisation"],
     accent: "#a7f432",
   },
   {
     num: "04",
     title: "Multi-Platform Distribution",
-    description: "Strategic content placement across our owned properties, social channels and partner networks. One campaign brief, unified reporting, consistent messaging across every touchpoint.",
+    description: "Strategic content placement across owned channels, social channels and vetted partner networks. One campaign brief, unified reporting, consistent messaging across every touchpoint.",
     stat: { val: "40+", label: "media properties" },
-    items: ["Owned media placement", "Social amplification", "Partner network access", "Unified campaign management"],
+    items: ["Owned channel placement", "Social amplification", "Partner network access", "Unified campaign management"],
     accent: "#a7f432",
   },
   {
@@ -102,12 +102,12 @@ const faqs: FAQItem[] = [
   {
     question: "Which media properties are included in your network?",
     answer:
-      "Our network includes owned editorial properties across sport, finance and technology verticals — including EconomySignals and FormalGeek, among others. All properties are fully owned and operated by DolphX.",
+      "Our distribution network combines DolphX-operated channels with vetted Turkish media partners across technology, startups, finance, ecommerce, retail and sports, including publications such as Webrazzi, egirişim, Girişim Haber, Kurumsal Medya, E-Ticaret Türkiye and Sporx depending on the campaign fit.",
   },
   {
     question: "How do you ensure brand safety?",
     answer:
-      "Because we own every property in our network, we have full editorial control. All sponsored content is reviewed for brand alignment before publication. There is no programmatic inventory — every placement is curated and approved.",
+      "Every sponsored placement is curated before launch. We review publisher fit, category context, creative tone and approval workflows so campaigns run in planned environments instead of unmanaged programmatic inventory.",
   },
   {
     question: "What formats are available?",
@@ -167,7 +167,7 @@ export default function MediaDistributionPage() {
                   margin: 0,
                 }}
               >
-                Editorial distribution across our proprietary network<span style={{ color: "var(--color-eyebrow)" }}>.</span>
+                Editorial distribution across trusted media networks<span style={{ color: "var(--color-eyebrow)" }}>.</span>
               </h1>
               <p
                 style={{
@@ -178,7 +178,7 @@ export default function MediaDistributionPage() {
                   lineHeight: 1.8,
                 }}
               >
-                Sponsored content placed across owned media properties — reaching verified audiences in sport, finance and technology with full attribution reporting.
+                Sponsored content placed through owned channels and vetted Turkish media partners — reaching audiences in sport, finance, retail and technology with full attribution reporting.
               </p>
             </div>
           </ScrollReveal>

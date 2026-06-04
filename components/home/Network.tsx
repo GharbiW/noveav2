@@ -10,20 +10,52 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const properties = [
   {
-    name: "EconomySignals",
-    vertical: "Finance",
-    description: "Real-time economic intelligence for investors and business decision-makers.",
-    audience: "1.8M monthly",
-    href: "#",
+    name: "Webrazzi",
+    vertical: "Tech",
+    description: "Turkey's long-running technology, startup and digital business publication.",
+    audience: "Tech & startups",
+    href: "https://webrazzi.com/",
     accentColor: "#86c93f",
   },
   {
-    name: "FormalGeek",
-    vertical: "Tech",
-    description: "In-depth AI tools and innovation reviews for senior tech professionals.",
-    audience: "980K monthly",
-    href: "#",
+    name: "egirişim",
+    vertical: "Startups",
+    description: "New-generation entrepreneurship media covering investment rounds and ecosystem news.",
+    audience: "Startup ecosystem",
+    href: "https://egirisim.com/",
     accentColor: "var(--color-eyebrow)",
+  },
+  {
+    name: "Girişim Haber",
+    vertical: "SMB",
+    description: "Entrepreneurship and SME-focused coverage for Turkish business builders.",
+    audience: "SMEs & founders",
+    href: "https://www.girisimhaber.com/",
+    accentColor: "#10B981",
+  },
+  {
+    name: "Kurumsal Medya",
+    vertical: "Finance",
+    description: "Corporate, finance and digital transformation coverage for Turkish companies.",
+    audience: "Corporate readers",
+    href: "https://kurumsalmedya.com/",
+    accentColor: "#86c93f",
+  },
+  {
+    name: "E-Ticaret Türkiye",
+    vertical: "Ecommerce",
+    description: "Digital commerce media covering Turkish ecommerce, retail technology and online growth.",
+    audience: "Retail operators",
+    href: "https://e-ticaretturkiye.com/",
+    accentColor: "var(--color-eyebrow)",
+  },
+  {
+    name: "Sporx",
+    vertical: "Sports",
+    description: "Mainstream Turkish sports news, live scores and fan audience coverage.",
+    audience: "Sports fans",
+    href: "https://www.sporx.com/",
+    accentColor: "#10B981",
   },
 ];
 
@@ -75,7 +107,7 @@ export default function Network({ backgroundColor = "var(--color-canvas)" }: { b
                   letterSpacing: "-0.02em",
                 }}
               >
-                Owned media properties.<br />First-party data built-in.
+                Turkish media network.<br />Partner reach built-in.
               </h2>
             </div>
             <p
@@ -88,7 +120,7 @@ export default function Network({ backgroundColor = "var(--color-canvas)" }: { b
                 textAlign: "right",
               }}
             >
-              Each property serves a distinct audience segment — generating proprietary intent signals.
+              Real Turkish publications across business, technology, retail and sports audience segments.
             </p>
           </div>
         </ScrollReveal>
@@ -128,6 +160,8 @@ export default function Network({ backgroundColor = "var(--color-canvas)" }: { b
           <ScrollReveal key={p.name} delay={i * 80}>
             <Link
               href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none", display: "block" }}
             >
               <div

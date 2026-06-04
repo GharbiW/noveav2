@@ -41,13 +41,13 @@ const faqs = [
   },
   {
     q: "How do you charge for your services?",
-    a: "Depending on the service: consulting and data mandates run on monthly retainers with defined deliverables; media campaigns are quoted per placement; automation and SaaS builds are scoped and fixed-price.",
+    a: "Depending on the service: consulting and data mandates run on monthly retainers with defined deliverables; media campaigns are quoted per placement; project development and SaaS builds are scoped and fixed-price.",
   },
 ];
 
 const enquiryTypes = [
   "Digital Consulting & Strategy",
-  "Marketing Automation & SaaS",
+  "Project Development & SaaS",
   "AI & Data Intelligence",
   "Média & Editorial Distribution",
   "Partnership & Press",

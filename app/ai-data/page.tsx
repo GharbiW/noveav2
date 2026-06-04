@@ -9,10 +9,10 @@ import WorkWithUs from "@/components/home/WorkWithUs";
 export const metadata: Metadata = {
   title: "AI & Data — DolphX | Predictive Modelling, Segmentation & Data Intelligence",
   description:
-    "AI-powered audience intelligence built on first-party data from our proprietary media network. Predictive modelling, behavioural segmentation, intent signals and GDPR-compliant data monetisation.",
+    "AI-powered audience intelligence built on owned channels, campaigns and vetted media partner signals. Predictive modelling, behavioural segmentation, intent signals and GDPR-compliant data monetisation.",
   openGraph: {
     title: "AI & Data — DolphX",
-    description: "First-party data intelligence powered by AI, built on 40+ owned media properties.",
+    description: "First-party data intelligence powered by AI, built on owned channels, campaigns and vetted media partner activations.",
     url: "https://dolphx.com/ai-data",
     siteName: "DolphX",
     type: "website",

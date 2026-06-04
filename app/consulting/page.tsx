@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Strategic digital consulting grounded in proprietary data. Performance audits, SEO architecture, conversion engineering and growth strategy — tested on our own media properties first.",
   openGraph: {
     title: "Consulting Digital — DolphX",
-    description: "Data-backed digital strategy, tested on 40+ owned properties.",
+    description: "Data-backed digital strategy tested across owned channels, campaigns and media partner activations.",
     url: "https://dolphx.com/consulting",
     siteName: "DolphX",
     type: "website",

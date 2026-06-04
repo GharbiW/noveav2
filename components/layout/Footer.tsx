@@ -8,7 +8,7 @@ const cols = [
     links: [
       { label: "All Services",           href: "/services" },
       { label: "Consulting Digital",     href: "/consulting" },
-      { label: "Automation & SaaS",      href: "/automation" },
+      { label: "Project Development & SaaS", href: "/automation" },
       { label: "AI & Data",             href: "/ai-data" },
       { label: "Média & Distribution",  href: "/media-distribution" },
     ],
@@ -16,16 +16,19 @@ const cols = [
   {
     title: "Network",
     links: [
-      { label: "EconomySignals", href: "#" },
-      { label: "FormalGeek",     href: "#" },
+      { label: "Webrazzi",        href: "https://webrazzi.com/" },
+      { label: "egirişim",        href: "https://egirisim.com/" },
+      { label: "Girişim Haber",   href: "https://www.girisimhaber.com/" },
+      { label: "E-Ticaret Türkiye", href: "https://e-ticaretturkiye.com/" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "About",   href: "/about"   },
-      { label: "News",    href: "/news"    },
-      { label: "Contact", href: "/contact" },
+      { label: "Use Cases", href: "/use-cases" },
+      { label: "About",     href: "/about"     },
+      { label: "News",      href: "/news"      },
+      { label: "Contact",   href: "/contact"   },
     ],
   },
 ];

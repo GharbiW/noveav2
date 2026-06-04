@@ -236,7 +236,7 @@ export default function Hero() {
               maxWidth: 820,
             }}
           >
-            <span className="hero-h1-line">40+ owned media properties.</span>
+            <span className="hero-h1-line">Owned channels and media partners.</span>
             <br />
             <span className="hero-h1-line">One platform, built for</span>
             <br />

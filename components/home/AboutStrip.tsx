@@ -8,7 +8,7 @@ const ACCENT = "#a7f432";
 const pillars = [
   {
     title: "Media-Native Infrastructure",
-    body: "We don't rent audiences — we operate 40+ owned properties. First-party data is structural, not sourced.",
+    body: "We don't rent audiences — we combine owned channels, media partners and consent-based audience signals into structured intelligence.",
   },
   {
     title: "Data That Compounds",

@@ -6,13 +6,13 @@ import WorkWithUs from "@/components/home/WorkWithUs";
 import SpecialistNetworks from "@/components/network/SpecialistNetworks";
 
 export const metadata: Metadata = {
-  title: "The DolphX Network — 40+ Media Properties, 150+ Countries",
+  title: "The DolphX Network — Media Partners, Data & 150+ Countries",
   description:
-    "DolphX operates a global intelligence network: 40+ owned media properties, specialist marketing networks in sports, politics and B2B, and first-party audience data across 150+ countries.",
+    "DolphX operates a global intelligence network: owned channels, vetted media partners, specialist marketing networks in sports, politics and B2B, and audience data across 150+ countries.",
   openGraph: {
     title: "The DolphX Network",
     description:
-      "Sports, political and B2B marketing networks — powered by owned media and 2.4 billion first-party data points.",
+      "Sports, political and B2B marketing networks — powered by owned channels, trusted media partnerships and audience intelligence.",
     url: "https://dolphx.com/network",
     siteName: "DolphX",
     type: "website",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 
 
 const dataScale = [
-  { val: "2.4B+", label: "First-party data points collected annually", desc: "Across all owned properties, every reader action — scroll depth, dwell, click, conversion — is captured and structured." },
-  { val: "120M+", label: "Unique monthly readers", desc: "Real, verified audience — no panel extrapolation, no modelled lookalikes. Every figure comes from our own server logs." },
-  { val: "150+", label: "Countries represented", desc: "Our properties attract audiences in every major market. Data is consent-based and jurisdiction-compliant across all regions." },
+  { val: "2.4B+", label: "Audience signals processed annually", desc: "Across owned channels, campaigns and media partner activations, reader actions such as scroll depth, dwell, click and conversion are captured where consent allows." },
+  { val: "120M+", label: "Addressable monthly reach", desc: "Audience access combines owned channels, partner publications and campaign inventory with clear source-level reporting." },
+  { val: "150+", label: "Countries represented", desc: "Our network attracts audiences in every major market. Data is consent-based and jurisdiction-compliant across all regions." },
   { val: "98%", label: "Data freshness rate", desc: "Segments are rebuilt on 72-hour refresh cycles. You activate on current behaviour, not six-month-old cookies." },
 ];
 
@@ -31,7 +31,7 @@ const partnerRegions = [
   { region: "Western Europe", countries: "France, UK, Germany, Spain, Italy, Netherlands, Belgium", strength: "Flagship market — full vertical coverage across all 4 content networks." },
   { region: "North Africa & MENA", countries: "Morocco, Algeria, Tunisia, Egypt, UAE, Saudi Arabia, Qatar", strength: "Sports and civic audiences dominant. Strong Maghreb and Gulf reach across owned and partner inventory." },
   { region: "Sub-Saharan Africa", countries: "Nigeria, Kenya, Ghana, South Africa, Senegal", strength: "Growing digital-first audiences. High mobile engagement. Sports and finance focus." },
-  { region: "North America", countries: "USA, Canada", strength: "B2B and tech vertical. Decision-maker data from FormalGeek syndication partners." },
+  { region: "North America", countries: "USA, Canada", strength: "B2B and tech vertical. Decision-maker data from technology syndication partners." },
   { region: "Asia-Pacific", countries: "Singapore, Australia, India, Japan, South Korea", strength: "Partner syndication layer. Finance and enterprise technology verticals." },
   { region: "Eastern Europe & CIS", countries: "Poland, Romania, Ukraine, Turkey, Russia", strength: "Political and civic coverage. Emerging market B2B pipeline signals." },
 ];
@@ -83,7 +83,7 @@ export default function NetworkPage() {
                   margin: 0,
                 }}
               >
-                Owned media.
+                Media partners.
                 <br />
                 Specialist networks.
                 <br />
@@ -100,7 +100,7 @@ export default function NetworkPage() {
                     marginBottom: 32,
                   }}
                 >
-                  DolphX doesn&apos;t rent audiences — we build them. 40+ owned media properties generate 2.4 billion first-party data points every year, structured into specialist networks for sports, political and B2B marketing at global scale.
+                  DolphX combines owned channels, campaign intelligence and vetted media partners into specialist networks for sports, political and B2B marketing at global scale.
                 </p>
 
                 {/* Key stats inline */}
@@ -117,8 +117,8 @@ export default function NetworkPage() {
                   id="hero-stats-grid"
                 >
                   {[
-                    { val: "40+", label: "Properties" },
-                    { val: "120M+", label: "Readers" },
+                    { val: "40+", label: "Media touchpoints" },
+                    { val: "120M+", label: "Reach" },
                     { val: "150+", label: "Countries" },
                   ].map((s) => (
                     <div
@@ -167,7 +167,7 @@ export default function NetworkPage() {
         `}</style>
       </section>
 
-      {/* ── OWNED PROPERTIES (existing component) ─────────────────── */}
+      {/* ── MEDIA NETWORK (existing component) ─────────────────────── */}
       <Network backgroundColor="var(--color-surface)" />
 
       {/* ── SPECIALIST NETWORKS ────────────────────────────────────── */}

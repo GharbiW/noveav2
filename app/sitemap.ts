@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { getAllUris } from "@/lib/wp-graphql";
+import { useCases } from "@/lib/use-cases";
 
 const BASE_URL = "https://dolphx.com";
 
@@ -10,6 +11,7 @@ const staticRoutes = [
   { url: "/automation", priority: 0.8 },
   { url: "/ai-data", priority: 0.8 },
   { url: "/media-distribution", priority: 0.8 },
+  { url: "/use-cases", priority: 0.8 },
   { url: "/network", priority: 0.7 },
   { url: "/about", priority: 0.7 },
   { url: "/news", priority: 0.8 },
@@ -33,6 +35,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
+  const useCaseRoutes = useCases.map((item) => ({
+    url: `${BASE_URL}/use-cases/${item.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes.map(({ url, priority }) => ({
       url: `${BASE_URL}${url}`,
@@ -40,6 +49,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority,
     })),
+    ...useCaseRoutes,
     ...wpRoutes,
   ];
 }

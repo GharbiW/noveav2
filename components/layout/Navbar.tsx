@@ -17,8 +17,8 @@ const serviceLinks = [
   },
   {
     href: "/automation",
-    title: "Automation & SaaS Marketing",
-    sub: "CRM workflows & mini-SaaS platforms",
+    title: "Project Development & SaaS",
+    sub: "Platforms, portals & workflow systems",
     accent: "#86c93f",
   },
   {
@@ -37,6 +37,7 @@ const serviceLinks = [
 
 const navLinks = [
   { href: "/network", label: "Network" },
+  { href: "/use-cases", label: "Use Cases" },
   { href: "/about",   label: "About"   },
   { href: "/news",    label: "News"    },
 ];

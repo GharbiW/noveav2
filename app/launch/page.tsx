@@ -45,7 +45,7 @@ export default function LaunchPage() {
               End-to-End Media Launch. Audience to Revenue.
             </h1>
             <p style={{ fontSize: 17, fontWeight: 300, color: "var(--color-muted-foreground)", maxWidth: 520, lineHeight: 1.7, marginBottom: 40 }}>
-              From audience intelligence to full-scale distribution — DolphX manages every element of your media launch, backed by first-party data and 40+ owned properties.
+              From audience intelligence to full-scale distribution — DolphX manages every element of your media launch, backed by first-party data, owned channels and vetted media partners.
             </p>
             <Link href="/contact" style={{ display: "inline-block", backgroundColor: "var(--color-primary)", color: "var(--color-primary-foreground)", padding: "14px 32px", fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 400, textDecoration: "none" }}>
               Brief Us on Your Launch

@@ -18,10 +18,10 @@ const services = [
   {
     num: "02",
     icon: TrendingUp,
-    title: "Automation & SaaS Marketing",
+    title: "Project Development & SaaS",
     href: "/automation",
-    tag: "Automation",
-    desc: "Custom CRM workflows, lead nurturing sequences, scoring engines and personalised mini-SaaS platforms that industrialise acquisition and retention.",
+    tag: "Development",
+    desc: "Project scoping, SaaS platforms, client portals, dashboards and workflow systems that industrialise acquisition, operations and reporting.",
     img: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=800&auto=format&fit=crop&q=85",
   },
   {
@@ -39,7 +39,7 @@ const services = [
     title: "Média & Distribution",
     href: "/media-distribution",
     tag: "Media",
-    desc: "Sponsored editorial content distributed across our proprietary media network — reaching verified audiences in sport, finance and technology verticals.",
+    desc: "Sponsored editorial content distributed through owned channels and vetted media partners — reaching audiences in sport, finance, retail and technology verticals.",
     img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=85",
   },
 ];

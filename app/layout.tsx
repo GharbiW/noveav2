@@ -30,12 +30,12 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "DolphX — Intelligent Media. Measurable Growth.",
   description:
-    "DolphX is a technology-mediatique company delivering digital consulting, marketing automation, AI-powered data intelligence and media distribution — powered by 40+ owned media properties.",
+    "DolphX is a technology-mediatique company delivering digital consulting, project development, AI-powered data intelligence and media distribution — powered by owned channels and vetted media partners.",
   keywords: ["media technology", "audience data", "digital consulting", "marketing automation", "AI data intelligence", "media distribution", "media network", "SaaS marketing"],
   openGraph: {
     title: "DolphX — Technology-Mediatique Company",
     description:
-      "Digital consulting, marketing automation, AI data intelligence and media distribution — powered by 40+ owned media properties.",
+      "Digital consulting, project development, AI data intelligence and media distribution — powered by owned channels and vetted media partners.",
     type: "website",
   },
 };

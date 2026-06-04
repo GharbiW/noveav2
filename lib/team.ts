@@ -34,6 +34,20 @@ export const TEAM: TeamMember[] = [
     social: { linkedin: "#" },
   },
   {
+    id: 8,
+    name: "Wael Gharbi",
+    role: "Head of Innovation and Technology",
+    bio: "Leads innovation strategy across DolphX technology initiatives, connecting product development, automation and data-led delivery into practical systems for clients.",
+    photo: "/team/wael.png",
+    service: "automation",
+    posts: [
+      { kind: "Innovation", label: "Turning market opportunities into deployable products" },
+      { kind: "Playbook",   label: "How project development connects SaaS, data and growth" },
+    ],
+    initials: "WG",
+    social: { linkedin: "#" },
+  },
+  {
     id: 2,
     name: "Kerem Yılmaz",
     role: "Chief Financial Officer",
@@ -131,8 +145,8 @@ export const INQUIRIES: Record<
   ],
   automation: [
     { key: "crm",        label: "CRM workflows & integration",          memberId: 6 },
-    { key: "nurturing",  label: "Lead nurturing & scoring",             memberId: 6 },
-    { key: "saas",       label: "Custom mini-SaaS platform",            memberId: 1 },
+    { key: "development",label: "Project development & delivery",       memberId: 8 },
+    { key: "saas",       label: "SaaS platform & client portal",        memberId: 8 },
   ],
   aidata: [
     { key: "modeling",   label: "Predictive modelling & segmentation",  memberId: 7 },
@@ -151,7 +165,7 @@ export const INQUIRIES: Record<
 
 export const SERVICES = [
   { key: "consulting", num: "01", label: "Consulting Digital",   desc: "Strategy, SEO & conversion"   },
-  { key: "automation", num: "02", label: "Automation & SaaS",    desc: "Workflows, CRM & mini-SaaS"   },
+  { key: "automation", num: "02", label: "Project Development & SaaS", desc: "Products, portals & workflows" },
   { key: "aidata",     num: "03", label: "AI & Data",            desc: "Predictive models & segments" },
   { key: "media",      num: "04", label: "Média & Distribution", desc: "Sponsored content & reach"    },
   { key: "general",    num: "05", label: "General Inquiry",      desc: "Partnerships, press & other"  },

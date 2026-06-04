@@ -21,16 +21,16 @@ const services = [
   },
   {
     num: "02",
-    title: "Automation & SaaS Marketing",
+    title: "Project Development & SaaS",
     accent: "#86c93f",
-    tag: "Automation",
+    tag: "Development",
     description:
-      "Custom-built marketing automation and personalised mini-SaaS platforms. We design CRM workflows, lead nurturing sequences and scoring engines — then build the tools that let clients industrialise their acquisition, retention and reporting at scale.",
+      "Custom project development, SaaS platforms and workflow systems. We scope the product, design the experience, build the application and integrate the tools that let clients industrialise acquisition, operations and reporting at scale.",
     items: [
+      "Project scoping & product strategy",
+      "SaaS platform development",
+      "Client portals & dashboards",
       "CRM workflow design & integration",
-      "Lead nurturing sequences",
-      "Lead scoring & qualification",
-      "Custom mini-SaaS platforms",
       "Reporting & analytics automation",
     ],
   },
@@ -40,7 +40,7 @@ const services = [
     accent: "#10B981",
     tag: "Intelligence",
     description:
-      "AI-powered audience intelligence built on first-party data from our proprietary media network. Predictive modelling, behavioural segmentation and intent signal extraction — structured for activation and GDPR-compliant data monetisation.",
+      "AI-powered audience intelligence built on owned channels, campaigns and vetted media partner signals. Predictive modelling, behavioural segmentation and intent signal extraction — structured for activation and GDPR-compliant data monetisation.",
     items: [
       "Predictive modelling & forecasting",
       "Behavioural audience segmentation",
@@ -55,7 +55,7 @@ const services = [
     accent: "#a7f432",
     tag: "Media",
     description:
-      "Sponsored editorial content produced and distributed across our proprietary network of media properties. Native advertising that reaches qualified, verified audiences across sport, finance and technology verticals — with full attribution reporting.",
+      "Sponsored editorial content produced and distributed through owned channels and vetted media partners. Native advertising that reaches qualified audiences across sport, finance, retail and technology verticals — with full attribution reporting.",
     items: [
       "Sponsored editorial programs",
       "Native content syndication",

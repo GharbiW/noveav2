@@ -7,12 +7,12 @@ import ServiceFAQ, { type FAQItem } from "@/components/services/ServiceFAQ";
 import WorkWithUs from "@/components/home/WorkWithUs";
 
 export const metadata: Metadata = {
-  title: "Automation & SaaS Marketing — DolphX | CRM, Workflows & Mini-SaaS",
+  title: "Project Development & SaaS — DolphX | Platforms, Portals & Automation",
   description:
-    "Custom marketing automation and personalised mini-SaaS platforms. CRM workflows, lead nurturing, scoring engines and reporting tools — built to industrialise your acquisition and retention.",
+    "Project development, SaaS platforms, client portals, dashboards and automation systems — scoped, designed, built and maintained for scalable growth operations.",
   openGraph: {
-    title: "Automation & SaaS Marketing — DolphX",
-    description: "Custom automation and mini-SaaS platforms for scalable marketing operations.",
+    title: "Project Development & SaaS — DolphX",
+    description: "Custom project development, SaaS platforms and workflow systems for scalable operations.",
     url: "https://dolphx.com/automation",
     siteName: "DolphX",
     type: "website",
@@ -22,37 +22,37 @@ export const metadata: Metadata = {
 const subServices: SubService[] = [
   {
     num: "01",
-    title: "CRM Workflow Design",
-    description: "End-to-end CRM workflow architecture — from lead capture to closed deal. We design, build and integrate pipelines that eliminate manual steps and keep your sales team focused on revenue.",
+    title: "Project Scoping & Product Strategy",
+    description: "We turn business requirements into a practical product roadmap: user journeys, feature priorities, data flows, integrations, delivery milestones and measurable launch criteria.",
     stat: { val: "60%", label: "time saved" },
-    items: ["Pipeline architecture", "CRM integration", "Trigger-based workflows", "Data hygiene automation"],
+    items: ["Product roadmap", "User journey mapping", "Feature prioritisation", "Delivery milestones"],
     accent: "#86c93f",
   },
   {
     num: "02",
-    title: "Lead Nurturing Sequences",
-    description: "Automated email and multi-channel sequences that move prospects through your funnel. Personalised content, behaviour-triggered sends and dynamic segmentation — configured for compliance and deliverability.",
-    items: ["Email sequence design", "Multi-channel nurturing", "Behavioural triggers", "Deliverability optimisation"],
+    title: "SaaS Platform Development",
+    description: "Custom web applications for the operational workflows that off-the-shelf tools cannot handle. Client portals, internal platforms, reporting tools and revenue systems built around your team.",
+    items: ["SaaS applications", "Client portals", "Admin dashboards", "Role-based access"],
     accent: "#86c93f",
   },
   {
     num: "03",
-    title: "Lead Scoring & Qualification",
-    description: "Scoring models that rank prospects by intent and fit. We build qualification frameworks that route hot leads to sales and cold leads to nurture — automatically, in real time.",
-    items: ["Scoring model design", "Intent-based ranking", "Automated routing", "Score calibration"],
+    title: "CRM & Workflow Automation",
+    description: "End-to-end workflow architecture — from lead capture to service delivery. We design, build and integrate pipelines that eliminate manual steps and keep teams focused on decisions.",
+    items: ["CRM integration", "Trigger-based workflows", "Data hygiene automation", "Team notifications"],
     accent: "#86c93f",
   },
   {
     num: "04",
-    title: "Custom Mini-SaaS Platforms",
-    description: "Personalised marketing tools built for your specific use case. Client portals, reporting dashboards, ROI calculators, booking engines — lightweight SaaS products that add value and lock in retention.",
+    title: "Growth & Marketing Systems",
+    description: "Personalised marketing tools built for your specific use case. Lead capture flows, ROI calculators, booking engines and campaign dashboards that add product value and improve conversion.",
     stat: { val: "40+", label: "platforms built" },
-    items: ["Client portals", "Reporting dashboards", "ROI calculators", "Booking & scheduling tools"],
+    items: ["Lead capture flows", "ROI calculators", "Booking & scheduling tools", "Campaign dashboards"],
     accent: "#86c93f",
   },
   {
     num: "05",
-    title: "Reporting Automation",
+    title: "Reporting & Business Intelligence",
     description: "Automated reporting that pulls data from every channel into one view. Weekly performance summaries, campaign attribution and executive dashboards — delivered without manual effort.",
     items: ["Multi-source data aggregation", "Automated report generation", "Executive dashboards", "Attribution tracking"],
     accent: "#86c93f",
@@ -64,37 +64,82 @@ const howItWorksSteps: ProcessStep[] = [
     num: "01",
     title: "Map & scope",
     description:
-      "We audit your current marketing stack, map existing workflows and identify automation opportunities. You get a clear scope document with priorities, dependencies and timelines.",
+      "We audit your current stack, map user journeys and identify the project scope. You get a clear delivery document with priorities, dependencies, integrations and timelines.",
   },
   {
     num: "02",
     title: "Build & integrate",
     description:
-      "We design and deploy the workflows, sequences and platforms — integrated with your CRM, email and analytics tools. Everything is tested end-to-end before launch.",
+      "We design and deploy the platform, portal, dashboard or workflow system — integrated with your CRM, analytics, payment, booking or internal tools. Everything is tested end-to-end before launch.",
   },
   {
     num: "03",
     title: "Optimise & scale",
     description:
-      "Post-launch monitoring, A/B testing and iterative improvements. We refine scoring models, tune sequences and scale what works — with regular performance reviews.",
+      "Post-launch monitoring, iteration and performance reviews. We refine workflows, improve conversion paths and scale the product as new use cases emerge.",
   },
 ];
 
 const whoItsForItems = [
   {
-    label: "Sales and revenue teams",
+    label: "Founders and project owners",
     description:
-      "Automated pipelines and scoring that deliver qualified leads directly to your CRM. Less manual work, more closed deals.",
+      "A senior product and technology team to turn a business idea into a scoped, designed and launched digital product without building an internal department first.",
   },
   {
-    label: "Marketing operations",
+    label: "Marketing and revenue operations",
     description:
-      "Scalable workflows and reporting that eliminate spreadsheet chaos. One system, automated end-to-end, integrated with your stack.",
+      "Scalable workflows, CRM integrations and reporting that eliminate spreadsheet chaos. One system, automated end-to-end, integrated with your stack.",
   },
   {
-    label: "SaaS founders and product teams",
+    label: "Established brands launching tools",
     description:
-      "Custom mini-SaaS tools and client-facing platforms that add product value and create stickiness — without building from scratch.",
+      "Client-facing portals, booking flows, calculators and dashboards that add product value, improve customer experience and create retention.",
+  },
+];
+
+const useCases = [
+  {
+    brand: "Halkbank",
+    sector: "Banking",
+    logo: "/clients/halkbank.png",
+    context: "A public bank serving retail, SME and corporate customers across Turkey.",
+    project: "SME onboarding portal with lead qualification, document collection and branch handoff dashboards.",
+  },
+  {
+    brand: "Esteworld",
+    sector: "Health tourism",
+    logo: "/clients/esteworld.webp",
+    context: "A Turkish aesthetic and hair-transplant brand with international patient demand.",
+    project: "Multilingual patient intake, consultation booking and treatment journey automation for sales and care teams.",
+  },
+  {
+    brand: "Mavi",
+    sector: "Retail",
+    logo: "/clients/mavi.webp",
+    context: "A denim and lifestyle retailer operating stores, ecommerce and loyalty-led customer journeys.",
+    project: "Campaign planning dashboard connecting ecommerce signals, CRM segments and store-level launch reporting.",
+  },
+  {
+    brand: "Yemeksepeti",
+    sector: "Food delivery",
+    logo: "/clients/yemeksepeti.webp",
+    context: "A food delivery marketplace coordinating customers, restaurants and high-volume city operations.",
+    project: "Partner performance portal for restaurant onboarding, promotion requests and operational issue tracking.",
+  },
+  {
+    brand: "Integral Yatırım",
+    sector: "Finance",
+    logo: "/clients/integral.webp",
+    context: "An investment services brand where education, compliance and qualified lead routing matter.",
+    project: "Investor education funnel with CRM scoring, webinar registration and advisor follow-up automation.",
+  },
+  {
+    brand: "MÜSİAD",
+    sector: "Business association",
+    logo: "/clients/musiad.webp",
+    context: "A business network connecting Turkish companies, events, committees and member services.",
+    project: "Member engagement platform for event registration, committee workflows and sponsor reporting.",
   },
 ];
 
@@ -102,17 +147,17 @@ const faqs: FAQItem[] = [
   {
     question: "What platforms and tools do you integrate with?",
     answer:
-      "We work with all major CRMs (HubSpot, Salesforce, Pipedrive), email platforms (Mailchimp, SendGrid, Brevo), analytics tools and custom APIs. We adapt to your existing stack rather than forcing a migration.",
+      "We work with major CRMs (HubSpot, Salesforce, Pipedrive), email platforms, analytics tools, payment providers, booking tools, internal databases and custom APIs. We adapt to your existing stack rather than forcing a migration.",
   },
   {
-    question: "What is a mini-SaaS platform?",
+    question: "What counts as a project development engagement?",
     answer:
-      "A lightweight, purpose-built web application tailored to your specific business need — client portals, ROI calculators, booking tools, reporting dashboards. They're faster and cheaper to build than full SaaS products, but deliver immediate operational value.",
+      "Any scoped digital product or operational platform: SaaS applications, client portals, dashboards, booking flows, ROI calculators, CRM-connected workflows or internal tools. The goal is to ship practical software that solves a clear business problem.",
   },
   {
-    question: "How long does a typical automation project take?",
+    question: "How long does a typical project take?",
     answer:
-      "Simple workflow automations take 1–2 weeks. Full CRM integrations and mini-SaaS builds typically take 4–8 weeks from scoping to launch. We provide clear timelines and milestones upfront.",
+      "Simple workflow automations take 1–2 weeks. Full portals, dashboards and SaaS builds typically take 4–8 weeks from scoping to launch. We provide clear timelines and milestones upfront.",
   },
   {
     question: "Do you provide ongoing support after launch?",
@@ -144,7 +189,7 @@ export default function AutomationPage() {
                 marginBottom: 40,
               }}
             >
-              Automation & SaaS
+              Project Development & SaaS
             </p>
 
             <div
@@ -167,7 +212,7 @@ export default function AutomationPage() {
                   margin: 0,
                 }}
               >
-                Custom automation and mini-SaaS platforms<span style={{ color: "#86c93f" }}>.</span>
+                Project development, SaaS platforms and growth systems<span style={{ color: "#86c93f" }}>.</span>
               </h1>
               <p
                 style={{
@@ -178,7 +223,7 @@ export default function AutomationPage() {
                   lineHeight: 1.8,
                 }}
               >
-                CRM workflows, lead nurturing, scoring engines and personalised marketing tools — built to industrialise your acquisition and retention.
+                Digital products, client portals, dashboards, CRM workflows and growth automation — built to industrialise acquisition, operations and reporting.
               </p>
             </div>
           </ScrollReveal>
@@ -196,9 +241,157 @@ export default function AutomationPage() {
         accentColor="#86c93f"
       />
 
+      <section
+        style={{
+          backgroundColor: "var(--color-canvas)",
+          borderTop: "1px solid var(--color-border)",
+          paddingTop: 80,
+          paddingBottom: 80,
+        }}
+      >
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 40px" }}>
+          <ScrollReveal>
+            <p
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: 10,
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+                color: "#86c93f",
+                marginBottom: 16,
+              }}
+            >
+              Use Cases
+            </p>
+            <h2
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "clamp(28px, 4vw, 48px)",
+                fontWeight: 400,
+                color: "var(--color-foreground)",
+                letterSpacing: "-0.02em",
+                marginBottom: 20,
+                maxWidth: 720,
+              }}
+            >
+              Real Turkish brand contexts for product development<span style={{ color: "#86c93f" }}>.</span>
+            </h2>
+            <p
+              style={{
+                fontFamily: "var(--font-sans)",
+                fontWeight: 300,
+                fontSize: 15,
+                color: "var(--color-muted-foreground)",
+                lineHeight: 1.8,
+                maxWidth: 640,
+                marginBottom: 48,
+              }}
+            >
+              Examples of the systems DolphX can scope and build for brands with the same operational needs as our Turkish client network.
+            </p>
+          </ScrollReveal>
+
+          <div
+            id="use-cases-grid"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: 1,
+              backgroundColor: "var(--color-border)",
+              border: "1px solid var(--color-border)",
+            }}
+          >
+            {useCases.map((item, i) => (
+              <ScrollReveal key={item.brand} delay={i * 50}>
+                <article
+                  style={{
+                    height: "100%",
+                    backgroundColor: "var(--color-surface)",
+                    padding: "28px",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 20,
+                  }}
+                >
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
+                    <img
+                      src={item.logo}
+                      alt={item.brand}
+                      style={{
+                        maxWidth: 112,
+                        maxHeight: 36,
+                        objectFit: "contain",
+                        filter: "grayscale(1) brightness(1.8)",
+                        opacity: 0.62,
+                      }}
+                    />
+                    <span
+                      style={{
+                        fontFamily: "var(--font-mono)",
+                        fontSize: 9,
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        color: "#86c93f",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {item.sector}
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3
+                      style={{
+                        fontFamily: "var(--font-serif)",
+                        fontSize: 22,
+                        fontWeight: 400,
+                        color: "var(--color-foreground)",
+                        marginBottom: 10,
+                        letterSpacing: "-0.01em",
+                      }}
+                    >
+                      {item.brand}
+                    </h3>
+                    <p
+                      style={{
+                        fontFamily: "var(--font-sans)",
+                        fontWeight: 300,
+                        fontSize: 13,
+                        color: "var(--color-muted-foreground)",
+                        lineHeight: 1.7,
+                        marginBottom: 14,
+                      }}
+                    >
+                      {item.context}
+                    </p>
+                    <p
+                      style={{
+                        fontFamily: "var(--font-sans)",
+                        fontWeight: 400,
+                        fontSize: 13,
+                        color: "var(--color-foreground)",
+                        lineHeight: 1.7,
+                        margin: 0,
+                      }}
+                    >
+                      {item.project}
+                    </p>
+                  </div>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+        <style>{`
+          @media(max-width:900px){#use-cases-grid{grid-template-columns:1fr 1fr!important;}}
+          @media(max-width:640px){#use-cases-grid{grid-template-columns:1fr!important;}}
+          html.light #use-cases-grid img{filter:grayscale(1) brightness(0.35)!important;opacity:0.68!important;}
+        `}</style>
+      </section>
+
       <ServiceWhoItsFor
         eyebrow="Ideal for"
-        title="Built for teams ready to automate"
+        title="Built for teams ready to ship"
         titleHighlight="."
         items={whoItsForItems}
         accentColor="#86c93f"
@@ -206,7 +399,7 @@ export default function AutomationPage() {
 
       <ServiceFAQ
         eyebrow="Frequently asked questions"
-        title="Automation & SaaS Marketing"
+        title="Project Development & SaaS"
         titleHighlight="."
         faqs={faqs}
         accentColor="#86c93f"
