@@ -28,15 +28,30 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dolphx.com"),
   title: "DolphX — Intelligent Media. Measurable Growth.",
   description:
     "DolphX is a technology-mediatique company delivering digital consulting, project development, AI-powered data intelligence and media distribution — powered by owned channels and vetted media partners.",
   keywords: ["media technology", "audience data", "digital consulting", "marketing automation", "AI data intelligence", "media distribution", "media network", "SaaS marketing"],
+  icons: {
+    icon: [{ url: "/brand/icon.webp", type: "image/webp" }],
+    shortcut: [{ url: "/brand/icon.webp", type: "image/webp" }],
+    apple: [{ url: "/brand/icon.webp" }],
+  },
   openGraph: {
     title: "DolphX — Technology-Mediatique Company",
     description:
       "Digital consulting, project development, AI data intelligence and media distribution — powered by owned channels and vetted media partners.",
     type: "website",
+    siteName: "DolphX",
+    images: [{ url: "/brand/icon.webp", alt: "DolphX" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "DolphX — Intelligent Media. Measurable Growth.",
+    description:
+      "Digital consulting, project development, AI data intelligence and media distribution.",
+    images: [{ url: "/brand/icon.webp", alt: "DolphX" }],
   },
 };
 

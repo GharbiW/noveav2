@@ -24,9 +24,11 @@ export const metadata: Metadata = {
     siteName: "DolphX",
     locale: "en_US",
     type: "website",
+    images: [{ url: "/brand/icon.webp", alt: "DolphX" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: [{ url: "/brand/icon.webp", alt: "DolphX" }],
     title: "DolphX — Owned Media. First-Party Data. Enterprise Delivery.",
     description:
       "Owned channels, vetted partners and 2.4B audience signals/year. Consulting, project development, AI & distribution — DolphX delivers attribution, not estimates.",

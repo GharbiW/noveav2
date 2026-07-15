@@ -10,18 +10,17 @@ import { motion } from "motion/react";
 const ACCENT = "#a7f432";
 
 const tools = [
-  { mark: "GA", name: "Analytics",   color: "#E8A13B" },
-  { mark: "Ma", name: "Meta Ads",    color: "#4A7BF7" },
-  { mark: "GA", name: "Google Ads",  color: "#3FA45B" },
-  { mark: "HS", name: "HubSpot",     color: "#F07A5B" },
-  { mark: "SF", name: "Salesforce",  color: "#4AA3E0" },
-  { mark: "Se", name: "Segment",     color: "#5CC98F" },
-  { mark: "Sn", name: "Snowflake",   color: "#5AC8F5" },
-  { mark: "BQ", name: "BigQuery",    color: "#6B8FF0" },
-  { mark: "Sh", name: "Shopify",     color: "#7DB84B" },
-  { mark: "Sl", name: "Slack",       color: "#C05BA8" },
-  { mark: "Za", name: "Zapier",      color: "#E8734A" },
-  { mark: "Lk", name: "Looker",      color: "#6E8BE8" },
+  { name: "Meta Ads",   src: "/brand/meta.webp" },
+  { name: "Google Ads", src: "/brand/google-ads.png" },
+  { name: "HubSpot",    src: "/brand/hubspot.jpg" },
+  { name: "Salesforce", src: "/brand/salesforce.webp" },
+  { name: "Segment",    src: "/brand/segment.png" },
+  { name: "Snowflake",  src: "/brand/snowflake.webp" },
+  { name: "BigQuery",   src: "/brand/bigquery.png" },
+  { name: "Shopify",    src: "/brand/shopify.webp" },
+  { name: "Slack",      src: "/brand/slack.png" },
+  { name: "Zapier",     src: "/brand/zapier-logo.png" },
+  { name: "Looker",     src: "/brand/looker.webp" },
 ];
 
 /* Count-up gated by viewport entry */
@@ -134,20 +133,20 @@ export default function Integrations() {
           <div className="int-grid">
             {tools.map((t, i) => (
               <motion.div
-                key={t.name + i}
+                key={t.name}
                 className="int-tile"
                 initial={{ opacity: 0, scale: 0.92 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.15 + i * 0.05 }}
               >
-                <span
-                  className="int-mark"
-                  style={{ color: t.color, borderColor: `${t.color}44` }}
-                >
-                  {t.mark}
-                </span>
-                <span className="int-name">{t.name}</span>
+                <img
+                  className="int-logo"
+                  src={t.src}
+                  alt={`${t.name} logo`}
+                  loading="lazy"
+                  decoding="async"
+                />
               </motion.div>
             ))}
           </div>
@@ -220,41 +219,43 @@ export default function Integrations() {
           padding: 32px;
         }
         .int-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 12px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 14px;
         }
         .int-tile {
+          width: 158px;
+          height: 74px;
+          flex: 0 0 auto;
           display: flex;
           align-items: center;
-          gap: 12px;
-          padding: 14px 16px;
-          background: var(--color-canvas);
-          border: 1px solid var(--color-border);
-          border-radius: 999px;
-          transition: border-color 200ms ease, transform 200ms ease;
+          justify-content: center;
+          padding: 16px 20px;
+          background: #ffffff;
+          border: 1px solid rgba(0,0,0,0.06);
+          border-radius: 12px;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+          transition: transform 200ms ease, box-shadow 200ms ease;
         }
         .int-tile:hover {
-          border-color: var(--color-border-md);
-          transform: translateY(-2px);
+          transform: translateY(-3px);
+          box-shadow: 0 10px 24px -10px rgba(0,0,0,0.35);
         }
-        .int-mark {
-          width: 30px; height: 30px; flex-shrink: 0;
-          border: 1px solid; border-radius: 8px;
-          display: flex; align-items: center; justify-content: center;
-          font-family: var(--font-mono); font-size: 11px; font-weight: 600;
-          background: var(--color-surface);
-        }
-        .int-name {
-          font-family: var(--font-sans); font-weight: 400; font-size: 14px;
-          color: var(--color-foreground); white-space: nowrap;
+        .int-logo {
+          max-width: 100%;
+          max-height: 30px;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+          display: block;
         }
         @media (max-width: 780px) {
-          .int-grid { grid-template-columns: repeat(2, 1fr); }
-          .int-card { padding: 20px; border-radius: 14px; }
+          .int-card { padding: 22px; border-radius: 14px; }
+          .int-tile { width: calc(50% - 7px); }
         }
-        @media (max-width: 420px) {
-          .int-grid { grid-template-columns: 1fr; }
+        @media (max-width: 430px) {
+          .int-tile { width: 100%; }
         }
       `}</style>
     </section>
