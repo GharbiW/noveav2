@@ -15,7 +15,7 @@ const properties = [
     description: "Turkey's long-running technology, startup and digital business publication.",
     audience: "Tech & startups",
     href: "https://webrazzi.com/",
-    accentColor: "#86c93f",
+    accentColor: "var(--color-cyan)",
   },
   {
     name: "egirişim",
@@ -31,7 +31,7 @@ const properties = [
     description: "Entrepreneurship and SME-focused coverage for Turkish business builders.",
     audience: "SMEs & founders",
     href: "https://www.girisimhaber.com/",
-    accentColor: "#10B981",
+    accentColor: "var(--color-positive)",
   },
   {
     name: "Kurumsal Medya",
@@ -39,7 +39,7 @@ const properties = [
     description: "Corporate, finance and digital transformation coverage for Turkish companies.",
     audience: "Corporate readers",
     href: "https://kurumsalmedya.com/",
-    accentColor: "#86c93f",
+    accentColor: "var(--color-cyan)",
   },
   {
     name: "E-Ticaret Türkiye",
@@ -55,7 +55,7 @@ const properties = [
     description: "Mainstream Turkish sports news, live scores and fan audience coverage.",
     audience: "Sports fans",
     href: "https://www.sporx.com/",
-    accentColor: "#10B981",
+    accentColor: "var(--color-positive)",
   },
 ];
 

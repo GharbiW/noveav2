@@ -3,7 +3,10 @@ import Hero           from "@/components/home/Hero";
 import ClientsGrid    from "@/components/home/ClientsGrid";
 import AboutStrip     from "@/components/home/AboutStrip";
 import Services       from "@/components/home/Services";
+import Method         from "@/components/home/Method";
 import ComparisonTable from "@/components/home/ComparisonTable";
+import MultiProperty  from "@/components/home/MultiProperty";
+import Integrations   from "@/components/home/Integrations";
 import GlobalReach    from "@/components/home/GlobalReach";
 import Network        from "@/components/home/Network";
 import WorkWithUs     from "@/components/home/WorkWithUs";
@@ -37,7 +40,10 @@ export default function HomePage() {
       <ClientsGrid />
       <AboutStrip />   {/* About DolphX / Why DolphX */}
       <Services />        {/* What we do */}
+      <Method />          {/* How we operate — engagement timeline */}
       <ComparisonTable /> {/* Why DolphX vs others */}
+      <MultiProperty />   {/* Product console — multi-property */}
+      <Integrations />    {/* Ecosystem / integrations */}
       <GlobalReach />     {/* Global Data Network */}
       <Network />      {/* Our Network */}
       <TeamShowcase /> {/* The crew (home + about only) */}

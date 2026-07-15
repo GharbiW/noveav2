@@ -9,8 +9,8 @@ import { useEffect, useRef, useState } from "react";
 
 const metrics = [
   { raw: 40,  suffix: "+",  label: "Media Properties",   sub: "Owned & actively operated",       color: "var(--color-eyebrow)" },
-  { raw: 120, suffix: "M+", label: "Monthly Readers",    sub: "Across all network verticals",    color: "#86c93f" },
-  { raw: 98,  suffix: "%",  label: "Client Retention",   sub: "Enterprise partnership rate",     color: "#10B981" },
+  { raw: 120, suffix: "M+", label: "Monthly Readers",    sub: "Across all network verticals",    color: "var(--color-cyan)" },
+  { raw: 98,  suffix: "%",  label: "Client Retention",   sub: "Enterprise partnership rate",     color: "var(--color-positive)" },
   { raw: 4,   suffix: "",   label: "Service Pillars",    sub: "Consulting · Automation · AI & Data · Media", color: "var(--color-eyebrow)" },
 ];
 

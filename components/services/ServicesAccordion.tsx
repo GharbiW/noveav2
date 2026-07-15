@@ -22,7 +22,7 @@ const services = [
   {
     num: "02",
     title: "Project Development & SaaS",
-    accent: "#86c93f",
+    accent: "var(--color-cyan)",
     tag: "Development",
     description:
       "Custom project development, SaaS platforms and workflow systems. We scope the product, design the experience, build the application and integrate the tools that let clients industrialise acquisition, operations and reporting at scale.",
@@ -37,7 +37,7 @@ const services = [
   {
     num: "03",
     title: "AI & Data",
-    accent: "#10B981",
+    accent: "var(--color-positive)",
     tag: "Intelligence",
     description:
       "AI-powered audience intelligence built on owned channels, campaigns and vetted media partner signals. Predictive modelling, behavioural segmentation and intent signal extraction — structured for activation and GDPR-compliant data monetisation.",

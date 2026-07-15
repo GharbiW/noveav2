@@ -6,9 +6,11 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 /* ── Services — full-width panels with colored accent, chip items ────── */
 
-const ACCENT  = "#a7f432";
-const ACCENT2 = "#86c93f";
-const GREEN   = "#10B981";
+/* Theme-aware per-card accents — bright & distinct in dark, darkened for
+   legibility on the light cream canvas (see globals.css light overrides). */
+const ACCENT  = "var(--color-accent)";   // olive-green  (#5a8a12 light)
+const ACCENT2 = "var(--color-cyan)";     // forest-green (#2f7d4a light)
+const GREEN   = "var(--color-positive)"; // emerald/teal (#0f7a54 light)
 
 const services = [
   {

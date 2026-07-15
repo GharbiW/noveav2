@@ -87,6 +87,19 @@ html.light {
   --color-eyebrow:     #2d4a0c;
   --color-accent-text: #2d4a0c;
 
+  /*
+   * Secondary greens — dark mode keeps them bright/distinct (multi-vertical
+   * colour-coding). On the cream canvas the dark defaults (#bff368 / #86c93f)
+   * drop to ~1.9:1 and wash out, so each gets a darker, still-distinct hue
+   * that clears the 3:1 non-text floor while preserving the hue split:
+   *   accent  = olive-green   (#5a8a12)
+   *   cyan    = forest-green  (#2f7d4a)
+   *   positive= emerald/teal  (#0f7a54)
+   */
+  --color-bright:   #6b9e17;
+  --color-cyan:     #2f7d4a;
+  --color-positive: #0f7a54;
+
   /* Component tokens */
   --color-nav-scrolled: rgba(244, 246, 238, 0.97);
   --color-hover-link:   #1c1f18;
