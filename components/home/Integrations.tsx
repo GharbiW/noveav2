@@ -9,18 +9,21 @@ import { motion } from "motion/react";
 
 const ACCENT = "#a7f432";
 
+/* Per-logo max height/width (px) — computed from each source's content
+   bounding box so every mark renders at a visually uniform ~24px height,
+   compensating for the whitespace baked into some logos (HubSpot, Slack…). */
 const tools = [
-  { name: "Meta Ads",   src: "/brand/meta.webp" },
-  { name: "Google Ads", src: "/brand/google-ads.png" },
-  { name: "HubSpot",    src: "/brand/hubspot.jpg" },
-  { name: "Salesforce", src: "/brand/salesforce.webp" },
-  { name: "Segment",    src: "/brand/segment.png" },
-  { name: "Snowflake",  src: "/brand/snowflake.webp" },
-  { name: "BigQuery",   src: "/brand/bigquery.png" },
-  { name: "Shopify",    src: "/brand/shopify.webp" },
-  { name: "Slack",      src: "/brand/slack.png" },
-  { name: "Zapier",     src: "/brand/zapier-logo.png" },
-  { name: "Looker",     src: "/brand/looker.webp" },
+  { name: "Meta Ads",   src: "/brand/meta.webp",      mh: 24, mw: 40 },
+  { name: "Google Ads", src: "/brand/google-ads.png", mh: 34, mw: 112 },
+  { name: "HubSpot",    src: "/brand/hubspot.jpg",     mh: 60, mw: 60 },
+  { name: "Salesforce", src: "/brand/salesforce.webp", mh: 26, mw: 38 },
+  { name: "Segment",    src: "/brand/segment.png",     mh: 22, mw: 100 },
+  { name: "Snowflake",  src: "/brand/snowflake.webp",  mh: 24, mw: 100 },
+  { name: "BigQuery",   src: "/brand/bigquery.png",    mh: 26, mw: 74 },
+  { name: "Shopify",    src: "/brand/shopify.webp",    mh: 27, mw: 88 },
+  { name: "Slack",      src: "/brand/slack.png",        mh: 54, mw: 98 },
+  { name: "Zapier",     src: "/brand/zapier-logo.png",  mh: 24, mw: 92 },
+  { name: "Looker",     src: "/brand/looker.webp",      mh: 24, mw: 92 },
 ];
 
 /* Count-up gated by viewport entry */
@@ -146,6 +149,7 @@ export default function Integrations() {
                   alt={`${t.name} logo`}
                   loading="lazy"
                   decoding="async"
+                  style={{ maxHeight: t.mh, maxWidth: t.mw }}
                 />
               </motion.div>
             ))}
@@ -225,13 +229,13 @@ export default function Integrations() {
           gap: 14px;
         }
         .int-tile {
-          width: 158px;
-          height: 74px;
+          width: 162px;
+          height: 88px;
           flex: 0 0 auto;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 16px 20px;
+          padding: 12px 16px;
           background: #ffffff;
           border: 1px solid rgba(0,0,0,0.06);
           border-radius: 12px;
@@ -243,8 +247,6 @@ export default function Integrations() {
           box-shadow: 0 10px 24px -10px rgba(0,0,0,0.35);
         }
         .int-logo {
-          max-width: 100%;
-          max-height: 30px;
           width: auto;
           height: auto;
           object-fit: contain;
