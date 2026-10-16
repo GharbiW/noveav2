@@ -33,7 +33,7 @@ export const useCases: UseCase[] = [
     publicContext:
       "Halkbank is one of Turkey's major public banks, with a strong role in SME banking, merchant finance and business customer services.",
     services: [
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
     ],
@@ -71,8 +71,8 @@ export const useCases: UseCase[] = [
       "Esteworld is a Turkish aesthetics and hair-transplant brand serving domestic and international patients across high-consideration treatment journeys.",
     services: [
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
-      { label: "Média & Distribution", href: "/media-distribution", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
+      { label: "Media & Distribution", href: "/media-distribution", accent: "#a7f432" },
     ],
     challenge:
       "International patient demand needs fast qualification, clear treatment information and reliable follow-up. When inquiries arrive from different countries and languages, sales and care teams need one source of truth.",
@@ -108,7 +108,7 @@ export const useCases: UseCase[] = [
       "Hisar Hospital is a private hospital brand in Turkey, operating in a category where trust, clarity and service-line discovery are central to patient decisions.",
     services: [
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
     ],
     challenge:
@@ -146,7 +146,7 @@ export const useCases: UseCase[] = [
     services: [
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
-      { label: "Média & Distribution", href: "/media-distribution", accent: "#a7f432" },
+      { label: "Media & Distribution", href: "/media-distribution", accent: "#a7f432" },
     ],
     challenge:
       "Finance audiences consume market content at different sophistication levels. The team needs to distinguish education readers from high-intent prospects while maintaining compliant communication.",
@@ -182,7 +182,7 @@ export const useCases: UseCase[] = [
       "Mavi is a denim and lifestyle retail brand with stores, ecommerce and recurring campaign moments across Turkey and international markets.",
     services: [
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
     ],
     challenge:
@@ -219,8 +219,8 @@ export const useCases: UseCase[] = [
       "MÜSİAD is a Turkish business association with member companies, events, committees and partnership activity across sectors.",
     services: [
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
-      { label: "Média & Distribution", href: "/media-distribution", accent: "#a7f432" },
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Media & Distribution", href: "/media-distribution", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
     ],
     challenge:
       "Associations need to keep members active, sponsors visible and events organised. The challenge is coordinating many stakeholders without turning every update into manual admin.",
@@ -257,7 +257,7 @@ export const useCases: UseCase[] = [
     services: [
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
     ],
     challenge:
       "Restaurant partners need quick onboarding, clear promotion workflows and simple issue tracking. Marketplace teams need visibility into partner readiness, campaign participation and recurring bottlenecks.",
@@ -292,9 +292,9 @@ export const useCases: UseCase[] = [
     publicContext:
       "Tamamliyo is an Istanbul-based insurtech founded in 2022, focused on no-code embedded insurance integration for digital businesses and ecommerce companies.",
     services: [
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
-      { label: "Média & Distribution", href: "/media-distribution", accent: "#a7f432" },
+      { label: "Media & Distribution", href: "/media-distribution", accent: "#a7f432" },
     ],
     challenge:
       "Embedded insurance requires education before conversion. Ecommerce teams need to understand the product, technical requirements, insurance partner fit and implementation effort before they book a serious integration conversation.",
@@ -331,7 +331,7 @@ export const useCases: UseCase[] = [
     services: [
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
     ],
     challenge:
       "Consumer health products need trust and simplicity. Users may have labs, wearable data, goals and symptoms, but onboarding fails if the experience feels clinical, confusing or too heavy.",
@@ -366,9 +366,9 @@ export const useCases: UseCase[] = [
     publicContext:
       "TeamSec presents itself as a Turkish cloud-based securitization-as-a-service fintech and regtech company operating from Istanbul technopark ecosystems.",
     services: [
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
-      { label: "Média & Distribution", href: "/media-distribution", accent: "#a7f432" },
+      { label: "Media & Distribution", href: "/media-distribution", accent: "#a7f432" },
     ],
     challenge:
       "Structured finance buyers are senior, specialised and difficult to reach through broad campaigns. The sales journey needs education, credibility and account-level prioritisation.",
@@ -405,7 +405,7 @@ export const useCases: UseCase[] = [
     services: [
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
-      { label: "Média & Distribution", href: "/media-distribution", accent: "#a7f432" },
+      { label: "Media & Distribution", href: "/media-distribution", accent: "#a7f432" },
     ],
     challenge:
       "Marketplace sellers care about stock, profitability, comments, campaigns and reconciliations. The growth challenge is showing value quickly enough for sellers to connect data and keep using the platform.",
@@ -440,7 +440,7 @@ export const useCases: UseCase[] = [
     publicContext:
       "Obifin is an Istanbul-based AI-supported open banking and service banking platform that brings bank account and POS movements into one screen and integrates with ERP/accounting systems.",
     services: [
-      { label: "Consulting Digital", href: "/consulting", accent: "#a7f432" },
+      { label: "Digital Consulting", href: "/consulting", accent: "#a7f432" },
       { label: "Project Development & SaaS", href: "/automation", accent: "#86c93f" },
       { label: "AI & Data", href: "/ai-data", accent: "#10B981" },
     ],

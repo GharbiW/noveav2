@@ -11,27 +11,26 @@ import GlobalReach    from "@/components/home/GlobalReach";
 import Network        from "@/components/home/Network";
 import WorkWithUs     from "@/components/home/WorkWithUs";
 import TeamShowcase   from "@/components/team/TeamShowcase";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "DolphX — Owned Media. First-Party Data. Enterprise Delivery.",
-  description:
-    "DolphX combines owned channels, vetted media partners and audience intelligence into consulting strategies, project development, AI intelligence and direct media distribution for enterprise clients.",
+  alternates: { canonical: "/" },
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   openGraph: {
-    title: "DolphX — Owned Media. First-Party Data. Enterprise Delivery.",
-    description:
-      "Owned channels, vetted partners and 120M+ addressable monthly reach. Digital consulting, project development, AI data and media distribution — built on audience intelligence, not rented assumptions.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     url: "https://dolphx.com",
     siteName: "DolphX",
-    locale: "en_US",
+    locale: "en_GB",
     type: "website",
     images: [{ url: "/brand/icon.webp", alt: "DolphX" }],
   },
   twitter: {
     card: "summary_large_image",
     images: [{ url: "/brand/icon.webp", alt: "DolphX" }],
-    title: "DolphX — Owned Media. First-Party Data. Enterprise Delivery.",
-    description:
-      "Owned channels, vetted partners and 2.4B audience signals/year. Consulting, project development, AI & distribution — DolphX delivers attribution, not estimates.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
   },
 };
 

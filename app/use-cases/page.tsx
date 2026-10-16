@@ -5,6 +5,7 @@ import { useCases } from "@/lib/use-cases";
 import UseCasesGrid from "@/components/use-cases/UseCasesGrid";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/use-cases" },
   title: "Use Cases — DolphX | Client Growth Systems",
   description:
     "DolphX use cases across Turkish enterprise clients, small companies and startups in banking, healthcare, retail, fintech, ecommerce and SaaS.",
@@ -19,10 +20,10 @@ export const metadata: Metadata = {
 };
 
 const serviceSummary = [
-  { label: "Consulting Digital", desc: "Audits, journeys, funnel strategy and conversion architecture.", accent: "#a7f432" },
+  { label: "Digital Consulting", desc: "Audits, journeys, funnel strategy and conversion architecture.", accent: "#a7f432" },
   { label: "Project Development & SaaS", desc: "Portals, dashboards, onboarding flows and workflow systems.", accent: "#86c93f" },
   { label: "AI & Data", desc: "Segmentation, intent signals, scoring models and reporting layers.", accent: "#10B981" },
-  { label: "Média & Distribution", desc: "Editorial programs, partner distribution and campaign attribution.", accent: "#a7f432" },
+  { label: "Media & Distribution", desc: "Editorial programs, partner distribution and campaign attribution.", accent: "#a7f432" },
 ];
 
 export default function UseCasesPage() {

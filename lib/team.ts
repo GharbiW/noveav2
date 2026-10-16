@@ -164,9 +164,9 @@ export const INQUIRIES: Record<
 };
 
 export const SERVICES = [
-  { key: "consulting", num: "01", label: "Consulting Digital",   desc: "Strategy, SEO & conversion"   },
+  { key: "consulting", num: "01", label: "Digital Consulting",   desc: "Strategy, SEO & conversion"   },
   { key: "automation", num: "02", label: "Project Development & SaaS", desc: "Products, portals & workflows" },
   { key: "aidata",     num: "03", label: "AI & Data",            desc: "Predictive models & segments" },
-  { key: "media",      num: "04", label: "Média & Distribution", desc: "Sponsored content & reach"    },
+  { key: "media",      num: "04", label: "Media & Distribution", desc: "Sponsored content & reach"    },
   { key: "general",    num: "05", label: "General Inquiry",      desc: "Partnerships, press & other"  },
 ];

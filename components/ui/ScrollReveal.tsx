@@ -19,12 +19,21 @@ export default function ScrollReveal({
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !window.IntersectionObserver || !el.animate ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    let animation: Animation | undefined;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => el.classList.add("visible"), delay);
+          // Content stays visible before hydration and outside the viewport.
+          animation = el.animate(
+            type === "fade-up"
+              ? [{ opacity: 0.85, transform: "translateY(20px)" }, { opacity: 1, transform: "translateY(0)" }]
+              : [{ opacity: 0.85 }, { opacity: 1 }],
+            { duration: 750, delay, easing: "cubic-bezier(0.22, 1, 0.36, 1)" }
+          );
           observer.disconnect();
         }
       },
@@ -32,8 +41,11 @@ export default function ScrollReveal({
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
-  }, [delay]);
+    return () => {
+      observer.disconnect();
+      animation?.cancel();
+    };
+  }, [delay, type]);
 
   return (
     <div ref={ref} className={`${type} ${className}`}>

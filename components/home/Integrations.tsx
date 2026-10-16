@@ -83,7 +83,7 @@ export default function Integrations() {
       <div style={{ maxWidth: 1000, margin: "0 auto", padding: "0 40px" }}>
         {/* ── Header ────────────────────────────────────── */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -127,7 +127,7 @@ export default function Integrations() {
 
         {/* ── Tool grid card ──────────────────────────────── */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
@@ -138,7 +138,7 @@ export default function Integrations() {
               <motion.div
                 key={t.name}
                 className="int-tile"
-                initial={{ opacity: 0, scale: 0.92 }}
+                initial={false}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.15 + i * 0.05 }}
@@ -158,7 +158,7 @@ export default function Integrations() {
 
         {/* ── Big number + CTA ────────────────────────────── */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}

@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
+    alternates: { canonical: `/use-cases/${useCase.slug}` },
     title: `${useCase.client} Use Case — DolphX`,
     description: useCase.summary,
     openGraph: {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/launch" },
   title: "Media Launch Services — DolphX | From Strategy to Distribution",
   description:
     "DolphX end-to-end media launch services: content strategy, editorial production, distribution across 40+ properties, and performance analytics.",

@@ -8,10 +8,10 @@ import UseCaseMark from "@/components/use-cases/UseCaseMark";
 
 const filters = [
   { label: "All", value: "all" },
-  { label: "Consulting Digital", value: "Consulting Digital" },
+  { label: "Digital Consulting", value: "Digital Consulting" },
   { label: "Project Development & SaaS", value: "Project Development & SaaS" },
   { label: "AI & Data", value: "AI & Data" },
-  { label: "Média & Distribution", value: "Média & Distribution" },
+  { label: "Media & Distribution", value: "Media & Distribution" },
 ];
 
 type Props = {

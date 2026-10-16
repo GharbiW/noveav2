@@ -1,16 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { LINKEDIN_URL, NEWS_ENABLED } from "@/lib/site";
 
 const cols = [
   {
     title: "Services",
     links: [
       { label: "All Services",           href: "/services" },
-      { label: "Consulting Digital",     href: "/consulting" },
+      { label: "Digital Consulting",     href: "/consulting" },
       { label: "Project Development & SaaS", href: "/automation" },
       { label: "AI & Data",             href: "/ai-data" },
-      { label: "Média & Distribution",  href: "/media-distribution" },
+      { label: "Media & Distribution",  href: "/media-distribution" },
+      { label: "Media Launch", href: "/launch" },
+      { label: "Media Technology", href: "/development" },
     ],
   },
   {
@@ -27,7 +30,7 @@ const cols = [
     links: [
       { label: "Use Cases", href: "/use-cases" },
       { label: "About",     href: "/about"     },
-      { label: "News",      href: "/news"      },
+      ...(NEWS_ENABLED ? [{ label: "News", href: "/news" }] : []),
       { label: "Contact",   href: "/contact"   },
     ],
   },
@@ -73,7 +76,7 @@ export default function Footer() {
                 marginBottom: 14,
               }}
             >
-              Technology-Mediatique Company
+              Media Technology Company
             </p>
 
             <p
@@ -92,8 +95,7 @@ export default function Footer() {
             {/* Social links */}
             <div style={{ display: "flex", gap: 20, marginTop: 20, marginBottom: 24 }}>
               {[
-                { label: "LinkedIn", href: "#" },
-                { label: "X",        href: "#" },
+                { label: "LinkedIn", href: LINKEDIN_URL },
               ].map((s) => (
                 <Link
                   key={s.label}

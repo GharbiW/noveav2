@@ -7,11 +7,12 @@ import ServiceFAQ, { type FAQItem } from "@/components/services/ServiceFAQ";
 import WorkWithUs from "@/components/home/WorkWithUs";
 
 export const metadata: Metadata = {
-  title: "Consulting Digital — DolphX | Strategy, SEO & Conversion",
+  alternates: { canonical: "/consulting" },
+  title: "Digital Consulting — DolphX | Strategy, SEO & Conversion",
   description:
     "Strategic digital consulting grounded in proprietary data. Performance audits, SEO architecture, conversion engineering and growth strategy — tested on our own media properties first.",
   openGraph: {
-    title: "Consulting Digital — DolphX",
+    title: "Digital Consulting — DolphX",
     description: "Data-backed digital strategy tested across owned channels, campaigns and media partner activations.",
     url: "https://dolphx.com/consulting",
     siteName: "DolphX",
@@ -144,7 +145,7 @@ export default function ConsultingPage() {
                 marginBottom: 40,
               }}
             >
-              Consulting Digital
+              Digital Consulting
             </p>
 
             <div
@@ -206,7 +207,7 @@ export default function ConsultingPage() {
 
       <ServiceFAQ
         eyebrow="Frequently asked questions"
-        title="Consulting Digital"
+        title="Digital Consulting"
         titleHighlight="."
         faqs={faqs}
         accentColor="#a7f432"

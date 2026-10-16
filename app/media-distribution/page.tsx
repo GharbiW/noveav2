@@ -7,11 +7,12 @@ import ServiceFAQ, { type FAQItem } from "@/components/services/ServiceFAQ";
 import WorkWithUs from "@/components/home/WorkWithUs";
 
 export const metadata: Metadata = {
-  title: "Média & Distribution — DolphX | Sponsored Content & Media Network",
+  alternates: { canonical: "/media-distribution" },
+  title: "Media & Distribution — DolphX | Sponsored Content & Media Network",
   description:
     "Sponsored editorial content distributed through DolphX media operations and vetted Turkish partner publications. Qualified audiences across sport, finance, retail and technology verticals — with full attribution reporting.",
   openGraph: {
-    title: "Média & Distribution — DolphX",
+    title: "Media & Distribution — DolphX",
     description: "Premium editorial distribution through owned channels and vetted media partners.",
     url: "https://dolphx.com/media-distribution",
     siteName: "DolphX",
@@ -144,7 +145,7 @@ export default function MediaDistributionPage() {
                 marginBottom: 40,
               }}
             >
-              Média & Distribution
+              Media & Distribution
             </p>
 
             <div
@@ -206,7 +207,7 @@ export default function MediaDistributionPage() {
 
       <ServiceFAQ
         eyebrow="Frequently asked questions"
-        title="Média & Distribution"
+        title="Media & Distribution"
         titleHighlight="."
         faqs={faqs}
         accentColor="#a7f432"

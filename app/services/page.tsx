@@ -6,6 +6,7 @@ import GlobalReach from "@/components/home/GlobalReach";
 import WorkWithUs from "@/components/home/WorkWithUs";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services" },
   title: "Services — DolphX | Consulting, Project Development, AI & Data, Media",
   description:
     "DolphX delivers four integrated service pillars: digital consulting, project development & SaaS, AI-powered data intelligence and media distribution.",
@@ -85,19 +86,19 @@ export default function ServicesPage() {
             <h1
               style={{
                 fontFamily: "var(--font-serif)",
-                fontSize: "clamp(44px, 6vw, 80px)",
+                fontSize: "clamp(32px, 4.2vw, 52px)",
                 fontWeight: 400,
                 color: "var(--color-foreground)",
-                lineHeight: 1.04,
+                lineHeight: 1.12,
                 letterSpacing: "-0.025em",
                 margin: 0,
               }}
             >
-              Four pillars.
+              Digital consulting.
               <br />
-              One integrated
+              Software and AI.
               <br />
-              platform
+              Media distribution
               <span style={{ color: "var(--color-eyebrow)" }}>.</span>
             </h1>
 

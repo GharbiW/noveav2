@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/thank-you" },
+  robots: { index: false, follow: true },
   title: "Thank You — DolphX",
   description: "Thank you for reaching out. A DolphX senior team member will respond within 24 business hours.",
 };

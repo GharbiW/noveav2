@@ -51,7 +51,7 @@ export default function Method() {
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 40px" }}>
         {/* ── Header ────────────────────────────────────────────── */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -134,7 +134,7 @@ export default function Method() {
             {steps.map((s, i) => (
               <motion.div
                 key={s.num}
-                initial={{ opacity: 0, y: 22 }}
+                initial={false}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{
@@ -206,7 +206,7 @@ export default function Method() {
             <motion.div
               className="method-live-dot"
               aria-hidden
-              initial={{ opacity: 0, scale: 0 }}
+              initial={false}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-120px" }}
               transition={{ duration: 0.5, delay: 1.4, ease: "backOut" }}

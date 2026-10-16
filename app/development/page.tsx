@@ -3,6 +3,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/development" },
   title: "Technology Solutions — DolphX | Media Infrastructure & Data Platforms",
   description:
     "DolphX builds proprietary media technology: CMS infrastructure, audience analytics platforms, API integrations and custom data tooling for high-traffic media operations.",

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
+import { NEWS_ENABLED } from "@/lib/site";
 
 const ACCENT = "#a7f432";
 const BTN_BG  = "#F0F2EA";
@@ -11,7 +12,7 @@ const BTN_TXT = "#0f110c";
 const serviceLinks = [
   {
     href: "/consulting",
-    title: "Consulting Digital",
+    title: "Digital Consulting",
     sub: "Strategy, SEO & conversion advisory",
     accent: ACCENT,
   },
@@ -29,7 +30,7 @@ const serviceLinks = [
   },
   {
     href: "/media-distribution",
-    title: "Média & Distribution",
+    title: "Media & Distribution",
     sub: "Sponsored content across our network",
     accent: ACCENT,
   },
@@ -39,7 +40,7 @@ const navLinks = [
   { href: "/network", label: "Network" },
   { href: "/use-cases", label: "Use Cases" },
   { href: "/about",   label: "About"   },
-  { href: "/news",    label: "News"    },
+  ...(NEWS_ENABLED ? [{ href: "/news", label: "News" }] : []),
 ];
 
 export default function Navbar() {

@@ -143,7 +143,7 @@ export default function AboutStrip() {
                     maxWidth: 380,
                   }}
                 >
-                  DolphX is not an agency. We operate a technology-mediatique platform — a proprietary network generating first-party audience intelligence that powers every consulting mandate, automation deployment and distribution campaign we run.
+                  DolphX brings digital consulting, software development, AI and media distribution together. Our owned channels and media partners provide audience insights that help clients plan campaigns, improve customer journeys and measure results.
                 </p>
               </div>
 
@@ -229,7 +229,7 @@ export default function AboutStrip() {
               </div>
 
               {/* CTA */}
-              <div style={{ marginTop: 36, display: "flex", alignItems: "center", gap: 20 }}>
+              <div style={{ marginTop: 36, display: "flex", flexWrap: "wrap", alignItems: "center", gap: 20 }}>
                 <Link
                   href="/about"
                   style={{
@@ -261,7 +261,8 @@ export default function AboutStrip() {
 
       <style>{`
         @media (max-width: 768px) {
-          #about-grid  { grid-template-columns: 1fr !important; }
+          #about-grid  { grid-template-columns: minmax(0, 1fr) !important; }
+          #about-grid > div { min-width: 0; padding: 36px 24px !important; }
           #about-stats { grid-template-columns: 1fr 1fr !important; }
         }
       `}</style>

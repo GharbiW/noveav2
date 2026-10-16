@@ -7,6 +7,7 @@ import ServiceFAQ, { type FAQItem } from "@/components/services/ServiceFAQ";
 import WorkWithUs from "@/components/home/WorkWithUs";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/ai-data" },
   title: "AI & Data — DolphX | Predictive Modelling, Segmentation & Data Intelligence",
   description:
     "AI-powered audience intelligence built on owned channels, campaigns and vetted media partner signals. Predictive modelling, behavioural segmentation, intent signals and GDPR-compliant data monetisation.",

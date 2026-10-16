@@ -6,6 +6,7 @@ import WorkWithUs from "@/components/home/WorkWithUs";
 import SpecialistNetworks from "@/components/network/SpecialistNetworks";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/network" },
   title: "The DolphX Network — Media Partners, Data & 150+ Countries",
   description:
     "DolphX operates a global intelligence network: owned channels, vetted media partners, specialist marketing networks in sports, politics and B2B, and audience data across 150+ countries.",

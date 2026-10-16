@@ -9,7 +9,7 @@ const services = [
   {
     num: "01",
     icon: Shield,
-    title: "Consulting Digital",
+    title: "Digital Consulting",
     href: "/consulting",
     tag: "Strategy",
     desc: "Strategic advisory for digital transformation — performance audits, SEO architecture, conversion engineering and growth strategy grounded in proprietary data.",
@@ -36,7 +36,7 @@ const services = [
   {
     num: "04",
     icon: Globe,
-    title: "Média & Distribution",
+    title: "Media & Distribution",
     href: "/media-distribution",
     tag: "Media",
     desc: "Sponsored editorial content distributed through owned channels and vetted media partners — reaching audiences in sport, finance, retail and technology verticals.",

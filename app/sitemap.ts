@@ -1,8 +1,6 @@
 import { MetadataRoute } from "next";
-import { getAllUris } from "@/lib/wp-graphql";
 import { useCases } from "@/lib/use-cases";
-
-const BASE_URL = "https://dolphx.com";
+import { SITE_URL, NEWS_ENABLED } from "@/lib/site";
 
 const staticRoutes = [
   { url: "/", priority: 1.0 },
@@ -14,42 +12,27 @@ const staticRoutes = [
   { url: "/use-cases", priority: 0.8 },
   { url: "/network", priority: 0.7 },
   { url: "/about", priority: 0.7 },
-  { url: "/news", priority: 0.8 },
+  ...(NEWS_ENABLED ? [{ url: "/news", priority: 0.8 }] : []),
   { url: "/contact", priority: 0.8 },
   { url: "/launch", priority: 0.6 },
   { url: "/development", priority: 0.6 },
 ];
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  let wpUris: string[] = [];
-  try {
-    wpUris = await getAllUris();
-  } catch {
-    // WP not configured yet — skip
-  }
-
-  const wpRoutes = wpUris.map((uri) => ({
-    url: `${BASE_URL}${uri}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
-
+// Only publish routes this frontend serves. Add CMS URLs when their page routes exist.
+// Omit lastModified until actual content revision dates are available.
+export default function sitemap(): MetadataRoute.Sitemap {
   const useCaseRoutes = useCases.map((item) => ({
-    url: `${BASE_URL}/use-cases/${item.slug}`,
-    lastModified: new Date(),
+    url: `${SITE_URL}/use-cases/${item.slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   return [
     ...staticRoutes.map(({ url, priority }) => ({
-      url: `${BASE_URL}${url}`,
-      lastModified: new Date(),
+      url: `${SITE_URL}${url}`,
       changeFrequency: "weekly" as const,
       priority,
     })),
     ...useCaseRoutes,
-    ...wpRoutes,
   ];
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact DolphX — Start a Conversation",
   description:
     "Contact DolphX to discuss digital consulting, marketing automation, AI & data solutions or media distribution. A senior team member responds within 24 hours.",
@@ -49,7 +50,7 @@ const enquiryTypes = [
   "Digital Consulting & Strategy",
   "Project Development & SaaS",
   "AI & Data Intelligence",
-  "Média & Editorial Distribution",
+  "Media & Editorial Distribution",
   "Partnership & Press",
   "Data Licensing",
   "Investment Enquiry",

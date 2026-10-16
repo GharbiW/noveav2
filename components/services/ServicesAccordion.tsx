@@ -6,7 +6,7 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Consulting Digital",
+    title: "Digital Consulting",
     accent: "#a7f432",
     tag: "Strategy",
     description:
@@ -51,7 +51,7 @@ const services = [
   },
   {
     num: "04",
-    title: "Média & Distribution",
+    title: "Media & Distribution",
     accent: "#a7f432",
     tag: "Media",
     description:

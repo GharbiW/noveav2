@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import Link from "next/link";
+import { NEWS_ENABLED } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/news" },
+  robots: { index: NEWS_ENABLED, follow: true },
   title: "News & Insights — DolphX | Media Technology Intelligence",
   description:
     "Strategic insights on media technology, audience data, digital publishing and performance marketing from the DolphX editorial team.",
@@ -103,6 +107,21 @@ const articles = [
 const categories = ["All", "Data Strategy", "AI & Data", "Media Economics", "Sports Media", "Monetisation", "Technology", "Market Intelligence", "Automation", "Consulting", "Media Distribution"];
 
 export default function NewsPage() {
+  if (!NEWS_ENABLED) {
+    return (
+      <section style={{ padding: "160px 40px 100px", maxWidth: 1200, margin: "0 auto" }}>
+        <p className="eyebrow">DolphX Insights</p>
+        <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(36px, 5vw, 64px)", margin: "24px 0" }}>
+          Our next insights are in preparation.
+        </h1>
+        <p style={{ maxWidth: 580, lineHeight: 1.8, marginBottom: 32 }}>
+          Explore our services or talk to us about your digital consulting, software, data and media projects.
+        </p>
+        <Link href="/services" style={{ color: "var(--color-foreground)", textUnderlineOffset: 6 }}>Explore services →</Link>
+      </section>
+    );
+  }
+
   return (
     <>
       {/* ── Page Hero ───────────────────────────────────────────── */}

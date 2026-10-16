@@ -217,7 +217,7 @@ export default function Hero() {
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 28 }}>
             <div className="hero-dot-pulse" />
             <p className="hero-eyebrow" style={{ fontFamily: "var(--font-mono)", fontSize: 10, letterSpacing: "0.28em", textTransform: "uppercase", margin: 0 }}>
-              Technology-Mediatique Company
+              Media Technology Company
             </p>
             <div className="hero-dot-pulse" style={{ animationDelay: "1s" }} />
           </div>
@@ -236,7 +236,7 @@ export default function Hero() {
               maxWidth: 820,
             }}
           >
-            <span className="hero-h1-line">Owned channels and media partners.</span>
+            <span className="hero-h1-line">DolphX: technology and media.</span>
             <br />
             <span className="hero-h1-line">One platform, built for</span>
             <br />
@@ -272,7 +272,7 @@ export default function Hero() {
               margin: "0 auto 32px",
             }}
           >
-            First-party data from our owned network — consulting, automation, AI and distribution for clients who need clear attribution.
+            Digital consulting, custom software, AI and media distribution for businesses across Europe, powered by first-party audience data.
           </p>
 
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, flexWrap: "wrap" }}>

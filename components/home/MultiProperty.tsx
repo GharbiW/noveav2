@@ -49,7 +49,7 @@ export default function MultiProperty() {
         <div className="mp-grid">
           {/* ── LEFT: copy ─────────────────────────────────── */}
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -157,7 +157,7 @@ export default function MultiProperty() {
           {/* ── RIGHT: product mockup ──────────────────────── */}
           <motion.div
             className="mp-mock-wrap"
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
@@ -198,7 +198,7 @@ export default function MultiProperty() {
                   <motion.path
                     d="M0,74 C40,70 60,40 96,44 C132,48 150,20 192,28 C230,35 250,14 288,10 L320,8 L320,90 L0,90 Z"
                     fill={`color-mix(in srgb, ${ACCENT} 9%, transparent)`}
-                    initial={{ opacity: 0 }}
+                    initial={false}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 1.4 }}
@@ -210,7 +210,7 @@ export default function MultiProperty() {
             {/* Command palette in front */}
             <motion.div
               className="mp-palette"
-              initial={{ opacity: 0, y: 24, scale: 0.97 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.35 }}
@@ -227,7 +227,7 @@ export default function MultiProperty() {
                   <motion.div
                     key={p.name}
                     className={`mp-pal-row${isActive ? " active" : ""}`}
-                    initial={{ opacity: 0, x: -12 }}
+                    initial={false}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.6 + i * 0.09 }}

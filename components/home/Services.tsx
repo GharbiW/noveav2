@@ -15,7 +15,7 @@ const GREEN   = "var(--color-positive)"; // emerald/teal (#0f7a54 light)
 const services = [
   {
     num: "01",
-    title: "Consulting Digital",
+    title: "Digital Consulting",
     href: "/consulting",
     description:
       "Performance audits, SEO architecture and conversion engineering grounded in real reader behaviour from our owned network — not third-party benchmarks. Every recommendation comes with a measurable KPI attached.",
@@ -45,7 +45,7 @@ const services = [
   },
   {
     num: "04",
-    title: "Média & Distribution",
+    title: "Media & Distribution",
     href: "/media-distribution",
     description:
       "Sponsored editorial produced in-house and distributed through owned channels, social amplification and vetted media partners. Sport, finance, retail and technology verticals with full-funnel attribution on every placement.",

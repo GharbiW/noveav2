@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { SITE_URL, SITE_TITLE, SITE_DESCRIPTION, organizationSchema, websiteSchema } from "@/lib/site";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -28,10 +29,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dolphx.com"),
-  title: "DolphX — Intelligent Media. Measurable Growth.",
-  description:
-    "DolphX is a technology-mediatique company delivering digital consulting, project development, AI-powered data intelligence and media distribution — powered by owned channels and vetted media partners.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   keywords: ["media technology", "audience data", "digital consulting", "marketing automation", "AI data intelligence", "media distribution", "media network", "SaaS marketing"],
   icons: {
     icon: [{ url: "/brand/icon.webp", type: "image/webp" }],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/brand/icon.webp" }],
   },
   openGraph: {
-    title: "DolphX — Technology-Mediatique Company",
+    title: SITE_TITLE,
     description:
       "Digital consulting, project development, AI data intelligence and media distribution — powered by owned channels and vetted media partners.",
     type: "website",
@@ -48,9 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "DolphX — Intelligent Media. Measurable Growth.",
-    description:
-      "Digital consulting, project development, AI data intelligence and media distribution.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: [{ url: "/brand/icon.webp", alt: "DolphX" }],
   },
 };
@@ -65,6 +64,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([organizationSchema, websiteSchema]).replace(/</g, "\\u003c"),
+          }}
+        />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"

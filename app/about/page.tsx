@@ -4,11 +4,12 @@ import WorkWithUs from "@/components/home/WorkWithUs";
 import TeamShowcase from "@/components/team/TeamShowcase";
 
 export const metadata: Metadata = {
-  title: "About DolphX — Technology-Mediatique Company",
+  alternates: { canonical: "/about" },
+  title: "About DolphX — Media Technology Company",
   description:
     "DolphX operates at the intersection of media intelligence and data technology. Learn about our mission, network and founding story.",
   openGraph: {
-    title: "About DolphX — Technology-Mediatique Company",
+    title: "About DolphX — Media Technology Company",
     description: "We own the media, engineer the data, and deliver precision growth for enterprise clients.",
     url: "https://dolphx.com/about",
     siteName: "DolphX",
@@ -88,7 +89,7 @@ export default function AboutPage() {
                   lineHeight: 1.8,
                 }}
               >
-                DolphX is a technology-mediatique company. We own and operate a network of trusted media properties and leverage proprietary audience data to deliver high-impact results for enterprise clients.
+                DolphX is a media technology company helping businesses connect digital strategy, software, audience data and media distribution. We combine owned channels and media partnerships with consulting and technology delivery for clients across Europe.
               </p>
             </div>
           </ScrollReveal>

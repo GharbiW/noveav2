@@ -29,7 +29,7 @@ export default function ClientsGrid() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
+            gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
             gap: 1,
             backgroundColor: "var(--color-border)",
           }}
@@ -50,12 +50,14 @@ export default function ClientsGrid() {
               }}
             >
               <img
+                loading="lazy"
+                decoding="async"
                 src={c.src}
                 alt={c.name}
                 className="client-logo"
                 style={{
                   maxHeight: 40,
-                  maxWidth: 120,
+                  maxWidth: "min(120px, 100%)",
                   width: "auto",
                   height: "auto",
                   objectFit: "contain",
@@ -123,7 +125,7 @@ export default function ClientsGrid() {
           opacity: 0.85 !important;
         }
         @media (max-width: 640px) {
-          #clients-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          #clients-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
         }
         @media (prefers-reduced-motion: reduce) {
           .clients-tech-edge { animation: none !important; opacity: 0.2; }

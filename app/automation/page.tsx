@@ -7,6 +7,7 @@ import ServiceFAQ, { type FAQItem } from "@/components/services/ServiceFAQ";
 import WorkWithUs from "@/components/home/WorkWithUs";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/automation" },
   title: "Project Development & SaaS — DolphX | Platforms, Portals & Automation",
   description:
     "Project development, SaaS platforms, client portals, dashboards and automation systems — scoped, designed, built and maintained for scalable growth operations.",
