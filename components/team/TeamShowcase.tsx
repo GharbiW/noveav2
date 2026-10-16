@@ -15,6 +15,8 @@ import { TEAM, type TeamMember } from "@/lib/team";
  */
 
 const ACCENT = "#a7f432";
+// Temporarily hide team sections site-wide. Set to true to restore them.
+const SHOW_TEAM_SECTION = false;
 
 type Props = {
   eyebrow?: string;
@@ -31,6 +33,8 @@ export default function TeamShowcase({
   variant = "full",
 }: Props) {
   const [activeId, setActiveId] = useState<number>(TEAM[0].id);
+  if (!SHOW_TEAM_SECTION) return null;
+
   const active = TEAM.find((m) => m.id === activeId) ?? TEAM[0];
 
   return (
