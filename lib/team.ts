@@ -3,8 +3,12 @@
    - components/team/TeamShowcase.tsx (home + about presentation)
    - components/home/WorkWithUs.tsx   (form routing → assigned member)
 
-   `service` controls which member is surfaced for which contact path.
+   `contactRequests` controls form options and the contact for each request.
 ─────────────────────────────────────────────────────────────────────── */
+
+export type ServiceKey = "consulting" | "automation" | "aidata" | "media" | "general";
+
+export type ContactRequest = { service: ServiceKey; key: string; label: string };
 
 export type TeamMember = {
   id: number;
@@ -12,7 +16,8 @@ export type TeamMember = {
   role: string;
   bio: string;
   photo: string;          // /public path
-  service: "consulting" | "automation" | "aidata" | "media" | "general";
+  service: ServiceKey;
+  contactRequests: ContactRequest[];
   posts: { kind: string; label: string }[];
   initials: string;
   social?: { linkedin?: string; x?: string };
@@ -22,6 +27,10 @@ export const TEAM: TeamMember[] = [
   {
     id: 1,
     name: "Emir Kaya",
+    contactRequests: [
+      { service: "consulting", key: "seo", label: "Technical SEO & site architecture" },
+      { service: "automation", key: "architecture", label: "Technical architecture & integrations" },
+    ],
     role: "Chief Technology Officer",
     bio: "Architects and operates the technology backbone of DolphX — from the proprietary data platform to the SaaS automation layer. Leads all engineering decisions across client-facing products.",
     photo: "/team/emir-kaya.webp",
@@ -36,6 +45,10 @@ export const TEAM: TeamMember[] = [
   {
     id: 8,
     name: "Wael Gharbi",
+    contactRequests: [
+      { service: "automation", key: "development", label: "Project development & delivery" },
+      { service: "automation", key: "saas", label: "SaaS platform & client portal" },
+    ],
     role: "Head of Innovation and Technology",
     bio: "Leads innovation strategy across DolphX technology initiatives, connecting product development, automation and data-led delivery into practical systems for clients.",
     photo: "/team/wael.png",
@@ -50,6 +63,9 @@ export const TEAM: TeamMember[] = [
   {
     id: 2,
     name: "Kerem Yılmaz",
+    contactRequests: [
+      { service: "general", key: "investment", label: "Investment & financial enquiries" },
+    ],
     role: "Chief Financial Officer",
     bio: "Oversees financial strategy, investor relations and operational performance across the DolphX group. Brings institutional finance experience to media-technology business models.",
     photo: "/team/kerem-yilmaz.webp",
@@ -64,6 +80,9 @@ export const TEAM: TeamMember[] = [
   {
     id: 3,
     name: "Mehmet Adali",
+    contactRequests: [
+      { service: "general", key: "operations", label: "Project coordination & other enquiries" },
+    ],
     role: "Chief Operation Officer",
     bio: "Runs day-to-day operations, client delivery coordination and cross-vertical project management. Ensures every engagement is executed on time and to the agreed specification.",
     photo: "/team/mehmet-adali.webp",
@@ -78,6 +97,10 @@ export const TEAM: TeamMember[] = [
   {
     id: 4,
     name: "Selin Yıldız",
+    contactRequests: [
+      { service: "consulting", key: "strategy", label: "Digital strategy & client growth" },
+      { service: "general", key: "onboarding", label: "Client onboarding & account support" },
+    ],
     role: "Chief Client Success Director",
     bio: "Manages all client relationships from onboarding through quarterly reviews. Ensures every engagement produces measurable results and long-term partnership outcomes.",
     photo: "/team/selin-yildiz.webp",
@@ -92,6 +115,11 @@ export const TEAM: TeamMember[] = [
   {
     id: 5,
     name: "Claire Moreau",
+    contactRequests: [
+      { service: "media", key: "editorial", label: "Sponsored editorial programmes" },
+      { service: "media", key: "distribution", label: "Multi-platform distribution" },
+      { service: "general", key: "partnership", label: "Partnerships & press" },
+    ],
     role: "Brand & Communication Director",
     bio: "Leads DolphX brand strategy, external communications and the sponsored editorial programme. Manages the voice and visibility of the group across all properties and international markets.",
     photo: "/team/claire-moreau.webp",
@@ -106,6 +134,11 @@ export const TEAM: TeamMember[] = [
   {
     id: 6,
     name: "Elif Şahin",
+    contactRequests: [
+      { service: "consulting", key: "audit", label: "Performance audit & diagnostics" },
+      { service: "consulting", key: "conversion", label: "Conversion optimisation & CRO" },
+      { service: "automation", key: "crm", label: "CRM workflows & marketing automation" },
+    ],
     role: "Performance Marketing Lead",
     bio: "Designs and operates high-performance marketing automation systems for clients. Expert in CRM architecture, lead scoring and multi-channel acquisition programmes at enterprise scale.",
     photo: "/team/elif-sahin.webp",
@@ -120,6 +153,11 @@ export const TEAM: TeamMember[] = [
   {
     id: 7,
     name: "Aylin Arslan",
+    contactRequests: [
+      { service: "aidata", key: "modeling", label: "Predictive modelling & segmentation" },
+      { service: "aidata", key: "signals", label: "Intent signals & data activation" },
+      { service: "aidata", key: "licensing", label: "Data monetisation & licensing" },
+    ],
     role: "Data & Analytics Manager",
     bio: "Translates raw audience behaviour into actionable intelligence. Builds the predictive models, segment schemas and reporting layers that power every DolphX client engagement.",
     photo: "/team/aylin-arslan.webp",
@@ -133,40 +171,22 @@ export const TEAM: TeamMember[] = [
   },
 ];
 
-/* Maps form sub-inquiries → memberId (used in WorkWithUs) */
-export const INQUIRIES: Record<
-  string,
-  { key: string; label: string; memberId: number }[]
-> = {
-  consulting: [
-    { key: "audit",      label: "Performance audit & diagnostics",      memberId: 4 },
-    { key: "seo",        label: "SEO architecture & strategy",          memberId: 4 },
-    { key: "conversion", label: "Conversion engineering & CRO",         memberId: 4 },
-  ],
-  automation: [
-    { key: "crm",        label: "CRM workflows & integration",          memberId: 6 },
-    { key: "development",label: "Project development & delivery",       memberId: 8 },
-    { key: "saas",       label: "SaaS platform & client portal",        memberId: 8 },
-  ],
-  aidata: [
-    { key: "modeling",   label: "Predictive modelling & segmentation",  memberId: 7 },
-    { key: "signals",    label: "Intent signals & data activation",     memberId: 7 },
-    { key: "licensing",  label: "Data monetisation & licensing",        memberId: 7 },
-  ],
-  media: [
-    { key: "editorial",    label: "Sponsored editorial programs",       memberId: 5 },
-    { key: "distribution", label: "Multi-platform distribution",        memberId: 5 },
-  ],
-  general: [
-    { key: "partnership", label: "Partnership & press",                  memberId: 4 },
-    { key: "onboarding",  label: "Client onboarding",                    memberId: 4 },
-  ],
-};
-
-export const SERVICES = [
+export const SERVICES: { key: ServiceKey; num: string; label: string; desc: string }[] = [
   { key: "consulting", num: "01", label: "Digital Consulting",   desc: "Strategy, SEO & conversion"   },
   { key: "automation", num: "02", label: "Project Development & SaaS", desc: "Products, portals & workflows" },
   { key: "aidata",     num: "03", label: "AI & Data",            desc: "Predictive models & segments" },
   { key: "media",      num: "04", label: "Media & Distribution", desc: "Sponsored content & reach"    },
   { key: "general",    num: "05", label: "General Inquiry",      desc: "Partnerships, press & other"  },
 ];
+
+// Derive both the form options and their owners from the same team records.
+// Moving a request to another member updates every contact form automatically.
+export function getContactRequests(service: ServiceKey) {
+  return TEAM.flatMap((member) => member.contactRequests.filter((request) => request.service === service));
+}
+
+export function getInquiryContact(service: ServiceKey | "", requestKey: string) {
+  return TEAM.find((member) => member.contactRequests.some(
+    (request) => request.service === service && request.key === requestKey
+  ));
+}

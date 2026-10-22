@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const nextSteps = [
-  { num: "01", label: "Check your inbox", desc: "You'll receive a confirmation email shortly with a copy of your submission." },
+  { num: "01", label: "Keep an eye on your inbox", desc: "Our team will reply to the email address you provided. Check your spam folder if you don't see our response." },
   { num: "02", label: "We review your enquiry", desc: "A DolphX senior team member reads every submission personally — typically within a few hours." },
   { num: "03", label: "Receive a tailored response", desc: "We'll respond within 24 business hours with a brief assessment and proposed next steps." },
   { num: "04", label: "Begin the engagement", desc: "If there's a fit, we schedule a discovery call and move forward from there." },

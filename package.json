@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "test:seo": "node scripts/check-seo.mjs",
+    "test:contact": "node --test scripts/contact-routing.test.mjs",
     "lint": "next lint"
   },
   "keywords": [],

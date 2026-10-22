@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
@@ -45,40 +46,6 @@ const faqs = [
     a: "Depending on the service: consulting and data mandates run on monthly retainers with defined deliverables; media campaigns are quoted per placement; project development and SaaS builds are scoped and fixed-price.",
   },
 ];
-
-const enquiryTypes = [
-  "Digital Consulting & Strategy",
-  "Project Development & SaaS",
-  "AI & Data Intelligence",
-  "Media & Editorial Distribution",
-  "Partnership & Press",
-  "Data Licensing",
-  "Investment Enquiry",
-  "Other",
-];
-
-const inputStyle: React.CSSProperties = {
-  width: "100%",
-  backgroundColor: "var(--color-surface)",
-  border: "1px solid var(--color-border)",
-  color: "var(--color-foreground)",
-  padding: "12px 16px",
-  fontSize: 14,
-  fontFamily: "var(--font-sans)",
-  outline: "none",
-  transition: "border-color 200ms ease",
-};
-
-const labelStyle: React.CSSProperties = {
-  fontFamily: "var(--font-mono)",
-  fontSize: 11,
-  color: "var(--color-muted-foreground)",
-  display: "block",
-  marginBottom: 8,
-  letterSpacing: "0.14em",
-  textTransform: "uppercase",
-  fontWeight: 500,
-};
 
 export default function ContactPage() {
   return (
@@ -130,89 +97,7 @@ export default function ContactPage() {
       <section style={{ backgroundColor: "var(--color-surface)", borderBottom: "1px solid var(--color-border)", paddingTop: 120, paddingBottom: 120 }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 40px", display: "grid", gridTemplateColumns: "1.4fr 1fr", gap: 64, alignItems: "start" }} id="contact-grid">
 
-          {/* ── Left: Form ─────────────────────────────────────── */}
-          <ScrollReveal>
-            <div style={{ border: "1px solid var(--color-border)", backgroundColor: "var(--color-card)" }}>
-              <div style={{ padding: "20px 32px", borderBottom: "1px solid var(--color-border)", display: "flex", alignItems: "center", gap: 10 }}>
-                <span style={{ width: 6, height: 6, borderRadius: "50%", backgroundColor: "var(--color-eyebrow)" }} />
-                <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--color-eyebrow)", letterSpacing: "0.2em", textTransform: "uppercase" }}>Enquiry Form</p>
-              </div>
-
-              <form
-                action="https://formsubmit.co/hello@dolphx.com"
-                method="POST"
-                style={{ padding: "32px" }}
-              >
-                <input type="hidden" name="_subject" value="New DolphX Enquiry" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="/thank-you" />
-
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }} id="form-name-grid">
-                  <div>
-                    <label style={labelStyle}>First Name</label>
-                    <input name="first_name" required style={inputStyle} />
-                  </div>
-                  <div>
-                    <label style={labelStyle}>Last Name</label>
-                    <input name="last_name" required style={inputStyle} />
-                  </div>
-                </div>
-
-                {[
-                  { name: "email", label: "Business Email", type: "email" },
-                  { name: "company", label: "Company", type: "text" },
-                ].map((field) => (
-                  <div key={field.name} style={{ marginBottom: 16 }}>
-                    <label style={labelStyle}>{field.label}</label>
-                    <input name={field.name} type={field.type} required style={inputStyle} />
-                  </div>
-                ))}
-
-                <div style={{ marginBottom: 16 }}>
-                  <label style={labelStyle}>Enquiry Type</label>
-                  <select name="enquiry_type" style={{ ...inputStyle, appearance: "none" }}>
-                    {enquiryTypes.map((t) => (
-                      <option key={t} value={t}>{t}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div style={{ marginBottom: 32 }}>
-                  <label style={labelStyle}>Message</label>
-                  <textarea
-                    name="message"
-                    rows={5}
-                    required
-                    placeholder="Describe your project or objectives..."
-                    style={{
-                      ...inputStyle,
-                      resize: "vertical",
-                      minHeight: 120,
-                    }}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  style={{
-                    width: "100%",
-                    backgroundColor: "#F0F2EA",
-                    color: "#0f110c",
-                    border: "none",
-                    padding: "16px",
-                    fontFamily: "var(--font-sans)",
-                    fontSize: 14,
-                    fontWeight: 500,
-                    cursor: "pointer",
-                    letterSpacing: "0.02em",
-                    transition: "background-color 200ms ease",
-                  }}
-                >
-                  Send Enquiry
-                </button>
-              </form>
-            </div>
-          </ScrollReveal>
+          <ContactForm />
 
           {/* ── Right: Details + FAQ ────────────────────────────── */}
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
@@ -261,10 +146,11 @@ export default function ContactPage() {
         </div>
         <style>{`
           @media(max-width:900px){#contact-grid{grid-template-columns:1fr!important;}}
-          @media(max-width:480px){#form-name-grid{grid-template-columns:1fr!important;}}
-          input::placeholder,textarea::placeholder{color:var(--color-muted-foreground);opacity:0.5;}
-          input:focus,textarea:focus,select:focus{border-color:var(--color-eyebrow)!important;}
-          button[type="submit"]:hover{background-color:#d8dbd2!important;}
+          @media(max-width:600px){#contact-grid{padding-left:20px!important;padding-right:20px!important;}}
+
+
+
+
         `}</style>
       </section>
 
